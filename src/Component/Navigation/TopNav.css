@@ -1,0 +1,21 @@
+.top-nav{
+    height:40px;
+    background-color:yellowgreen;
+    display: flex;
+    margin: auto 0px;
+    font-size:15px;
+    letter-spacing:1px;
+    color:#444;
+    justify-content:space-between;
+    padding:0px 30px;
+}
+.links-div{
+    margin: auto 0px;
+}
+.link{
+    margin: auto 10px;
+    color:#444;
+}
+.wlcm{
+    margin: auto 20px;
+}

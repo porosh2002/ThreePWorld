@@ -127,13 +127,6 @@ export default class Navigation extends Component {
                 >
                   Essentials
                 </Link>
-                <Link
-                  className="menu-link"
-                  to=""
-                  onMouseEnter={this.menu_div_out}
-                >
-                  Buy Old Goods
-                </Link>
               </div>
             </div>
             <div className="srch-profile" onMouseEnter={this.menu_div_out}>
@@ -150,10 +143,25 @@ export default class Navigation extends Component {
                 </form>
               </div>
               <div className="pr-container">
+
+                  {/* <div className="pre-container-link-div pcld">
+                  <Link className='pre-container-links' to="/">
+Make Money
+                </Link>
+                <Link className='pre-container-links' to="/">
+Promotion
+                </Link>
+                  </div> */}
                 <Link to="/">
                   <div className="pre-container-link-div">
-                    <i className="fas fa-user-circle"></i>
-                    <p className="pr-container-des">Profile</p>
+                    <i className="far fa-bookmark"></i>
+                    <p className="pr-container-des ">Make Money</p>
+                  </div>
+                </Link>
+                <Link to="/">
+                  <div className="pre-container-link-div">
+                    <i className="far fa-bookmark"></i>
+                    <p className="pr-container-des ">Promotion</p>
                   </div>
                 </Link>
                 <Link to="/">

@@ -16,7 +16,7 @@
       color: #444;
     }
     .menu-div-main {
-      width: 600px;
+      width: 500px;
       text-align: center;
     }
     .drop-down{
@@ -44,7 +44,7 @@
     }
     .navigation {
       display: flex;
-      justify-content: space-between;
+      justify-content: space-around;
     }
     .pr-container {
       margin: auto 0px;
@@ -86,7 +86,7 @@
       background-color: #f08080;
     }
     .srch-profile {
-      width: 600px;
+      width:700px;
       display: flex;
       justify-content: space-around;
     }
@@ -133,7 +133,6 @@
       display: flex;
       margin: 50px 0px;
     }
-    .pre-container-link-div:hover .fa-user-circle,
     .pre-container-link-div:hover .fa-bookmark,
     .pre-container-link-div:hover .fa-shopping-bag {
       color: #f08080;
