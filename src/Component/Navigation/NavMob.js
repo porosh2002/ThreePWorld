@@ -31,11 +31,11 @@ export default class NavMob extends Component {
           <Link to=''>3pshopping</Link>
         </div>
         <div className="pr-container">
-          <Link to="/">
+          {/* <Link to="/">
             <div className="pre-container-link-div">
               <i className="fas fa-user-circle"></i>
             </div>
-          </Link>
+          </Link> */}
           <Link to="/">
             <div className="pre-container-link-div">
               <i className="far fa-bookmark"></i>
@@ -71,6 +71,21 @@ export default class NavMob extends Component {
         </Link>
         <Link className="menu-link " to="">
           Contact Us
+        </Link>
+        <Link className="menu-link " to="">
+          Login
+        </Link>
+        <Link className="menu-link " to="">
+        Become a Vendor
+        </Link>
+        <Link className="menu-link " to="">
+        Profile
+        </Link>
+        <Link className="menu-link " to="">
+        Login
+        </Link>
+        <Link className="menu-link " to="">
+        পুরাতন পন্য ক্রয় বিক্রয়
         </Link>
         <Link className="menu-link " to="">
           FAQs

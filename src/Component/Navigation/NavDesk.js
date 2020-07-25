@@ -1,6 +1,8 @@
 import React,{Component} from 'react';
 import logo from "../Images/logo.jpg";
 import { Link } from "react-router-dom";
+import NavTop from './TopNav';
+import TopNav from './TopNav';
 export default class Navigation extends Component {
     constructor() {
       super();
@@ -79,6 +81,7 @@ export default class Navigation extends Component {
       const style5 = hovered_essential ? { display: "block" } : {};
       return (
         <div >
+          <TopNav />
           <div className="navigation">
             <div className="logo_div" onMouseEnter={this.menu_div_out}>
               <Link to="/">
@@ -143,24 +146,15 @@ export default class Navigation extends Component {
                 </form>
               </div>
               <div className="pr-container">
-
-                  {/* <div className="pre-container-link-div pcld">
-                  <Link className='pre-container-links' to="/">
-Make Money
-                </Link>
-                <Link className='pre-container-links' to="/">
-Promotion
-                </Link>
-                  </div> */}
                 <Link to="/">
                   <div className="pre-container-link-div">
-                    <i className="far fa-bookmark"></i>
+                  <i className="far fa-money-bill-alt"></i>
                     <p className="pr-container-des ">Make Money</p>
                   </div>
                 </Link>
                 <Link to="/">
                   <div className="pre-container-link-div">
-                    <i className="far fa-bookmark"></i>
+                  <i className="fas fa-bullhorn"></i>
                     <p className="pr-container-des ">Promotion</p>
                   </div>
                 </Link>

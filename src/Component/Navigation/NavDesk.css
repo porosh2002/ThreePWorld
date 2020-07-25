@@ -2,7 +2,7 @@
   @media screen and (min-width: 900px) {
     .navigation {
       height: 70px;
-      top: 0;
+      top:40px;
       position: sticky;
       background-color: #fff;
     }
@@ -11,7 +11,9 @@
     }
     .fa-user-circle,
     .fa-bookmark,
-    .fa-shopping-bag {
+    .fa-shopping-bag,
+    .fa-money-bill-alt,
+    .fa-bullhorn{
       font-size: 20px;
       color: #444;
     }
@@ -49,11 +51,10 @@
     .pr-container {
       margin: auto 0px;
       text-align: center;
-      display: flex;
     }
     .pr-container div {
       display: inline-block;
-      margin: 0px 15px;
+      margin: 0px 5px;
     }
     .search-box,
     .search-btn {
