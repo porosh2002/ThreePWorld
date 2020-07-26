@@ -1,7 +1,6 @@
 import React,{Component} from 'react';
 import logo from "../Images/logo.jpg";
 import { Link } from "react-router-dom";
-import NavTop from './TopNav';
 import TopNav from './TopNav';
 export default class Navigation extends Component {
     constructor() {

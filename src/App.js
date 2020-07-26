@@ -1,14 +1,22 @@
-import React from 'react';
-import './App.css';
+import React, { Component,Suspense} from "react";
+import { Switch, Route} from "react-router-dom";
+import Loading from "./Component/Loading/Loading";
 import Navigation from './Component/Navigation/Navigation'
-// import Footer from './Component/Footer/Footer';
-function App() {
-  return (
-<div>
-<Navigation />
- {/* <Footer />  */}
-    </div>
-  );
+import "./App.css";
+export default class App extends Component {
+  render() {
+    const Home =React.lazy(() => import('./Pages/Home'));
+    const Error =React.lazy(() => import('./Pages/Error'));
+    return (
+      <div>
+    <Suspense fallback={<Loading />}>
+      <Navigation />
+      <Switch>
+        <Route exact path="/" component={Home}/>
+        <Route component={Error}/>
+      </Switch>
+    </Suspense>
+      </div>
+    );
+  }
 }
-
-export default App;
