@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/ThreePWorld/static/css/main.dff55d56.chunk.css",
+    "main.js": "/ThreePWorld/static/js/main.636aecd6.chunk.js",
+    "main.js.map": "/ThreePWorld/static/js/main.636aecd6.chunk.js.map",
+    "runtime-main.js": "/ThreePWorld/static/js/runtime-main.7ec16fdd.js",
+    "runtime-main.js.map": "/ThreePWorld/static/js/runtime-main.7ec16fdd.js.map",
+    "static/js/2.8874d3ff.chunk.js": "/ThreePWorld/static/js/2.8874d3ff.chunk.js",
+    "static/js/2.8874d3ff.chunk.js.map": "/ThreePWorld/static/js/2.8874d3ff.chunk.js.map",
+    "static/css/3.cc77a333.chunk.css": "/ThreePWorld/static/css/3.cc77a333.chunk.css",
+    "static/js/3.3b491fce.chunk.js": "/ThreePWorld/static/js/3.3b491fce.chunk.js",
+    "static/js/3.3b491fce.chunk.js.map": "/ThreePWorld/static/js/3.3b491fce.chunk.js.map",
+    "static/css/4.e21cb845.chunk.css": "/ThreePWorld/static/css/4.e21cb845.chunk.css",
+    "static/js/4.69f2e70c.chunk.js": "/ThreePWorld/static/js/4.69f2e70c.chunk.js",
+    "static/js/4.69f2e70c.chunk.js.map": "/ThreePWorld/static/js/4.69f2e70c.chunk.js.map",
+    "static/css/5.75bc6138.chunk.css": "/ThreePWorld/static/css/5.75bc6138.chunk.css",
+    "static/js/5.52c78483.chunk.js": "/ThreePWorld/static/js/5.52c78483.chunk.js",
+    "static/js/5.52c78483.chunk.js.map": "/ThreePWorld/static/js/5.52c78483.chunk.js.map",
+    "static/js/6.05189f1d.chunk.js": "/ThreePWorld/static/js/6.05189f1d.chunk.js",
+    "static/js/6.05189f1d.chunk.js.map": "/ThreePWorld/static/js/6.05189f1d.chunk.js.map",
+    "static/js/7.7cce20a9.chunk.js": "/ThreePWorld/static/js/7.7cce20a9.chunk.js",
+    "static/js/7.7cce20a9.chunk.js.map": "/ThreePWorld/static/js/7.7cce20a9.chunk.js.map",
+    "index.html": "/ThreePWorld/index.html",
+    "precache-manifest.807edcd8fec8c5961fe87a341f66fca3.js": "/ThreePWorld/precache-manifest.807edcd8fec8c5961fe87a341f66fca3.js",
+    "service-worker.js": "/ThreePWorld/service-worker.js",
+    "static/css/3.cc77a333.chunk.css.map": "/ThreePWorld/static/css/3.cc77a333.chunk.css.map",
+    "static/css/4.e21cb845.chunk.css.map": "/ThreePWorld/static/css/4.e21cb845.chunk.css.map",
+    "static/css/5.75bc6138.chunk.css.map": "/ThreePWorld/static/css/5.75bc6138.chunk.css.map",
+    "static/css/main.dff55d56.chunk.css.map": "/ThreePWorld/static/css/main.dff55d56.chunk.css.map",
+    "static/js/2.8874d3ff.chunk.js.LICENSE.txt": "/ThreePWorld/static/js/2.8874d3ff.chunk.js.LICENSE.txt",
+    "static/media/logo.jpg": "/ThreePWorld/static/media/logo.4e73d0b1.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7ec16fdd.js",
+    "static/js/2.8874d3ff.chunk.js",
+    "static/css/main.dff55d56.chunk.css",
+    "static/js/main.636aecd6.chunk.js"
+  ]
+}

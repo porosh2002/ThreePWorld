@@ -1,0 +1,2 @@
+(this.webpackJsonpthree_p_world=this.webpackJsonpthree_p_world||[]).push([[6],{46:function(e,t,r){"use strict";r.r(t),r.d(t,"default",(function(){return s}));var n=r(0),o=r.n(n);function s(){return o.a.createElement("div",{className:"error-txt"},"Something went wrong :(")}}}]);
+//# sourceMappingURL=6.05189f1d.chunk.js.map
