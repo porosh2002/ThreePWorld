@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "33d27d271ca6e86651fdb93a0dbaaff8",
+    "revision": "8c54f49ba6a5c9f090fa13d74d57674d",
     "url": "/ThreePWorld/index.html"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ThreePWorld/static/css/4.75bc6138.chunk.css"
   },
   {
-    "revision": "bd48470e5caaddf98c78",
-    "url": "/ThreePWorld/static/css/main.dff55d56.chunk.css"
+    "revision": "f18daa2a972817ca2ef3",
+    "url": "/ThreePWorld/static/css/main.829a7881.chunk.css"
   },
   {
     "revision": "41e71a47906d9d9656b4",
@@ -36,7 +36,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ThreePWorld/static/js/4.c1702681.chunk.js"
   },
   {
-    "revision": "bd48470e5caaddf98c78",
+    "revision": "f18daa2a972817ca2ef3",
     "url": "/ThreePWorld/static/js/main.a9ff914a.chunk.js"
   },
   {
