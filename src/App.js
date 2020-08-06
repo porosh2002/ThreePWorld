@@ -13,7 +13,7 @@ export default class App extends Component {
       <Navigation />
       <Switch>
         <Route exact path="/" component={Home}/>
-        <Route component={Error}/>
+        <Route component={Home}/>
       </Switch>
     </Suspense>
       </div>
