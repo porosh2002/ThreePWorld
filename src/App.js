@@ -10,6 +10,7 @@ export default class App extends Component {
 //     const Error =React.lazy(() => import('./Pages/Error'));
     return (
       <div>
+        <Navigation />
       <Home />
     {/* <Suspense fallback={<Loading />}>
        <Navigation />
