@@ -5,6 +5,14 @@
   text-decoration: none;
   text-align: center;
 }
+.slider-main{
+  z-index:0;
+}
+.slider-img{
+  width: 100vw;
+  height:400px;
+  margin:0px;
+}
 /* .title-md {
   font-size: 15px;
   letter-spacing: 1px;
