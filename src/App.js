@@ -11,13 +11,13 @@ export default class App extends Component {
     return (
       <div>
       <Home />
-//     <Suspense fallback={<Loading />}>
-//       <Navigation />
-//       <Switch>
-//         <Route exact path="/" component={Home}/>
-//         <Route component={Home}/>
-//       </Switch>
-//     </Suspense>
+    {/* <Suspense fallback={<Loading />}>
+       <Navigation />
+       <Switch>
+         <Route exact path="/" component={Home}/>
+         <Route component={Home}/>
+      </Switch>
+     </Suspense> */}
       </div>
     );
   }
