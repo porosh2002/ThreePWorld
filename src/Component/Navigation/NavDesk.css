@@ -33,7 +33,7 @@
     .pr-container-des {
       text-decoration: none;
       margin: 0px 10px;
-      font-size: 14px;
+      font-size: 13px;
       color: #444;
       font-weight: 650;
       letter-spacing: 1px;
@@ -117,16 +117,19 @@
       color: #444;
       font-weight: 600;
       margin: 10px 0px 0px 10px;
+      text-align: left;
     }
     .drop-des:hover {
       color: #f08080;
     }
     .drop-div {
       width: 600px;
+      text-align: left;
     }
     .drp-lst {
       display: block;
       margin: 10px 0px;
+      text-align: left;
     }
     .ddmf {
       display: flex;
