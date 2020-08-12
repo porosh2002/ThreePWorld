@@ -153,3 +153,19 @@ color:#444;
 color:#ea8041;
 padding:30vh 0px;
 }
+/* Offer Slider */
+.offer-slider{
+  height:150px;
+  width:100%;
+  background-color: #444;
+}
+.offer-slider-2{
+  height:150px;
+  width:100%;
+  background-color:tomato;
+}
+.offer-slider-3{
+  height:150px;
+  width:100%;
+  background-color:royalblue;
+}
