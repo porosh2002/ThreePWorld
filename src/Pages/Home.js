@@ -4,8 +4,8 @@ import SliderOffer from '../Component/Slider/offerSlider'
 export default function Home() {
     return (
         <div>
-            <Slider />
-            <SliderOffer />
+             <Slider /> 
+             <SliderOffer /> 
         </div>
     )
 }

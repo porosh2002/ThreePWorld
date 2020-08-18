@@ -19,12 +19,12 @@ export default class Slider extends Component {
     >
       <SwiperSlide>
           <Link to=''>
-          <img className='slider-img' src='https://images.pexels.com/photos/3680746/pexels-photo-3680746.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940' alt='company-logo'></img>
+          <img className='slider-img' src='https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2020/8/17/baba2c89-c706-44b1-a7d8-abbad4649fe41597683284959-women-footwear-dk.jpg' alt='company-logo'></img>
           </Link>
       </SwiperSlide>
       <SwiperSlide>
           <Link to=''>
-          <img className='slider-img' src='https://images.pexels.com/photos/4755027/pexels-photo-4755027.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940' alt='company-logo'></img>
+          <img className='slider-img' src='https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2020/8/17/1b9af71b-64ee-4736-9ee7-1209740a3f4b1597683284668-MnH_Desk.jpg' alt='company-logo'></img>
           </Link>
       </SwiperSlide>
     </Swiper>
