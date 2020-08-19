@@ -157,15 +157,22 @@ padding:30vh 0px;
 .offer-slider{
   height:150px;
   width:100%;
-  background-color: #444;
 }
-.offer-slider-2{
-  height:150px;
-  width:100%;
-  background-color:tomato;
+/* Product Filter Desk */
+.product-filter{
+  width:20%;
+  height:100%;
 }
-.offer-slider-3{
-  height:150px;
-  width:100%;
-  background-color:royalblue;
+
+.title-filter{
+  font-size:13px;
+  color: #444;
+  font-weight: 600;
+  letter-spacing:1px;
+  margin:10px 0px 30px 10px;
+  text-align-last: left;
+}
+.title-main-f{
+  font-size:18px;
+  margin:70px 0px 40px 10px;
 }
