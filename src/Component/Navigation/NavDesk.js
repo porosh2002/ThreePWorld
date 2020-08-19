@@ -79,7 +79,7 @@ export default class Navigation extends Component {
       const style4 = hovered_home ? { display: "block" } : {};
       const style5 = hovered_essential ? { display: "block" } : {};
       return (
-        <div >
+        <div className='nav--main' >
           <TopNav />
           <div className="navigation">
             <div className="logo_div" onMouseEnter={this.menu_div_out}>

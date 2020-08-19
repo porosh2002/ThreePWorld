@@ -20,7 +20,7 @@ export default class NavMob extends Component {
     const { transition } = this.state;
     const style = {transform:menu,transition:transition};
     return (
-      <div>
+      <div className='nav--main'>
         <div>
       <div className="navigation">
         <div className="bars" onClick={this.Click}>

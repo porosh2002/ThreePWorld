@@ -1,6 +1,7 @@
 import React, { Component,Suspense} from "react";
 import { Switch, Route} from "react-router-dom";
 import "./App.css";
+// import Footer from './Component/Footer/Footer'
 import Loading from "./Component/Loading/Loading";
 import Navigation from './Component/Navigation/Navigation'
 export default class App extends Component {
@@ -18,6 +19,7 @@ export default class App extends Component {
          <Route component={Error}/>
       </Switch>
      </Suspense>
+     {/* <Footer /> */}
       </div>
     );
   }

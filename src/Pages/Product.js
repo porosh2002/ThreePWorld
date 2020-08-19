@@ -8,11 +8,13 @@ export default class Product extends Component {
             <div>
         {window.innerWidth > 900 ? (
           <Suspense fallback={<Loading />}>
+            <div className='product-desk'>
             <ProductDesk />
+            </div>
           </Suspense>
         ) : (
           <Suspense fallback={<Loading />}>
-            <ProductMob />
+<ProductMob />
           </Suspense>
         )}
             </div>

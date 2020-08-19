@@ -5,6 +5,10 @@
   text-decoration: none;
   text-align: center;
 }
+.nav--main{
+  position:fixed;
+  width:100%;
+}
 .slider-main{
   z-index:0;
 }
@@ -159,9 +163,12 @@ padding:30vh 0px;
   width:100%;
 }
 /* Product Filter Desk */
+.product-desk{
+  height:800px;
+  overflow:scroll;
+}
 .product-filter{
   width:20%;
-  height:100%;
 }
 .title-filter{
   font-size:13px;
@@ -212,4 +219,21 @@ padding:30vh 0px;
 }
 #select_capacity{
   width:90%;
+}
+/* filter-mob */
+.filter-m0b-div{
+  min-height:100vh;
+  overflow:scroll;
+}
+.filter-mob{
+height:70px;
+width:100vw;
+background-color:yellowgreen;
+position:fixed;
+bottom:0px;
+}
+.fa-sliders-h{
+  font-size:25px;
+  color: #444;
+  margin-top:25px;
 }
