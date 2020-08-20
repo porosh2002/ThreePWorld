@@ -171,7 +171,7 @@ padding:30vh 0px;
   width:20%;
 }
 .product-filter-mob{
-  margin-bottom:70px;
+  margin-bottom:50px;
   width:100%;
 }
 .title-filter{
@@ -245,4 +245,15 @@ bottom:0px;
   font-size:25px;
   color: #444;
   margin-top:25px;
+}
+.filter-close{
+  height:70px;
+  background-color: #444;
+}
+.filter-close p{
+  color: #fff;
+  font-size:15px;
+  font-weight:600;
+  letter-spacing:1px;
+padding-top:30px;
 }

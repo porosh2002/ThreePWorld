@@ -161,7 +161,10 @@ export default class Product_filter_mob extends Component {
            </div>
         </label>
            </form>
-        </div>
+<div className='filter-close'>
+  <p>Close</p>
+</div>
+</div>
 </div>
 
 
