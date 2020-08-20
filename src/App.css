@@ -170,6 +170,10 @@ padding:30vh 0px;
 .product-filter{
   width:20%;
 }
+.product-filter-mob{
+  margin-bottom:70px;
+  width:100%;
+}
 .title-filter{
   font-size:13px;
   color: #444;
@@ -222,7 +226,12 @@ padding:30vh 0px;
 }
 /* filter-mob */
 .filter-m0b-div{
-  min-height:100vh;
+  overflow:scroll;
+}
+.filter-gelary{
+  height:100vh;
+  background-color: #fff;
+  position:sticky;
   overflow:scroll;
 }
 .filter-mob{
