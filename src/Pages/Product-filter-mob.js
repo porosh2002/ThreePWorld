@@ -174,23 +174,6 @@ export default class Product_filter_mob extends Component {
 </div>
 </div>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
       <div className="filter-m0b-div">
         <div style={style2} className="filter-mob">
           <div onClick={this.menu_div_out}>

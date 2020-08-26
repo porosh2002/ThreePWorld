@@ -12,6 +12,9 @@
 .slider-main{
   z-index:0;
 }
+.nav{
+  height:110px;
+}
 .slider-img{
   width: 100vw;
   height:400px;
