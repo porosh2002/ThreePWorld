@@ -402,3 +402,19 @@ font-weight: 600;
   margin:50px 0px 0px 150px;
 }
 }
+/* ADmin Panel */
+.title-AD{
+  margin:50px 0px;
+font-size:1.5rem;
+color: #ff3f6c;
+}
+.des-AD{
+  margin:50px 0px;
+font-size:1rem;
+color: #444;
+font-weight:600;
+}
+.usr-AD{
+  font-size: 1.5rem;
+  color: yellowgreen;
+}
