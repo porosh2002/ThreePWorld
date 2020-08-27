@@ -14,6 +14,7 @@
 }
 .nav{
   height:110px;
+  z-index: -1;
 }
 .slider-img{
   width: 100vw;
@@ -310,74 +311,94 @@ font-weight: 600;
   letter-spacing:1px;
 }
 /* dsbrd */
+.links-dsbrd{
+  position: relative;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+.dsbrd{
+  position: fixed;
+  top:110px;
+  background-color:#29303b;
+  height:100vh;
+}
+.dsLnk{
+  display: block;
+  margin:1px;
+  padding:15px 0px;
+  text-decoration: none;
+  color: #fff;
+  font-size:15px;
+}
+.dsLnk:hover{
+  background-color: #4444;
+  text-decoration: none;
+  color: #fff;
+    }
+    .title{
+      font-size:25px;
+    }
+    .title-des{
+      font-size:19px;
+    }
+    .update-form input{
+      border:1px solid orange;
+      display: block;
+      text-align: center;
+      margin:10px auto;
+      padding:10px;
+      font-size:15px;
+    }
+    .orders{
+      display: inline-block;
+      margin:20px;
+    }
+    .odr-des{
+      display: inline-block;
+      margin: 10px 20px;
+    }
+    .withdrawform{
+      padding:10px 20px;
+      text-align: center;
+      border:1px solid yellowgreen;
+    }
+    .desE{
+      font-size:13px;
+      font-weight:600;
+      letter-spacing:1px;
+      color: #ea8041;
+    }
+    .title-des-btn{
+      padding:10px 20px;
+      background-color: #444;
+      margin: 10px auto;
+      color:orange;
+      border-radius:3px;
+      width:200px;
+      cursor: pointer;
+    }
 @media screen and (min-width:900px){
   .dsbrd{
     width:300px;
-    position: fixed;
-    top:110px;
-    background-color:#29303b;
-    height:100vh;
-  }
-  .links-dsbrd{
-    position: relative;
-    top: 50%;
-    left:50%;
-    transform: translate(-50%,-50%);
-  }
-  .dsLnk{
-    display: block;
-    margin:1px;
-    padding:15px 0px;
-    text-decoration: none;
-    color: #fff;
-    font-size:15px;
-  }
-  .dsLnk:hover{
-background-color: #4444;
-text-decoration: none;
-color: #fff;
   }
   .dsbrd-cntnt{
     margin:150px 0px 0px 300px;
     color: #444;
 }
-.title{
-  font-size:25px;
-}
-.title-des{
-  font-size:19px;
-}
-.title-des-btn{
-  padding:10px 20px;
-  background-color: #444;
-  margin: 10px auto;
-  color:orange;
-  border-radius:3px;
-  width:200px;
-  cursor: pointer;
-}
 .update-form,.oh{
   margin:50px 0px 0px 300px;
 }
-.update-form input{
-  border:1px solid orange;
-  display: block;
-  text-align: center;
-  margin:10px auto;
-  padding:10px;
-  font-size:15px;
 }
-.orders{
-  display: inline-block;
-  margin:20px;
+@media screen and (max-width:899px){
+  .dsbrd{
+    width:100px;
+  }
+  .dsbrd-cntnt{
+    margin:150px 0px 0px 150px;
+    color: #444;
 }
-.odr-des{
-  display: inline-block;
-  margin: 10px 20px;
-}
-.withdrawform{
-  padding:10px 20px;
-  text-align: center;
-  border:1px solid yellowgreen;
+.update-form,.oh{
+  margin:50px 0px 0px 150px;
 }
 }

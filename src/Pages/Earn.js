@@ -8,6 +8,7 @@ export default function User() {
                 <p className='title'>Earn From Affiliate</p>
                 <p className='title-des'>৳ 500</p>
                 <form>
+                <p className='desE'>minimum Wwithdrawl ৳500</p>
                 <input type='submit' className='withdrawform' value='Withdraw'></input>
             </form>
                 </div>
