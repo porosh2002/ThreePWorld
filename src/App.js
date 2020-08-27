@@ -11,6 +11,9 @@ export default class App extends Component {
     const Product =React.lazy(() => import('./Pages/Product'));
     const Login =React.lazy(() => import('./Pages/Login'));
     const Signup =React.lazy(() => import('./Pages/Signup'));
+    const User =React.lazy(() => import('./Pages/User'));
+    const Order =React.lazy(() => import('./Pages/Order'));
+    const Earn =React.lazy(() => import('./Pages/Earn'));
     return (
       <div>
         <div className='nav'>
@@ -22,6 +25,9 @@ export default class App extends Component {
          <Route exact path="/product" component={Product}/>
          <Route exact path="/Login" component={Login}/>
          <Route exact path="/Register" component={Signup}/>
+         <Route exact path="/Profile/:id" component={User}/>
+         <Route exact path="/Order/:id" component={Order}/>
+         <Route exact path="/Earn/:id" component={Earn}/>
          <Route component={Error}/>
       </Switch>
      </Suspense>
