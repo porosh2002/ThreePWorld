@@ -420,7 +420,6 @@ font-weight:600;
 }
 /* Upload Product */
 .admin-nav{
-  width:150px;
   background-color: #29303b;
   color:#fff;
   height:100vh;
@@ -437,7 +436,52 @@ font-weight:600;
 cursor: pointer;
 }
 @media screen and (min-width:900px){
+  .admin-nav{
+    width:150px;
+  }
   .product-ADMIN{
     margin:70px 0px 50px 150px;
+    font-size:15px;
+    font-weight:600;
+    color: #29303b;
   }
+}
+@media screen and (max-width:899px){
+  .admin-nav{
+    width:70px;
+  }
+  .product-ADMIN{
+    margin:70px 0px 50px 70px;
+  }
+
+}
+.input-upload{
+  height:30px;
+  width:250px;
+  display: block;
+ margin:20px auto;
+ font-size:15px;
+ font-weight:600;
+ color: #29303b;
+}
+.input-textarea{
+  height:120px;
+  width:280px;
+  display: block;
+ margin:10px auto;
+ font-size:15px;
+ font-weight:600;
+ color: #29303b;
+}
+.uploadbtn{
+  width:150px;
+  display: block;
+  padding:10px 0px;
+  margin:30px auto;
+  font-size:13px;
+  font-weight:600;
+  color: #fff;
+  background-color:#ff3f6c;
+  border:none;
+  border-radius:3px;
 }

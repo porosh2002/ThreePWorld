@@ -72,6 +72,15 @@ export default class ops extends Component {
 
 
 <input className='input-upload' type='name' placeholder='Enter Product Name' required></input>
+<input className='input-upload' type='number' placeholder='Enter Product Price' required></input>
+<input className='input-upload' type='number' placeholder='Enter offer in % (0-100%)' required></input>
+<input className='input-upload' type='name' placeholder='Enter Product Size (S,L,M)' required></input>
+<textarea className='input-textarea' placeholder='Enter Product Tags' required></textarea>
+<textarea className='input-textarea' placeholder='Enter Product Description' required></textarea>
+<input className='input-upload' type='file' placeholder='image for product' required></input>
+<input className='input-upload' type='file' placeholder='image for product' required></input>
+<input className='input-upload' type='file' placeholder='image for product' required></input>
+<input className='uploadbtn' type='submit' value='ADD Product'></input>
 
 
             </form>
