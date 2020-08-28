@@ -6,9 +6,77 @@ export default class ops extends Component {
     this.state = {
       slider:false,
       Brand:false,
-      Product:true
+      Product:true,
+      iteam:'',
+      price:'',
+      offer:'',
+      size:'',
+      tags:'',
+      description:'',
+      BrandName:'',
+      img1:'',
     }
   }
+  imageChange=(event)=>{
+    this.setState({img1:event.target.value})
+    console.log(this.state.img1);
+  }
+  IteamNameChange=(event)=>{
+    this.setState({iteam:event.target.value})
+  }
+  BrandNameChange=(event)=>{
+    this.setState({BrandName:event.target.value})
+    
+  }
+  priceNameChange=(event)=>{
+    this.setState({price:event.target.value})
+    
+  }
+  offerNameChange=(event)=>{
+    this.setState({offer:event.target.value})
+    
+  }
+  sizeNameChange=(event)=>{
+    this.setState({size:event.target.value})
+    
+  }
+  tagsNameChange=(event)=>{
+    this.setState({tags:event.target.value})
+    
+  }
+  desNameChange=(event)=>{
+    this.setState({description:event.target.value})
+    
+  }
+  SliderChange=(event)=>{
+    this.setState({slider:event.target.value})
+    console.log(this.state.slider);
+  }
+  BrandChange=(event)=>{
+    this.setState({Brand:event.target.value})
+    console.log(this.state.Brand);
+  }
+  ProductChange=(event)=>{
+    this.setState({Product:event.target.value})
+    console.log(this.state.Product);
+  }
+  onbtnsubmitPDCT=()=>{
+    fetch('http://localhost:5000/ProductADD',{
+        method:'post',
+        headers: {'Content-Type': 'application/json'},
+        body:JSON.stringify({
+            iteam:this.state.iteam,
+            price:this.state.price,
+            offer:this.state.offer,
+            size:this.state.size,
+            tags:this.state.tags,
+            description:this.state.description,
+            BrandName:this.state.BrandName,
+        })
+    })
+  }
+
+
   render() {
     return (
       <div>
@@ -71,16 +139,17 @@ export default class ops extends Component {
             <form>
 
 
-<input className='input-upload' type='name' placeholder='Enter Product Name' required></input>
-<input className='input-upload' type='number' placeholder='Enter Product Price' required></input>
-<input className='input-upload' type='number' placeholder='Enter offer in % (0-100%)' required></input>
-<input className='input-upload' type='name' placeholder='Enter Product Size (S,L,M)' required></input>
-<textarea className='input-textarea' placeholder='Enter Product Tags' required></textarea>
-<textarea className='input-textarea' placeholder='Enter Product Description' required></textarea>
+<input className='input-upload' onChange={this.IteamNameChange} type='name' placeholder='Enter Product Name' required></input>
+<input className='input-upload' onChange={this.priceNameChange} type='number' placeholder='Enter Product Price' required></input>
+<input className='input-upload' onChange={this.BrandNameChange} type='text' placeholder='Enter Product Brand' required></input>
+<input className='input-upload' onChange={this.offerNameChange} type='number' placeholder='Enter offer in % (0-100%)' required></input>
+<input className='input-upload' onChange={this.sizeNameChange} type='name' placeholder='Enter Product Size (S,L,M)' required></input>
+<textarea className='input-textarea' onChange={this.tagsNameChange} placeholder='Enter Product Tags' required></textarea>
+<textarea className='input-textarea' onChange={this.desNameChange} placeholder='Enter Product Description' required></textarea>
+<input className='input-upload' onChange={this.imageChange} type='file' placeholder='image for product' required></input>
 <input className='input-upload' type='file' placeholder='image for product' required></input>
 <input className='input-upload' type='file' placeholder='image for product' required></input>
-<input className='input-upload' type='file' placeholder='image for product' required></input>
-<input className='uploadbtn' type='submit' value='ADD Product'></input>
+<input className='uploadbtn' onClick={this.onbtnsubmitPDCT} type='submit' value='ADD Product'></input>
 
 
             </form>
