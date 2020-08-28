@@ -9,7 +9,7 @@ export default class Signup extends Component {
           password:'',
           Address:'',
           district:'',
-          Refferal:''
+          refferal:'000000'
         }
       }
       onNameChange=(event)=>{
@@ -28,16 +28,20 @@ export default class Signup extends Component {
           this.setState({district:event.target.value})
       }
       onRefferalChange=(event)=>{
-          this.setState({Refferal:event.target.value})
+          this.setState({refferal:event.target.value})
       }
     onSubmit=()=>{
-if(this.state.email.length>6 || this.state.password>5){
-    fetch('http://localhost:3000/Register',{
+if(this.state.email.length>6 || this.state.password.length>5 || this.state.Address.length>6 || this.state.name.length>1 || this.state.name.district.length>1 ||this.state.refferal.length>5){
+    fetch('http://localhost:5000/Register',{
         method:'post',
         headers: {'Content-Type': 'application/json'},
         body:JSON.stringify({
             email:this.state.email,
-            password:this.state.password
+            password:this.state.password,
+            address:this.state.Address,
+            district:this.state.district,
+            name:this.state.name,
+            refferal:this.state.refferal,
         })
     })
 }
@@ -53,8 +57,8 @@ if(this.state.email.length>6 || this.state.password>5){
                 <input className='password-input' required onChange={this.onPasswordChange} minLength='6' type='password' placeholder='Enter New Password Here' />
                 <input className='password-input' required onChange={this.onAddressChange} minLength='7' type='' placeholder='Enter Your Address' />
                 <input className='password-input' required onChange={this.onDistrictChange} type='text' placeholder='Enter Your district' />
-                <input className='password-input' onChange={this.onRefferalChange} type='password' minLength='6' placeholder='Referral Number (Optional)' />
-                <input className='submit-input' type='submit' value='Submit'/>
+                <input className='password-input' onChange={this.onRefferalChange} minLength='6' type='number' placeholder='Referral Number (Optional)' />
+                <input className='submit-input' onClick={this.onSubmit} type='submit' value='Submit'/>
                 <Link className='undr-form' to='/Login' >Log In</Link>
                 <Link className='undr-form' to='' >Forgot Password</Link>
                 </div>
