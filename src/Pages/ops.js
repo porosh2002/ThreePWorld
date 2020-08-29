@@ -15,11 +15,18 @@ export default class ops extends Component {
       description:'',
       BrandName:'',
       img1:'',
+      img2:'',
+      img3:'',
     }
   }
   imageChange=(event)=>{
-    this.setState({img1:event.target.value})
-    console.log(this.state.img1);
+    this.setState({img1:event.target.files})
+  }
+  image2Change=(event)=>{
+    this.setState({img2:event.target.files})
+  }
+  image3Change=(event)=>{
+    this.setState({img3:event.target.files})
   }
   IteamNameChange=(event)=>{
     this.setState({iteam:event.target.value})
@@ -72,6 +79,9 @@ export default class ops extends Component {
             tags:this.state.tags,
             description:this.state.description,
             BrandName:this.state.BrandName,
+            image1:this.state.img1,
+            // img2:this.state.img2,
+            // img3:this.state.img3,
         })
     })
   }
@@ -147,8 +157,8 @@ export default class ops extends Component {
 <textarea className='input-textarea' onChange={this.tagsNameChange} placeholder='Enter Product Tags' required></textarea>
 <textarea className='input-textarea' onChange={this.desNameChange} placeholder='Enter Product Description' required></textarea>
 <input className='input-upload' onChange={this.imageChange} type='file' placeholder='image for product' required></input>
-<input className='input-upload' type='file' placeholder='image for product' required></input>
-<input className='input-upload' type='file' placeholder='image for product' required></input>
+<input className='input-upload' onChange={this.image2Change} type='file' placeholder='image for product' required></input>
+<input className='input-upload' onChange={this.image3Change} type='file' placeholder='image for product' required></input>
 <input className='uploadbtn' onClick={this.onbtnsubmitPDCT} type='submit' value='ADD Product'></input>
 
 
