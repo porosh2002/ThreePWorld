@@ -4,23 +4,26 @@ export default class ops extends Component {
   constructor() {
     super()
     this.state = {
-      slider:false,
-      Brand:false,
-      Product:true,
-      iteam:'',
-      price:'',
-      offer:'',
-      size:'',
-      tags:'',
-      description:'',
-      BrandName:'',
-      img1:'',
-      img2:'',
-      img3:'',
+      // slider:false,
+      // Brand:false,
+      // Product:true,
+      // iteam:'',
+      // price:'',
+      // offer:'',
+      // size:'',
+      // tags:'',
+      // description:'',
+      // BrandName:'',
+      img1:null,
+      // img2:'',
+      // img3:'',
     }
   }
   imageChange=(event)=>{
-    this.setState({img1:event.target.files})
+    this.setState({img1:event.target.files[0]})
+  }
+  IC=()=>{
+   console.log(this.state.img1); 
   }
   image2Change=(event)=>{
     this.setState({img2:event.target.files})
@@ -70,19 +73,25 @@ export default class ops extends Component {
   onbtnsubmitPDCT=()=>{
     fetch('http://localhost:5000/ProductADD',{
         method:'post',
-        headers: {'Content-Type': 'application/json'},
-        body:JSON.stringify({
-            iteam:this.state.iteam,
-            price:this.state.price,
-            offer:this.state.offer,
-            size:this.state.size,
-            tags:this.state.tags,
-            description:this.state.description,
-            BrandName:this.state.BrandName,
-            image1:this.state.img1,
-            // img2:this.state.img2,
-            // img3:this.state.img3,
-        })
+        headers:{
+          "Content-Type": "multipart/form-data"
+        },
+        body:{
+          image1:this.state.img1
+        }
+        // headers: {'Content-Type': 'application/json'},
+    //     body:JSON.stringify({
+    //         iteam:this.state.iteam,
+    //         price:this.state.price,
+    //         offer:this.state.offer,
+    //         size:this.state.size,
+    //         tags:this.state.tags,
+    //         description:this.state.description,
+    //         BrandName:this.state.BrandName,
+    //         image1:this.state.img1,
+    //         // img2:this.state.img2,
+    //         // img3:this.state.img3,
+    //     })
     })
   }
 
@@ -160,6 +169,7 @@ export default class ops extends Component {
 <input className='input-upload' onChange={this.image2Change} type='file' placeholder='image for product' required></input>
 <input className='input-upload' onChange={this.image3Change} type='file' placeholder='image for product' required></input>
 <input className='uploadbtn' onClick={this.onbtnsubmitPDCT} type='submit' value='ADD Product'></input>
+<input className='uploadbtn' onClick={this.IC} type='button' value='Check'></input>
 
 
             </form>
