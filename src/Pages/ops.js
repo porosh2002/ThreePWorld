@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-
 export default class ops extends Component {
   constructor() {
     super()
@@ -71,14 +70,14 @@ export default class ops extends Component {
     console.log(this.state.Product);
   }
   onbtnsubmitPDCT=()=>{
-    fetch('http://localhost:5000/ProductADD',{
-        method:'post',
-        headers:{
-          "Content-Type": "multipart/form-data"
-        },
-        body:{
-          image1:this.state.img1
-        }
+  //   fetch('http://localhost:5000/ProductADD',{
+  //       method:'post',
+  //       headers:{
+  //         "Content-Type": "multipart/form-data"
+  //       },
+  //       body:{
+  //         image1:this.state.img1
+  //       }
         // headers: {'Content-Type': 'application/json'},
     //     body:JSON.stringify({
     //         iteam:this.state.iteam,
@@ -92,7 +91,7 @@ export default class ops extends Component {
     //         // img2:this.state.img2,
     //         // img3:this.state.img3,
     //     })
-    })
+  //   })
   }
 
 
