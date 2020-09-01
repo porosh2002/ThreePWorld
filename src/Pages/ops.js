@@ -16,6 +16,27 @@ export default class Upload extends React.Component {
       BrandName: "",
     };
   }
+  onBRANDChange=event=>{
+    this.setState({ BrandName: event.target.value});
+  }
+  onofferChange=event=>{
+    this.setState({ offer: event.target.value});
+  }
+  onsizeChange=event=>{
+    this.setState({ size: event.target.value});
+  }
+  ontagChange=event=>{
+    this.setState({ tags: event.target.value});
+  }
+  ondesChange=event=>{
+    this.setState({ description: event.target.value});
+  }
+  onpriceChange=event=>{
+    this.setState({ price: event.target.value});
+  }
+  oniteamChange=event=>{
+    this.setState({ iteam: event.target.value});
+  }
   fileChange = (event) => {
     this.setState({ file: event.target.files[0] });
   };
