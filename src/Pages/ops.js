@@ -69,36 +69,36 @@ export default class Upload extends React.Component {
         </div>
         <div className="main-admin-content">
           <div className="addProduct">
-            <input
+            <input onChange={this.oniteamChange}
               className="admin-input"
               type="name"
               placeholder="Enter Product Name"
             />
-            <input
+            <input onChange={this.onpriceChange}
               className="admin-input"
               type="number"
               placeholder="Enter Product Price"
             />
-            <input
+            <input onChange={this.onofferChange}
               className="admin-input"
               type="number"
               placeholder="Enter Product Offer"
             />
-            <input
+            <input onChange={this.onsizeChange}
               className="admin-input"
               type="text"
               placeholder="Product Size"
             />
-            <input
+            <input onChange={this.onBRANDChange}
               className="admin-input"
               type="text"
               placeholder="Product Brand"
             />
-            <textarea
+            <textarea onChange={this.ondesChange}
               className="admin-txtarea"
               placeholder="Enter Product Description"
             />
-            <textarea
+            <textarea onChange={this.ontagChange}
               className="admin-txtarea"
               placeholder="Enter Product Tags"
             />
