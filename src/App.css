@@ -403,3 +403,71 @@ font-weight: 600;
 }
 }
 /* ADmin Panel */
+.main-admin{
+  display: flex;
+}
+.main-admin-menu{
+  position: fixed;
+  height:100vh;
+  top:110px;
+  background-color: #29303b;
+}
+.menu-admin{
+  color: #fff;
+  letter-spacing:1px;
+  font-size:15px;
+  font-weight:600;
+  cursor: pointer;
+  padding:10px 0px;
+}
+.menu-p{
+  position: relative;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+@media screen and (min-width:900px){
+  .main-admin-menu{
+    width:300px;
+  } 
+  .main-admin-content{
+    margin:50px 0px 50px 300px;
+    width:100%;
+  }
+}
+.admin-input{
+  display: block;
+  height:30px;
+  width:250px;
+  margin:10px auto;
+  font-size:13px;
+  border-radius:5px;
+  font-weight:600;
+  border:1px solid #000;
+}
+.admin-txtarea{
+  display: block;
+  height:200px;
+  width:300px;
+  margin:10px auto;
+  font-size:13px;
+  border-radius:5px;
+  font-weight:600;
+  border:1px solid #000;
+}
+.img-admin-input{
+  display: block;
+  height:30px;
+  width:250px;
+  margin:20px auto;
+}
+.btn-upld-pdtc{
+padding:10px 20px;
+font-size:13px;
+border-radius:5px;
+font-weight:600;
+color: #d2d2d2;
+border:none;
+margin-top:30px;
+background-color: #ff3f6c;
+}
