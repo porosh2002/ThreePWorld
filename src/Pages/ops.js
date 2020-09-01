@@ -1,5 +1,5 @@
 import React from "react";
-
+import uniqid from 'uniqid'
 export default class Upload extends React.Component {
   constructor() {
     super();
@@ -14,6 +14,7 @@ export default class Upload extends React.Component {
       size: "",
       offer: "",
       BrandName: "",
+      imageID:""
     };
   }
   onBRANDChange=event=>{
@@ -35,6 +36,7 @@ export default class Upload extends React.Component {
     this.setState({ price: event.target.value});
   }
   oniteamChange=event=>{
+    this.setState({imageID:uniqid()})
     this.setState({ iteam: event.target.value});
   }
   fileChange = (event) => {
@@ -51,12 +53,26 @@ export default class Upload extends React.Component {
     formData.append("upload", this.state.file);
     formData.append("upload", this.state.file2);
     formData.append("upload", this.state.file3);
-    fetch("http://localhost:5000/ProductADD", {
+    formData.append("upload", this.state.imageID);
+    fetch("http://localhost:5000/ProductPIC", {
       method: "POST",
-      body: formData,
+      body:formData,
     });
+    fetch('http://localhost:5000/ProductADD', {
+      method: 'post',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({
+        iteam : this.state.iteam,
+        price : this.state.price,
+        description : this.state.description,
+        tags : this.state.tags,
+        size : this.state.size,
+        offer : this.state.offer,
+        BrandName : this.state.BrandName,
+        imageID:this.state.imageID
+      })
+    })
   };
-
   render() {
     return (
       <div className="main-admin">
