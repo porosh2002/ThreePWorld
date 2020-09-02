@@ -1,9 +1,13 @@
 import React, { Component } from 'react'
 
 export default class Product_Filter_desk extends Component {
+  componentDidMount(){
+   fetch('http://localhost:5000/AllProduct')
+  }
     render() {
         return (
-        <div className='product-filter'>
+<div className='product-page'>
+<div className='product-filter'>
             <p className=' title-filter title-main-f'>Filters</p>
            <p className='title-filter'>CATEGORIES</p>
            {/* {Catagories} */}
@@ -134,6 +138,10 @@ export default class Product_Filter_desk extends Component {
         </label>
            </form>
         </div>
+        <div className='ffc'>
+          <h1>Content Here</h1>
+        </div>
+</div>
         )
     }
 }

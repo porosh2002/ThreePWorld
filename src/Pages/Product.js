@@ -7,8 +7,8 @@ export default class Product extends Component {
     );
     const ProductMob = React.lazy(() => import("../Pages/Product-filter-mob"));
     return (
-      <div className='product-page'>
-<div className='filter'>
+      <div>
+<div>
 {window.innerWidth > 900 ? (
           <Suspense fallback={<Loading />}>
             <div>
@@ -20,11 +20,6 @@ export default class Product extends Component {
             <ProductMob />
           </Suspense>
         )}
-</div>
-<div className='ffc'>
-
-
-
 </div>
       </div>
     );

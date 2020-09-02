@@ -167,9 +167,9 @@ padding:30vh 0px;
   width:100%;
 }
 /* Product Filter Desk */
-/* .product-filter{
+.product-filter{
   width:20%;
-} */
+}
 .product-filter-mob{
   width:100%;
   margin-bottom:80px;
@@ -438,9 +438,6 @@ font-weight: 600;
   }
   .product-page{
     display: flex;
-  }
-  .filter{
-    width:20%;
   }
   .ffc{
     width:100%;
