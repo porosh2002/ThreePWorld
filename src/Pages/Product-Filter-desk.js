@@ -1,8 +1,16 @@
 import React, { Component } from 'react'
-
+import CardList from '../Component/CardList/CardList'
 export default class Product_Filter_desk extends Component {
+constructor(){
+  super();
+  this.state={
+    datas:''
+  }
+}
   componentDidMount(){
-   fetch('http://localhost:5000/AllProduct')
+    fetch('http://localhost:5000/AllProduct')
+      .then(response=> response.json())
+      .then(data =>  this.setState({datas:data}));
   }
     render() {
         return (
@@ -139,7 +147,7 @@ export default class Product_Filter_desk extends Component {
            </form>
         </div>
         <div className='ffc'>
-          <h1>Content Here</h1>
+          <CardList data={this.state.datas} />
         </div>
 </div>
         )
