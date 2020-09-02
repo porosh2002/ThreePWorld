@@ -167,13 +167,9 @@ padding:30vh 0px;
   width:100%;
 }
 /* Product Filter Desk */
-.product-desk{
-  height:800px;
-  overflow:scroll;
-}
-.product-filter{
+/* .product-filter{
   width:20%;
-}
+} */
 .product-filter-mob{
   width:100%;
   margin-bottom:80px;
@@ -440,6 +436,16 @@ font-weight: 600;
   .admin-input{
     width:250px;
   }
+  .product-page{
+    display: flex;
+  }
+  .filter{
+    width:20%;
+  }
+  .ffc{
+    width:100%;
+    text-align: center;
+  }
 }
 @media screen and (max-width:899px){
   .main-admin-menu{
@@ -497,3 +503,4 @@ background-color: #ff3f6c;
   color: #444;
 margin: 50px 0px;
 }
+/*? Prodict */
