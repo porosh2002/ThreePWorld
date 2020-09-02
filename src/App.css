@@ -434,11 +434,31 @@ font-weight: 600;
     margin:50px 0px 50px 300px;
     width:100%;
   }
+  .admin-txtarea{
+    width:300px;
+  }
+  .admin-input{
+    width:250px;
+  }
+}
+@media screen and (max-width:899px){
+  .main-admin-menu{
+    width:150px;
+  } 
+  .main-admin-content{
+    margin:150px 0px 50px 150px;
+    width:100%;
+  }
+  .admin-txtarea{
+    width:200px;
+  }
+  .admin-input{
+    width:200px;
+  }
 }
 .admin-input{
   display: block;
   height:30px;
-  width:250px;
   margin:10px auto;
   font-size:13px;
   border-radius:5px;
@@ -448,7 +468,6 @@ font-weight: 600;
 .admin-txtarea{
   display: block;
   height:200px;
-  width:300px;
   margin:10px auto;
   font-size:13px;
   border-radius:5px;

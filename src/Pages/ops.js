@@ -4,6 +4,8 @@ export default class Upload extends React.Component {
   constructor() {
     super();
     this.state = {
+      Brand:false,
+      order:false,
       file: null,
       file2: null,
       file3: null,
