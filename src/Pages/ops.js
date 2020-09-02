@@ -4,8 +4,10 @@ export default class Upload extends React.Component {
   constructor() {
     super();
     this.state = {
-      Brand:false,
-      order:false,
+      displayorder:'none',
+      displayBrand:'none',
+      displayproduct:'',
+      brand:'',
       file: null,
       file2: null,
       file3: null,
@@ -18,6 +20,12 @@ export default class Upload extends React.Component {
       BrandName: "",
       imageID:""
     };
+  }
+  braNDlIST=event=>{
+    this.setState({brand:event.target.value})
+  }
+  onBrand=()=>{
+    this.setState({ displayBrand:'',displayproduct:'none'});
   }
   onBRANDChange=event=>{
     this.setState({ BrandName: event.target.value});
@@ -50,6 +58,15 @@ export default class Upload extends React.Component {
   fileChange3 = (event) => {
     this.setState({ file3: event.target.files[0] });
   };
+  addBrand=()=>{
+    fetch('http://localhost:5000/AddBrand', {
+      method: 'post',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({
+        Brand : this.state.brand,
+      })
+    })
+  }
   upload = () => {
     const formData = new FormData();
     formData.append("upload", this.state.file);
@@ -76,17 +93,24 @@ export default class Upload extends React.Component {
     })
   };
   render() {
+    const {displayorder} = this.state;
+    const {displayBrand} = this.state;
+    const {displayproduct} = this.state;
+    const styleorder = {display:displayorder};
+    const stylebrand = {display:displayBrand};
+    const styleproduct = {display:displayproduct};
     return (
       <div className="main-admin">
         <div className="main-admin-menu">
           <div className="menu-p">
             <p className="menu-admin">Product</p>
             <p className="menu-admin">Order</p>
-            <p className="menu-admin">Brand</p>
+            <p onClick={this.onBrand} className="menu-admin">Brand</p>
           </div>
         </div>
         <div className="main-admin-content">
-          <div className="addProduct">
+          <div style={styleproduct} className="addProduct">
+            <p className='title-admin'>Add Product</p>
             <input onChange={this.oniteamChange}
               className="admin-input"
               type="name"
@@ -136,21 +160,23 @@ export default class Upload extends React.Component {
               type="file"
             />
             <button className="btn-upld-pdtc" onClick={this.upload}>
-              Upload
+              ADD Product
             </button>
           </div>
-          {/* <div className='deleteProduct'>
-          <input  type="file" />
-          <button>Upload</button>
+          <div style={styleproduct} className='deleteProduct'>
+          <p className='title-admin'>Delete Product</p>
+          <input className="admin-input" type="text" placeholder='Enter Product ID :'/>
+          <button className="btn-upld-pdtc">Delete Product</button>
         </div>
-        <div className='AddBrand'>
+        <div style={stylebrand}  className='AdBrand'>
+        <p className='title-admin'>ADD Brand</p>
+        <input className="admin-input" onChange={this.braNDlIST} type="text" placeholder='Enter Brand Name :'/>
+          <button onClick={this.addBrand} className="btn-upld-pdtc">ADD Brand</button>
+        </div>
+        <div style={styleorder} className='ADorder'>
           <input />
           <button>Upload</button>
         </div>
-        <div className='deleteBrand'>
-          <input />
-          <button>Upload</button>
-        </div> */}
         </div>
       </div>
     );
