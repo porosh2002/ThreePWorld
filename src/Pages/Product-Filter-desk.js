@@ -7,13 +7,14 @@ export default class Product_Filter_desk extends Component {
       robots: [],
     }
   }
-
   componentDidMount(){
-    fetch('http://localhost:5000/AllProduct')
+    console.log('didmount');
+     fetch('http://localhost:5000/AllProduct')
       .then(response=> response.json())
-      .then(users => {this.setState({ robots: users})});
+      .then(users => { this.setState({ robots: users})});
   }
     render() {
+      console.log('Filter Desk Render',this.state.robots);
         return (
 <div className='product-page'>
 <div className='product-filter'>
@@ -148,10 +149,11 @@ export default class Product_Filter_desk extends Component {
            </form>
         </div>
         <div className='ffc'>
-        <CardList robots={this.state.robots} />
+        {
+          <CardList robots={this.state.robots} />
+        }
         </div>
 </div>
         )
     }
 }
-

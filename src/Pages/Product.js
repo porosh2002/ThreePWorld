@@ -2,6 +2,7 @@ import React, { Component, Suspense } from "react";
 import Loading from "../Component/Loading/Loading";
 export default class Product extends Component {
   render() {
+    // console.log('Filter  Render');
     const ProductDesk = React.lazy(() =>
       import("../Pages/Product-Filter-desk")
     );
