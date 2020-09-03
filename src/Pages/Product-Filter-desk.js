@@ -1,16 +1,17 @@
 import React, { Component } from 'react'
 import CardList from '../Component/CardList/CardList'
 export default class Product_Filter_desk extends Component {
-constructor(){
-  super();
-  this.state={
-    datas:''
+  constructor() {
+    super()
+    this.state = {
+      robots: [],
+    }
   }
-}
+
   componentDidMount(){
     fetch('http://localhost:5000/AllProduct')
       .then(response=> response.json())
-      .then(data =>  this.setState({datas:data}));
+      .then(users => {this.setState({ robots: users})});
   }
     render() {
         return (
@@ -147,7 +148,7 @@ constructor(){
            </form>
         </div>
         <div className='ffc'>
-          <CardList data={this.state.datas} />
+        <CardList robots={this.state.robots} />
         </div>
 </div>
         )

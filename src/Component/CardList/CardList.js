@@ -1,19 +1,10 @@
 import React from 'react'
-import Card from '../Card/Card'
-export default function CardList({data}) {
-    return (    
-        <div>
-        {
-          data.map((data) => {
-            return (
-              <Card
 
-                />
-            );
-          })
-        }
-      </div>
-    )
+export default function CardList({robots}) {
+  console.log(robots[0].iteam);
+  return (
+    <div>
+      
+    </div>
+  )
 }
-
-
