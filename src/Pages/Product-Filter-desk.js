@@ -1,20 +1,20 @@
-import React, { Component } from 'react'
+import React, { Component,Suspense} from 'react'
 import CardList from '../Component/CardList/CardList'
 export default class Product_Filter_desk extends Component {
-  constructor() {
-    super()
-    this.state = {
-      robots: [],
-    }
-  }
   componentDidMount(){
     console.log('didmount');
      fetch('http://localhost:5000/AllProduct')
       .then(response=> response.json())
       .then(users => { this.setState({ robots: users})});
   }
+  constructor() {
+    super()
+    this.state = {
+      robots: [],
+    }
+  }
     render() {
-      console.log('Filter Desk Render',this.state.robots);
+      console.log(this.state.robots);
         return (
 <div className='product-page'>
 <div className='product-filter'>
@@ -149,9 +149,20 @@ export default class Product_Filter_desk extends Component {
            </form>
         </div>
         <div className='ffc'>
-        {
-          <CardList robots={this.state.robots} />
-        }
+   {/*
+    <CardList robots={this.state.robots} />
+     */}
+{this.state.robots.length > 0 ? (
+          <Suspense fallback={<p>...</p>}>
+            <div>
+            <CardList robots={this.state.robots} />
+            </div>
+          </Suspense>
+        ) : (
+          <Suspense fallback={<p>...</p>}>
+            <div></div>
+          </Suspense>
+        )}
         </div>
 </div>
         )
