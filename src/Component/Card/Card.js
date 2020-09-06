@@ -31,7 +31,7 @@ export default class Card extends Component {
               <div>
                 <img className='card-img' src={this.state.image.url} />
                 <h3 className='card-title'>{name}</h3>
-                <p className='ofr-price'>{price}</p><p className='offerprice'>122</p>
+                <p className='ofr-price'>TK: {price}</p><p className='offerprice'>TK : 122</p><p className='offerprice ofrprcnt'>(20% off)</p>
                 <p className='ofr-price ofr-card'>{offer}</p>
               </div>
             </Link>
