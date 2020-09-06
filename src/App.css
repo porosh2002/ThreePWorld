@@ -502,6 +502,7 @@ margin: 50px 0px;
 }
 /*? Prodict */
 .card{
+  margin:20px;
   color: #444;
   transition:.3s;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);

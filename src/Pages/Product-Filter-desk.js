@@ -10,9 +10,11 @@ export default class Product_Filter_desk extends Component {
     super()
     this.state = {
       robots: [],
+      
     }
   }
     render() {
+      const firtereddata = this.state.robots
         return (
 <div className='product-page'>
 <div className='product-filter'>
@@ -141,7 +143,47 @@ export default class Product_Filter_desk extends Component {
             className='checkbox'
              />
            <div className='color-dtails'>
-           <div className='color-title'>TK :  1,000tk to 2,000tk</div>
+           <div className='color-title'>10% and avobe</div>
+           </div>
+        </label>
+           <label className='color-label'>
+          <input
+            name="isGoing"
+            type="checkbox"
+            className='checkbox'
+             />
+           <div className='color-dtails'>
+           <div className='color-title'>20% and avobe</div>
+           </div>
+        </label>
+           <label className='color-label'>
+          <input
+            name="isGoing"
+            type="checkbox"
+            className='checkbox'
+             />
+           <div className='color-dtails'>
+           <div className='color-title'>30% and avobe</div>
+           </div>
+        </label>
+           <label className='color-label'>
+          <input
+            name="isGoing"
+            type="checkbox"
+            className='checkbox'
+             />
+           <div className='color-dtails'>
+           <div className='color-title'>40% and avobe</div>
+           </div>
+        </label>
+           <label className='color-label'>
+          <input
+            name="isGoing"
+            type="checkbox"
+            className='checkbox'
+             />
+           <div className='color-dtails'>
+           <div className='color-title'>50% and avobe</div>
            </div>
         </label>
            </form>
@@ -153,7 +195,7 @@ export default class Product_Filter_desk extends Component {
 {this.state.robots.length > 0 ? (
           <Suspense fallback={<p>...</p>}>
             <div>
-            <CardList robots={this.state.robots} />
+            <CardList robots={firtereddata} />
             </div>
           </Suspense>
         ) : (
