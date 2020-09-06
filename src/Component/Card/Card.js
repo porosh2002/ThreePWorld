@@ -1,4 +1,5 @@
 import React, { Component, Suspense } from "react";
+import { Link } from "react-router-dom";
 
 export default class Card extends Component {
   constructor(props) {
@@ -26,14 +27,14 @@ export default class Card extends Component {
       <div>
         {this.state.image.url !== null ? (
           <Suspense fallback={<p>...</p>}>
-            <div className="card">
+            <Link className="card">
               <div>
-                <img src={this.state.image.url} />
-                <h3>{name}</h3>
-                <p>{price}</p>
-                <p>{offer}</p>
+                <img className='card-img' src={this.state.image.url} />
+                <h3 className='card-title'>{name}</h3>
+                <p className='ofr-price'>{price}</p><p className='offerprice'>122</p>
+                <p className='ofr-price ofr-card'>{offer}</p>
               </div>
-            </div>
+            </Link>
           </Suspense>
         ) : (
           <Suspense fallback={<p>...</p>}>
