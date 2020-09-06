@@ -29,7 +29,7 @@ export default class Card extends Component {
               <div>
                 <img className='card-img' src={this.state.image.url} alt=''/>
                 <h3 className='card-title'>{name}</h3>
-                <p className='ofr-price'>TK: {price}</p><p className='offerprice'>TK : 122</p><p className='offerprice ofrprcnt'>(20% off)</p>
+        <p className='ofr-price'>TK: {price}</p><p className='offerprice'>TK : {Math.floor(price - price*offer/100)}</p><p className='offerprice ofrprcnt'>{offer}% off</p>
               </div>
             </Link>
           </Suspense>
