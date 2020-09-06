@@ -13,7 +13,6 @@ export default class Product_Filter_desk extends Component {
     }
   }
     render() {
-      console.log(this.state.robots);
         return (
 <div className='product-page'>
 <div className='product-filter'>
