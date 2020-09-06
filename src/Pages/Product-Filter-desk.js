@@ -2,7 +2,6 @@ import React, { Component,Suspense} from 'react'
 import CardList from '../Component/CardList/CardList'
 export default class Product_Filter_desk extends Component {
   componentDidMount(){
-    console.log('didmount');
      fetch('http://localhost:5000/AllProduct')
       .then(response=> response.json())
       .then(users => { this.setState({ robots: users})});
