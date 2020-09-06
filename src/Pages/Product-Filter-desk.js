@@ -6,10 +6,65 @@ export default class Product_Filter_desk extends Component {
       .then(response=> response.json())
       .then(users => { this.setState({ robots: users})});
   }
+  // *! bydget
+budget1=()=>{
+console.log('Red');
+}
+budget2=()=>{
+console.log('Green');
+}
+budget3=()=>{
+console.log('Yellow');
+}
+
+  // *! Color
+colorred=()=>{
+console.log('Red');
+}
+colorGreen=()=>{
+console.log('Green');
+}
+colorYello=()=>{
+console.log('Yellow');
+}
+colorOrange=()=>{
+console.log('Orange');
+}
+  // *! Size 
+  sizechangeS=()=>{
+    console.log('S');
+  }
+  sizechangeM=()=>{
+    console.log('M');
+  }
+  sizechangeL=()=>{
+    console.log('L');
+  }
+  // *! Story by 
+  storyby=(event)=>{
+    console.log(event.target.value);
+  }
+  //*! Offer
+  fiftteoffr1=()=>{
+    console.log('demo 1 offer');
+  }
+  fiftteoffr2=()=>{
+    console.log('demo 2 offer');
+  }
+  fiftteoffr3=()=>{
+    console.log('demo 3 offer');
+  }
+  fiftteoffr4=()=>{
+    console.log('demo 4 offer');
+  }
+  fiftteoffr5=()=>{
+    console.log('demo 5 offer');
+  }
   constructor() {
     super()
     this.state = {
       robots: [],
+      fiftteoffr:false
       
     }
   }
@@ -37,7 +92,27 @@ export default class Product_Filter_desk extends Component {
            <p className='title-filter'>PRICE</p>
            <form>
            <label className='color-label'>
-          <input
+          <input onChange={this.budget1}
+            name="isGoing"
+            type="checkbox"
+            className='checkbox'
+             />
+           <div className='color-dtails'>
+           <div className='color-title'>TK :  0tk to 500tk </div>
+           </div>
+        </label>
+           <label className='color-label'>
+          <input onChange={this.budget2}
+            name="isGoing"
+            type="checkbox"
+            className='checkbox'
+             />
+           <div className='color-dtails'>
+           <div className='color-title'>TK :  500tk to 1,000tk </div>
+           </div>
+        </label>
+           <label className='color-label'>
+          <input onChange={this.budget3}
             name="isGoing"
             type="checkbox"
             className='checkbox'
@@ -50,7 +125,7 @@ export default class Product_Filter_desk extends Component {
            <p className='title-filter'>COLOR</p>
            <form>
         <label className='color-label'>
-          <input
+          <input onChange={this.colorred}
             name="isGoing"
             type="checkbox"
             className='checkbox'
@@ -60,7 +135,7 @@ export default class Product_Filter_desk extends Component {
            </div>
         </label>
         <label className='color-label'>
-          <input
+          <input onChange={this.colorGreen}
             name="isGoing"
             type="checkbox"
             className='checkbox'
@@ -70,7 +145,7 @@ export default class Product_Filter_desk extends Component {
            </div>
         </label>
         <label className='color-label'>
-          <input
+          <input onChange={this.colorYello}
             name="isGoing"
             type="checkbox"
             className='checkbox'
@@ -80,7 +155,7 @@ export default class Product_Filter_desk extends Component {
            </div>
         </label>
         <label className='color-label'>
-          <input
+          <input onChange={this.colorOrange}
             name="isGoing"
             type="checkbox"
             className='checkbox'
@@ -93,7 +168,7 @@ export default class Product_Filter_desk extends Component {
            <p className='title-filter'>SIZE</p>
            <form>
            <label className='color-label'>
-          <input
+          <input onChange={this.sizechangeS}
             name="isGoing"
             type="checkbox"
             className='checkbox'
@@ -105,7 +180,7 @@ export default class Product_Filter_desk extends Component {
            </form>
            <form>
            <label className='color-label'>
-          <input
+          <input onChange={this.sizechangeM}
             name="isGoing"
             type="checkbox"
             className='checkbox'
@@ -117,7 +192,7 @@ export default class Product_Filter_desk extends Component {
            </form>
            <form>
            <label className='color-label'>
-          <input
+          <input onChange={this.sizechangeL}
             name="isGoing"
             type="checkbox"
             className='checkbox'
@@ -128,7 +203,7 @@ export default class Product_Filter_desk extends Component {
         </label>
            </form>
            <p className='title-filter'>STORE BY</p>
-           <select id="select_capacity">
+           <select onChange={this.storyby} id="select_capacity">
               <option value="any">Default</option> <option value="1"> 1 </option>
               <option value="2"> 2 </option> <option value="3"> 3 </option>
               <option value="4"> 4 </option> <option value="5"> 5 </option>
@@ -137,7 +212,7 @@ export default class Product_Filter_desk extends Component {
            <p className='title-filter'>DISCOUNT RANGE</p>
            <form>
            <label className='color-label'>
-          <input
+          <input onChange={this.fiftteoffr1}
             name="isGoing"
             type="checkbox"
             className='checkbox'
@@ -147,7 +222,7 @@ export default class Product_Filter_desk extends Component {
            </div>
         </label>
            <label className='color-label'>
-          <input
+          <input onChange={this.fiftteoffr2}
             name="isGoing"
             type="checkbox"
             className='checkbox'
@@ -161,13 +236,14 @@ export default class Product_Filter_desk extends Component {
             name="isGoing"
             type="checkbox"
             className='checkbox'
+            onChange={this.fiftteoffr3}
              />
            <div className='color-dtails'>
            <div className='color-title'>30% and avobe</div>
            </div>
         </label>
            <label className='color-label'>
-          <input
+          <input onChange={this.fiftteoffr4}
             name="isGoing"
             type="checkbox"
             className='checkbox'
@@ -177,7 +253,7 @@ export default class Product_Filter_desk extends Component {
            </div>
         </label>
            <label className='color-label'>
-          <input
+          <input onChange={this.fiftteoffr5}
             name="isGoing"
             type="checkbox"
             className='checkbox'
