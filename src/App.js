@@ -5,7 +5,6 @@ import Loading from "./Component/Loading/Loading";
 import Navigation from './Component/Navigation/Navigation'
 export default class App extends Component {
   render() {
-    console.log('App Render');
     const Home =React.lazy(() => import('./Pages/Home'));
     const Error =React.lazy(() => import('./Pages/Error'));
     const Product =React.lazy(() => import('./Pages/Product'));

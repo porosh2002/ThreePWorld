@@ -2,10 +2,17 @@ import React from 'react';
 import Card from '../Card/Card';
 
 const CardList = ({ robots }) => {
-  const {iteam,price,offer,imageID} = robots[0];
   return (
     <div>
-      <Card name={iteam} price={price} offer={offer} imageID={imageID}/>
+      {
+        robots.map(data=>{
+          return (
+            <div className='opscard'>
+              <Card name={data.iteam} price={data.price} offer={data.offer} imageID={data.imageID}/>
+            </div>
+          )
+        })
+      }
     </div>
   );
 }

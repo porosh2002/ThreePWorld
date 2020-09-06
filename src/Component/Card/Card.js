@@ -11,7 +11,6 @@ export default class Card extends Component {
   }
   componentDidMount() {
     if(this.state.imageID !== 0){
-      console.log(this.state.image);
       fetch(`http://localhost:5000/geTiMagE/${this.state.imageID}`).then(
         (users) => {
           this.setState({ image: users });
@@ -21,18 +20,16 @@ export default class Card extends Component {
   }
 
   render() {
-    console.log(this.props);
-    const { name, price, offer, imageID } = this.props;
+    const { name, price, offer} = this.props;
     return (
       <div>
         {this.state.image.url !== null ? (
           <Suspense fallback={<p>...</p>}>
             <Link className="card">
               <div>
-                <img className='card-img' src={this.state.image.url} />
+                <img className='card-img' src={this.state.image.url} alt=''/>
                 <h3 className='card-title'>{name}</h3>
                 <p className='ofr-price'>TK: {price}</p><p className='offerprice'>TK : 122</p><p className='offerprice ofrprcnt'>(20% off)</p>
-                <p className='ofr-price ofr-card'>{offer}</p>
               </div>
             </Link>
           </Suspense>
