@@ -8,13 +8,13 @@ export default class Product_Filter_desk extends Component {
   }
   // *! bydget
 budget1=()=>{
-console.log('Red');
+console.log('Price_Range_1');
 }
 budget2=()=>{
-console.log('Green');
+console.log('Price_Range_2');
 }
 budget3=()=>{
-console.log('Yellow');
+console.log('Price_Range_3');
 }
 
   // *! Color
