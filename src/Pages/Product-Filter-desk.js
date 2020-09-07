@@ -32,39 +32,48 @@ console.log('Orange');
 }
   // *! Size 
   sizechangeS=()=>{
-    console.log('S');
+    this.setState({SizeS:!this.state.SizeS})
   }
   sizechangeM=()=>{
-    console.log('M');
+    this.setState({SizeM:!this.state.SizeM})
   }
   sizechangeL=()=>{
-    console.log('L');
+    this.setState({SizeL:!this.state.SizeL})
   }
   // *! Story by 
   storyby=(event)=>{
-    console.log(event.target.value);
+    this.setState({offer1:!this.state.offer1})
   }
   //*! Offer
   fiftteoffr1=()=>{
-    console.log('demo 1 offer');
+    this.setState({offer1:!this.state.offer1})
   }
   fiftteoffr2=()=>{
-    console.log('demo 2 offer');
+    this.setState({offer2:!this.state.offer2})
   }
   fiftteoffr3=()=>{
-    console.log('demo 3 offer');
+    this.setState({offer3:!this.state.offer3})
   }
   fiftteoffr4=()=>{
-    console.log('demo 4 offer');
+    this.setState({offer4:!this.state.offer4})
   }
   fiftteoffr5=()=>{
-    console.log('demo 5 offer');
+    this.setState({offer5:!this.state.offer5})
   }
   constructor() {
     super()
     this.state = {
       robots: [],
-      fiftteoffr:false
+      fiftteoffr:false,
+      offer1:false,
+      offer2:false,
+      offer3:false,
+      offer4:false,
+      offer5:false,
+      storyby:'all',
+      SizeS:false,
+      SizeM:false,
+      SizeL:false,
       
     }
   }
@@ -204,10 +213,11 @@ console.log('Orange');
            </form>
            <p className='title-filter'>STORE BY</p>
            <select onChange={this.storyby} id="select_capacity">
-              <option value="any">Default</option> <option value="1"> 1 </option>
-              <option value="2"> 2 </option> <option value="3"> 3 </option>
-              <option value="4"> 4 </option> <option value="5"> 5 </option>
-              <option value="6"> 6 </option> <option value="7"> 6 + </option>
+              <option value="any">All</option>
+              <option value="1"> New </option>
+               <option value="hot"> Hot </option>
+              <option value="popular"> Popular </option>
+               <option value="recomanded"> Recomanded </option>
             </select>
            <p className='title-filter'>DISCOUNT RANGE</p>
            <form>
