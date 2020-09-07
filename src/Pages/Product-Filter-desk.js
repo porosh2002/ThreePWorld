@@ -6,29 +6,36 @@ export default class Product_Filter_desk extends Component {
       .then(response=> response.json())
       .then(users => { this.setState({ robots: users})});
   }
-  // *! bydget
+  // *! Brand
+  brand=event=>{
+    this.setState({brand:event.target.value})
+    }
+  // *! budget
 budget1=()=>{
-console.log('Price_Range_1');
+this.setState({price1:!this.state.price1})
 }
 budget2=()=>{
-console.log('Price_Range_2');
+this.setState({price2:!this.state.price2})
 }
 budget3=()=>{
-console.log('Price_Range_3');
+this.setState({price3:!this.state.price3})
 }
 
   // *! Color
 colorred=()=>{
-console.log('Red');
+this.setState({red:!this.state.red})
 }
 colorGreen=()=>{
-console.log('Green');
+this.setState({green:!this.state.green})
 }
 colorYello=()=>{
-console.log('Yellow');
+this.setState({Yellow:!this.state.Yellow})
 }
 colorOrange=()=>{
-console.log('Orange');
+this.setState({orange:!this.state.orange})
+}
+colorBlack=()=>{
+this.setState({black:!this.state.black})
 }
   // *! Size 
   sizechangeS=()=>{
@@ -74,6 +81,15 @@ console.log('Orange');
       SizeS:false,
       SizeM:false,
       SizeL:false,
+      red:false,
+      black:false,
+      Yellow:false,
+      green:false,
+      orange:false,
+      price1:false,
+      price2:false,
+      price3:false,
+      brand:''
       
     }
   }
@@ -88,14 +104,11 @@ console.log('Orange');
            <p className='title-filter'>BRAND</p>
            <form>
            <label className='color-label'>
-          <input
+          <input onChange={this.brand}
             name="isGoing"
-            type="checkbox"
+            type="text"
             className='checkbox'
              />
-           <div className='color-dtails'>
-           <div className='color-title'>Monkey </div>
-           </div>
         </label>
            </form>
            <p className='title-filter'>PRICE</p>
@@ -171,6 +184,16 @@ console.log('Orange');
              />
            <div className='color-dtails'>
            <div className='color color3'></div><div className='color-title'>Orange </div>
+           </div>
+        </label>
+        <label className='color-label'>
+          <input onChange={this.colorBlack}
+            name="isGoing"
+            type="checkbox"
+            className='checkbox'
+             />
+           <div className='color-dtails'>
+           <div className='color color4'></div><div className='color-title'>Black</div>
            </div>
         </label>
         </form>
