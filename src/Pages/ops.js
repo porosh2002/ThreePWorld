@@ -142,7 +142,7 @@ export default class Upload extends React.Component {
             />
             <textarea onChange={this.ontagChange}
               className="admin-txtarea"
-              placeholder="Enter Product Tags"
+              placeholder="Enter Product Tags , color , story by"
             />
             <input
               className="img-admin-input"
