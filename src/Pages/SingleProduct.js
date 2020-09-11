@@ -26,7 +26,7 @@ export default class SingleProduct extends Component {
       {price !== undefined ? (
             <Suspense fallback={<p>...</p>}>
               <div>
-                <CallImage  imageID={this.state.data.imageID}/>
+                <CallImage  imageID={this.state.data.imageIDa}/>
               </div>
             </Suspense>
           ) : (
