@@ -3,7 +3,7 @@ import { Switch, Route} from "react-router-dom";
 import "./App.css";
 import Loading from "./Component/Loading/Loading";
 import Navigation from './Component/Navigation/Navigation';
-import Footer from './Component/Footer/Footer'
+// import Footer from './Component/Footer/Footer'
 export default class App extends Component {
   render() {
     const Home =React.lazy(() => import('./Pages/Home'));
@@ -15,6 +15,7 @@ export default class App extends Component {
     const Order =React.lazy(() => import('./Pages/Order'));
     const Earn =React.lazy(() => import('./Pages/Earn'));
     const Ops =React.lazy(() => import('./Pages/ops'));
+    const SingleProduct =React.lazy(() => import('./Pages/SingleProduct'));
     return (
       <div>
         <div className='nav'>
@@ -29,7 +30,7 @@ export default class App extends Component {
          <Route exact path="/Profile/:id" component={User}/>
          <Route exact path="/Order/:id" component={Order}/>
          <Route exact path="/Earn/:id" component={Earn}/>
-         {/* <Route exact path="/Earn/:id" component={Earn}/> */}
+         <Route exact path="/SingleProduct/:id" component={SingleProduct}/>
          <Route exact path="/0psAdmin" component={Ops}/>
          <Route component={Error}/>
       </Switch>

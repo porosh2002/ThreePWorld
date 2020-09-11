@@ -18,12 +18,13 @@ export default class Card extends Component {
     }
   }
   render() {
-    const { name, price, offer} = this.props;
+    const { name, price, offer,id} = this.props;
+    console.log(id);
     return (
       <div>
         {this.state.image.url !== null ? (
           <Suspense fallback={<p>...</p>}>
-            <Link className="card">
+            <Link to={`/SingleProduct/${id}`} className="card">
               <div>
                 <img className='card-img' src={this.state.image.url} alt=''/>
                 <h3 className='card-title'>{name}</h3>

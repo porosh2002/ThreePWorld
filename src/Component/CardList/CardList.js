@@ -1,3 +1,4 @@
+
 import React from 'react';
 import Card from '../Card/Card';
 
@@ -8,7 +9,7 @@ const CardList = ({ robots }) => {
         robots.map(data=>{
           return (
             <div className='opscard'>
-              <Card name={data.iteam} price={data.price} offer={data.offer} imageID={data.imageID}/>
+              <Card id ={data._id} name={data.iteam} price={data.price} offer={data.offer} imageID={data.imageID}/>
             </div>
           )
         })
