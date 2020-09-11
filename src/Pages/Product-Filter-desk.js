@@ -48,10 +48,10 @@ export default class Product_Filter_desk extends Component {
   sizechangeL = () => {
     this.setState({ SizeL: !this.state.SizeL });
   };
-  // *! Story by
-  storyby = (event) => {
-    this.setState({ offer1: !this.state.offer1 });
-  };
+  // // *! Story by
+  // storyby = (event) => {
+  //   this.setState({ offer1: !this.state.offer1 });
+  // };
   //*! Offer
   fiftteoffr1 = () => {
     this.setState({ offer1: !this.state.offer1 });
@@ -78,7 +78,7 @@ export default class Product_Filter_desk extends Component {
       offer3: false,
       offer4: false,
       offer5: false,
-      storyby: "all",
+      // storyby: "all",
       SizeS: false,
       SizeM: false,
       SizeL: false,
@@ -97,7 +97,7 @@ export default class Product_Filter_desk extends Component {
     const ts = this.state;
     const filteroffer1 = ts.robots.filter(data=>{
       if(ts.offer1 === true){
-        if(data.offer>10){
+        if(data.offer>10 || data.offer===10){
           return data
         }
       }
@@ -108,7 +108,7 @@ export default class Product_Filter_desk extends Component {
     )
     const filteroffer2 = filteroffer1.filter(data=>{
       if(ts.offer2 === true){
-        if(data.offer>20){
+        if(data.offer>20 || data.offer===20){
           return data
         }
       }
@@ -119,7 +119,7 @@ export default class Product_Filter_desk extends Component {
     )
     const filteroffer3 = filteroffer2.filter(data=>{
       if(ts.offer3 === true){
-        if(data.offer>30){
+        if(data.offer>30 || data.offer===30){
           return data
         }
       }
@@ -130,7 +130,7 @@ export default class Product_Filter_desk extends Component {
     )
     const filteroffer4 = filteroffer3.filter(data=>{
       if(ts.offer4 === true){
-        if(data.offer>40){
+        if(data.offer>40 || data.offer===40){
           return data
         }
       }
@@ -141,12 +141,45 @@ export default class Product_Filter_desk extends Component {
     )
     const filteroffer5 = filteroffer4.filter(data=>{
       if(ts.offer5 === true){
-        if(data.offer>50){
+        if(data.offer>50 || data.offer===50){
           return data
         }
       }
       else{
         return filteroffer4
+      }
+    }
+    )
+    const sizeS = filteroffer5.filter(data=>{
+      if(ts.SizeS === true){
+        if(data.size.includes("S")){
+          return data
+        }
+      }
+      else{
+        return filteroffer5;
+      }
+    }
+    )
+    const sizeM = sizeS.filter(data=>{
+      if(ts.SizeM === true){
+        if(data.size.includes("M")){
+          return data
+        }
+      }
+      else{
+        return sizeS;
+      }
+    }
+    )
+    const sizeL = sizeM.filter(data=>{
+      if(ts.SizeL === true){
+        if(data.size.includes("L")){
+          return data
+        }
+      }
+      else{
+        return sizeM;
       }
     }
     )
@@ -307,14 +340,14 @@ export default class Product_Filter_desk extends Component {
               </div>
             </label>
           </form>
-          <p className="title-filter">STORE BY</p>
+          {/* <p className="title-filter">STORE BY</p>
           <select onChange={this.storyby} id="select_capacity">
             <option value="any">All</option>
             <option value="1"> New </option>
             <option value="hot"> Hot </option>
             <option value="popular"> Popular </option>
             <option value="recomanded"> Recomanded </option>
-          </select>
+          </select> */}
           <p className="title-filter">DISCOUNT RANGE</p>
           <form>
             <label className="color-label">
@@ -381,7 +414,7 @@ export default class Product_Filter_desk extends Component {
           {this.state.robots.length > 0 ? (
             <Suspense fallback={<p>...</p>}>
               <div>
-                <CardList robots={filteroffer2} />
+                <CardList robots={sizeL} />
               </div>
             </Suspense>
           ) : (
