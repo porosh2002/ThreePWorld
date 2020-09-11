@@ -87,7 +87,6 @@ export default class Product_filter_mob extends Component {
     // storyby = (event) => {
     //   this.setState({ offer1: !this.state.offer1 });
     // };
-    //*! Offer
     fiftteoffr1 = () => {
       this.setState({ offer1: !this.state.offer1 });
     };
