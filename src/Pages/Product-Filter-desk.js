@@ -183,7 +183,61 @@ export default class Product_Filter_desk extends Component {
       }
     }
     )
-    const firtereddata=ts.robots;
+    const Red = sizeL.filter(data=>{
+      if(ts.red === true){
+        if(data.tags.includes("red")){
+          return data
+        }
+      }
+      else{
+        return sizeL;
+      }
+    }
+    )
+    const green = Red.filter(data=>{
+      if(ts.green === true){
+        if(data.tags.includes("green")){
+          return data
+        }
+      }
+      else{
+        return Red;
+      }
+    }
+    )
+    const Orange = green.filter(data=>{
+      if(ts.orange === true){
+        if(data.tags.includes("orange")){
+          return data
+        }
+      }
+      else{
+        return green;
+      }
+    }
+    )
+    const Black = Orange.filter(data=>{
+      if(ts.black === true){
+        if(data.tags.includes("black")){
+          return data
+        }
+      }
+      else{
+        return Orange;
+      }
+    }
+    )
+    const Yellow = Black.filter(data=>{
+      if(ts.Yellow === true){
+        if(data.tags.includes("yellow")){
+          return data
+        }
+      }
+      else{
+        return Black;
+      }
+    }
+    )
     return (
       <div className="product-page">
         <div className="product-filter">
@@ -414,7 +468,7 @@ export default class Product_Filter_desk extends Component {
           {this.state.robots.length > 0 ? (
             <Suspense fallback={<p>...</p>}>
               <div>
-                <CardList robots={sizeL} />
+                <CardList robots={Yellow} />
               </div>
             </Suspense>
           ) : (
