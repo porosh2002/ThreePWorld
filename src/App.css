@@ -238,10 +238,11 @@ padding:30vh 0px;
 }
 .filter-gelary{
   background-color: #fff;
-  position:absolute;
-  top:110px;
+  position:fixed;
+  top:0px;
   width:100%;
-  z-index:-1;
+  overflow:scroll;
+  height:100%;
 }
 .filter-mob{
 height:70px;

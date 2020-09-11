@@ -310,7 +310,7 @@ export default class Product_filter_mob extends Component {
 <div style={style} className='filter-gelary'>
 <div  className='product-filter product-filter-mob'>
             <p className=' title-filter title-main-f'>Filters</p>
-           <p className='title-filter'>CATEGORIES</p>
+           {/* <p className='title-filter'>CATEGORIES</p> */}
            {/* {Catagories} */}
            <p className='title-filter'>BRAND</p>
            <form>
