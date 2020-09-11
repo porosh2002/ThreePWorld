@@ -1,6 +1,5 @@
 import React, { Component, Suspense } from "react";
 import { Link } from "react-router-dom";
-
 export default class Card extends Component {
   constructor(props) {
     super(props);
@@ -18,7 +17,6 @@ export default class Card extends Component {
       );
     }
   }
-
   render() {
     const { name, price, offer} = this.props;
     return (

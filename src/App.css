@@ -21,7 +21,7 @@
   height:400px;
   margin:0px;
 }
-/* .title-md {
+.title-md {
   font-size: 15px;
   letter-spacing: 1px;
   color: #d2d2d2;
@@ -148,7 +148,7 @@
 }
 .linkcare{
   text-decoration: underline;
-} */
+}
 /* Loading */
 .loader{
   letter-spacing: 2px;
@@ -505,7 +505,7 @@ margin: 50px 0px;
 }
 /*? Prodict */
 .card{
-  margin:20px;
+  margin:05px;
   color: #444;
   width:200px;
   transition:.3s;

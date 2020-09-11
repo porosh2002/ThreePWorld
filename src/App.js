@@ -2,7 +2,8 @@ import React, { Component,Suspense} from "react";
 import { Switch, Route} from "react-router-dom";
 import "./App.css";
 import Loading from "./Component/Loading/Loading";
-import Navigation from './Component/Navigation/Navigation'
+import Navigation from './Component/Navigation/Navigation';
+import Footer from './Component/Footer/Footer'
 export default class App extends Component {
   render() {
     const Home =React.lazy(() => import('./Pages/Home'));
@@ -28,11 +29,14 @@ export default class App extends Component {
          <Route exact path="/Profile/:id" component={User}/>
          <Route exact path="/Order/:id" component={Order}/>
          <Route exact path="/Earn/:id" component={Earn}/>
-         <Route exact path="/Earn/:id" component={Earn}/>
+         {/* <Route exact path="/Earn/:id" component={Earn}/> */}
          <Route exact path="/0psAdmin" component={Ops}/>
          <Route component={Error}/>
       </Switch>
      </Suspense>
+     <div>
+        <Footer />
+        </div>
       </div>
     );
   }
