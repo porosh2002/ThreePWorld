@@ -316,8 +316,9 @@ export default class Product_filter_mob extends Component {
            <form>
            <label className='color-label'>
           <input
+          onChange={this.brand}
             name="isGoing"
-            type="checkbox"
+            type="text"
             className='checkbox'
              />
            <div className='color-dtails'>
@@ -328,7 +329,27 @@ export default class Product_filter_mob extends Component {
            <p className='title-filter'>PRICE</p>
            <form>
            <label className='color-label'>
-          <input
+          <input onChange={this.budget1}
+            name="isGoing"
+            type="checkbox"
+            className='checkbox'
+             />
+           <div className='color-dtails'>
+           <div className='color-title'>TK :  0tk to 500tk <span className='color-iteam'>(5)</span></div>
+           </div>
+        </label>
+           <label className='color-label'>
+          <input onChange={this.budget2}
+            name="isGoing"
+            type="checkbox"
+            className='checkbox'
+             />
+           <div className='color-dtails'>
+           <div className='color-title'>TK :  500tk to 1,000tk <span className='color-iteam'>(5)</span></div>
+           </div>
+        </label>
+           <label className='color-label'>
+          <input onChange={this.budget3}
             name="isGoing"
             type="checkbox"
             className='checkbox'
@@ -341,7 +362,7 @@ export default class Product_filter_mob extends Component {
            <p className='title-filter'>COLOR</p>
            <form>
         <label className='color-label'>
-          <input
+          <input onChange={this.colorred}
             name="isGoing"
             type="checkbox"
             className='checkbox'
@@ -351,7 +372,7 @@ export default class Product_filter_mob extends Component {
            </div>
         </label>
         <label className='color-label'>
-          <input
+          <input onChange={this.colorGreen}
             name="isGoing"
             type="checkbox"
             className='checkbox'
@@ -361,7 +382,7 @@ export default class Product_filter_mob extends Component {
            </div>
         </label>
         <label className='color-label'>
-          <input
+          <input onChange={this.colorYello}
             name="isGoing"
             type="checkbox"
             className='checkbox'
@@ -371,7 +392,7 @@ export default class Product_filter_mob extends Component {
            </div>
         </label>
         <label className='color-label'>
-          <input
+          <input onChange={this.colorOrange}
             name="isGoing"
             type="checkbox"
             className='checkbox'
@@ -380,11 +401,21 @@ export default class Product_filter_mob extends Component {
            <div className='color color3'></div><div className='color-title'>Orange <span className='color-iteam'>(5)</span></div>
            </div>
         </label>
+        <label className='color-label'>
+          <input onChange={this.colorBlack}
+            name="isGoing"
+            type="checkbox"
+            className='checkbox'
+             />
+           <div className='color-dtails'>
+           <div className='color color4'></div><div className='color-title'>Black <span className='color-iteam'>(5)</span></div>
+           </div>
+        </label>
         </form>
            <p className='title-filter'>SIZE</p>
            <form>
            <label className='color-label'>
-          <input
+          <input onChange={this.sizechangeS}
             name="isGoing"
             type="checkbox"
             className='checkbox'
@@ -396,7 +427,7 @@ export default class Product_filter_mob extends Component {
            </form>
            <form>
            <label className='color-label'>
-          <input
+          <input onChange={this.sizechangeM}
             name="isGoing"
             type="checkbox"
             className='checkbox'
@@ -408,7 +439,7 @@ export default class Product_filter_mob extends Component {
            </form>
            <form>
            <label className='color-label'>
-          <input
+          <input onChange={this.sizechangeL}
             name="isGoing"
             type="checkbox"
             className='checkbox'
@@ -418,25 +449,66 @@ export default class Product_filter_mob extends Component {
            </div>
         </label>
            </form>
-           <p className='title-filter'>STORE BY</p>
+           {/* <p className='title-filter'>STORE BY</p>
            <select id="select_capacity">
               <option value="any">Default</option> <option value="1"> 1 </option>
               <option value="2"> 2 </option> <option value="3"> 3 </option>
               <option value="4"> 4 </option> <option value="5"> 5 </option>
               <option value="6"> 6 </option> <option value="7"> 6 + </option>
-            </select>
+            </select> */}
            <p className='title-filter'>DISCOUNT RANGE</p>
            <form>
            <label className='color-label'>
-          <input
+          <input onChange={this.fiftteoffr1}
             name="isGoing"
             type="checkbox"
             className='checkbox'
              />
            <div className='color-dtails'>
-           <div className='color-title'>TK :  1,000tk to 2,000tk <span className='color-iteam'>(5)</span></div>
+           <div className='color-title'>10% and avobe</div>
            </div>
         </label>
+           <label className='color-label'>
+          <input onChange={this.fiftteoffr2}
+            name="isGoing"
+            type="checkbox"
+            className='checkbox'
+             />
+           <div className='color-dtails'>
+           <div className='color-title'>20% and avobe</div>
+           </div>
+        </label>
+           <label className='color-label'>
+          <input onChange={this.fiftteoffr3}
+            name="isGoing"
+            type="checkbox"
+            className='checkbox'
+             />
+           <div className='color-dtails'>
+           <div className='color-title'>30% and avobe</div>
+           </div>
+        </label>
+           <label className='color-label'>
+          <input onChange={this.fiftteoffr4}
+            name="isGoing"
+            type="checkbox"
+            className='checkbox'
+             />
+           <div className='color-dtails'>
+           <div className='color-title'>40% and avobe</div>
+           </div>
+        </label>
+           <label className='color-label'>
+          <input onChange={this.fiftteoffr5}
+            name="isGoing"
+            type="checkbox"
+            className='checkbox'
+             />
+           <div className='color-dtails'>
+           <div className='color-title'>50% and avobe</div>
+           </div>
+        </label>
+
            </form>
 <div onClick={this.menu_div_out2} style={style} className='filter-close'>
   <p>Close</p>
