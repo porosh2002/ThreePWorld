@@ -494,7 +494,7 @@ export default class Product_filter_mob extends Component {
             type="checkbox"
             className='checkbox'
              />
-           <div className='color-dtails'>
+           <div className='color-dtails'> 
            <div className='color-title'>40% and avobe</div>
            </div>
         </label>
