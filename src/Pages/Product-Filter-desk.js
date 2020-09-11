@@ -10,7 +10,7 @@ export default class Product_Filter_desk extends Component {
   }
   // *! Brand
   brand = (event) => {
-    this.setState({ brand: event.target.value });
+    this.setState({ brand: event.target.value});
   };
   // *! budget
   budget1 = () => {
@@ -235,6 +235,50 @@ export default class Product_Filter_desk extends Component {
       }
       else{
         return Black;
+      }
+    }
+    )
+    const price1 = Yellow.filter(data=>{
+      if(ts.price1 === true){
+        if(data.price<500 || data.price===500){
+          return data
+        }
+      }
+      else{
+        return Yellow;
+      }
+    }
+    )
+    const price2 = price1.filter(data=>{
+      if(ts.price1 === true){
+        if(data.price<1000 || data.price>500 || data.price===500|| data.price===1000){
+          return data
+        }
+      }
+      else{
+        return price1;
+      }
+    }
+    )
+    const price3 = price2.filter(data=>{
+      if(ts.price1 === true){
+        if(data.price<2000 || data.price>1000 || data.price===1000|| data.price===2000){
+          return data
+        }
+      }
+      else{
+        return price2;
+      }
+    }
+    )
+    const Brand = price3.filter(data=>{
+if(ts.brand.length>0){
+  if(data.BrandName.includes(ts.brand.toString())){
+    return data;
+  }
+}
+else{
+        return price3;
       }
     }
     )
@@ -468,7 +512,7 @@ export default class Product_Filter_desk extends Component {
           {this.state.robots.length > 0 ? (
             <Suspense fallback={<p>...</p>}>
               <div>
-                <CardList robots={Yellow} />
+                <CardList robots={Brand} />
               </div>
             </Suspense>
           ) : (

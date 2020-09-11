@@ -129,12 +129,12 @@ export default class Upload extends React.Component {
             <input onChange={this.onsizeChange}
               className="admin-input"
               type="text"
-              placeholder="Product Size"
+              placeholder="Product Size (Upercase)"
             />
             <input onChange={this.onBRANDChange}
               className="admin-input"
               type="text"
-              placeholder="Product Brand"
+              placeholder="Product Brand (lowercase)"
             />
             <textarea onChange={this.ondesChange}
               className="admin-txtarea"
@@ -142,7 +142,7 @@ export default class Upload extends React.Component {
             />
             <textarea onChange={this.ontagChange}
               className="admin-txtarea"
-              placeholder="Enter Product Tags , color , story by"
+              placeholder="Enter Product Tags , color , story by (lowercase)"
             />
             <input
               className="img-admin-input"
