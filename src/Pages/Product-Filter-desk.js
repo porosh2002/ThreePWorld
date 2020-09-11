@@ -10,7 +10,7 @@ export default class Product_Filter_desk extends Component {
   }
   // *! Brand
   brand = (event) => {
-    this.setState({ brand: event.target.value});
+    this.setState({ brand: event.target.value });
   };
   // *! budget
   budget1 = () => {
@@ -95,193 +95,169 @@ export default class Product_Filter_desk extends Component {
   }
   render() {
     const ts = this.state;
-    const filteroffer1 = ts.robots.filter(data=>{
-      if(ts.offer1 === true){
-        if(data.offer>10 || data.offer===10){
-          return data
+    const filteroffer1 = ts.robots.filter((data) => {
+      if (ts.offer1 === true) {
+        if (data.offer > 10 || data.offer === 10) {
+          return data;
         }
+      } else {
+        return ts.robots;
       }
-      else{
-        return ts.robots
-      }
-    }
-    )
-    const filteroffer2 = filteroffer1.filter(data=>{
-      if(ts.offer2 === true){
-        if(data.offer>20 || data.offer===20){
-          return data
+    });
+    const filteroffer2 = filteroffer1.filter((data) => {
+      if (ts.offer2 === true) {
+        if (data.offer > 20 || data.offer === 20) {
+          return data;
         }
+      } else {
+        return filteroffer1;
       }
-      else{
-        return filteroffer1
-      }
-    }
-    )
-    const filteroffer3 = filteroffer2.filter(data=>{
-      if(ts.offer3 === true){
-        if(data.offer>30 || data.offer===30){
-          return data
+    });
+    const filteroffer3 = filteroffer2.filter((data) => {
+      if (ts.offer3 === true) {
+        if (data.offer > 30 || data.offer === 30) {
+          return data;
         }
+      } else {
+        return filteroffer2;
       }
-      else{
-        return filteroffer2
-      }
-    }
-    )
-    const filteroffer4 = filteroffer3.filter(data=>{
-      if(ts.offer4 === true){
-        if(data.offer>40 || data.offer===40){
-          return data
+    });
+    const filteroffer4 = filteroffer3.filter((data) => {
+      if (ts.offer4 === true) {
+        if (data.offer > 40 || data.offer === 40) {
+          return data;
         }
+      } else {
+        return filteroffer3;
       }
-      else{
-        return filteroffer3
-      }
-    }
-    )
-    const filteroffer5 = filteroffer4.filter(data=>{
-      if(ts.offer5 === true){
-        if(data.offer>50 || data.offer===50){
-          return data
+    });
+    const filteroffer5 = filteroffer4.filter((data) => {
+      if (ts.offer5 === true) {
+        if (data.offer > 50 || data.offer === 50) {
+          return data;
         }
+      } else {
+        return filteroffer4;
       }
-      else{
-        return filteroffer4
-      }
-    }
-    )
-    const sizeS = filteroffer5.filter(data=>{
-      if(ts.SizeS === true){
-        if(data.size.includes("S")){
-          return data
+    });
+    const sizeS = filteroffer5.filter((data) => {
+      if (ts.SizeS === true) {
+        if (data.size.includes("S")) {
+          return data;
         }
-      }
-      else{
+      } else {
         return filteroffer5;
       }
-    }
-    )
-    const sizeM = sizeS.filter(data=>{
-      if(ts.SizeM === true){
-        if(data.size.includes("M")){
-          return data
+    });
+    const sizeM = sizeS.filter((data) => {
+      if (ts.SizeM === true) {
+        if (data.size.includes("M")) {
+          return data;
         }
-      }
-      else{
+      } else {
         return sizeS;
       }
-    }
-    )
-    const sizeL = sizeM.filter(data=>{
-      if(ts.SizeL === true){
-        if(data.size.includes("L")){
-          return data
+    });
+    const sizeL = sizeM.filter((data) => {
+      if (ts.SizeL === true) {
+        if (data.size.includes("L")) {
+          return data;
         }
-      }
-      else{
+      } else {
         return sizeM;
       }
-    }
-    )
-    const Red = sizeL.filter(data=>{
-      if(ts.red === true){
-        if(data.tags.includes("red")){
-          return data
+    });
+    const Red = sizeL.filter((data) => {
+      if (ts.red === true) {
+        if (data.tags.includes("red")) {
+          return data;
         }
-      }
-      else{
+      } else {
         return sizeL;
       }
-    }
-    )
-    const green = Red.filter(data=>{
-      if(ts.green === true){
-        if(data.tags.includes("green")){
-          return data
+    });
+    const green = Red.filter((data) => {
+      if (ts.green === true) {
+        if (data.tags.includes("green")) {
+          return data;
         }
-      }
-      else{
+      } else {
         return Red;
       }
-    }
-    )
-    const Orange = green.filter(data=>{
-      if(ts.orange === true){
-        if(data.tags.includes("orange")){
-          return data
+    });
+    const Orange = green.filter((data) => {
+      if (ts.orange === true) {
+        if (data.tags.includes("orange")) {
+          return data;
         }
-      }
-      else{
+      } else {
         return green;
       }
-    }
-    )
-    const Black = Orange.filter(data=>{
-      if(ts.black === true){
-        if(data.tags.includes("black")){
-          return data
+    });
+    const Black = Orange.filter((data) => {
+      if (ts.black === true) {
+        if (data.tags.includes("black")) {
+          return data;
         }
-      }
-      else{
+      } else {
         return Orange;
       }
-    }
-    )
-    const Yellow = Black.filter(data=>{
-      if(ts.Yellow === true){
-        if(data.tags.includes("yellow")){
-          return data
+    });
+    const Yellow = Black.filter((data) => {
+      if (ts.Yellow === true) {
+        if (data.tags.includes("yellow")) {
+          return data;
         }
-      }
-      else{
+      } else {
         return Black;
       }
-    }
-    )
-    const price1 = Yellow.filter(data=>{
-      if(ts.price1 === true){
-        if(data.price<500 || data.price===500){
-          return data
+    });
+    const price1 = Yellow.filter((data) => {
+      if (ts.price1 === true) {
+        if (data.price < 500 || data.price === 500) {
+          return data;
         }
-      }
-      else{
+      } else {
         return Yellow;
       }
-    }
-    )
-    const price2 = price1.filter(data=>{
-      if(ts.price1 === true){
-        if(data.price<1000 || data.price>500 || data.price===500|| data.price===1000){
-          return data
+    });
+    const price2 = price1.filter((data) => {
+      if (ts.price1 === true) {
+        if (
+          data.price < 1000 ||
+          data.price > 500 ||
+          data.price === 500 ||
+          data.price === 1000
+        ) {
+          return data;
         }
-      }
-      else{
+      } else {
         return price1;
       }
-    }
-    )
-    const price3 = price2.filter(data=>{
-      if(ts.price1 === true){
-        if(data.price<2000 || data.price>1000 || data.price===1000|| data.price===2000){
-          return data
+    });
+    const price3 = price2.filter((data) => {
+      if (ts.price1 === true) {
+        if (
+          data.price < 2000 ||
+          data.price > 1000 ||
+          data.price === 1000 ||
+          data.price === 2000
+        ) {
+          return data;
         }
-      }
-      else{
+      } else {
         return price2;
       }
-    }
-    )
-    const Brand = price3.filter(data=>{
-if(ts.brand.length>0){
-  if(data.BrandName.includes(ts.brand.toString())){
-    return data;
-  }
-}
-else{
+    });
+    const Brand = price3.filter((data) => {
+      if (ts.brand.length > 0) {
+        if (data.BrandName.includes(ts.brand.toString())) {
+          return data;
+        }
+      } else {
         return price3;
       }
-    }
-    )
+    });
     return (
       <div className="product-page">
         <div className="product-filter">
