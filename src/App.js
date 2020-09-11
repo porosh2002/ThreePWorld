@@ -35,7 +35,7 @@ export default class App extends Component {
       </Switch>
      </Suspense>
      <div>
-        <Footer />
+        {/* <Footer /> */}
         </div>
       </div>
     );
