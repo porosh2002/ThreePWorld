@@ -22,7 +22,7 @@ export default class SingleProduct extends Component {
     };
   }
   render() {
-    const { price,iteam,offer,size,description} = this.state.data;
+    const { price,iteam,offer,size,description,_id} = this.state.data;
     return (
       <div className='img_Cntnt-s'>
       <div>
@@ -46,10 +46,11 @@ export default class SingleProduct extends Component {
             <h3>{iteam}</h3>
             <p className='offerprice2'>TK : {Math.floor(price - price*offer/100)}</p><h6 className='ofr-price2'>TK: {price}</h6><p className='offerprice ofrprcnt2'>({offer}% off)</p>
             <p className='txs'>inclusive of all taxes</p>
+            <p className='pdctid'>Product ID : {_id}</p>
             <p className='size'>Select Size</p>
             <p className='ssz'>{size}</p>
             <div className='atc' >
-            <Link className='atcLink'>Add To Cart</Link>
+            <Link to={`/cart/${this.state.id}`} className='atcLink'>Add To Cart</Link>
             </div>
             <p className='description'>{description}</p>
           </div>
