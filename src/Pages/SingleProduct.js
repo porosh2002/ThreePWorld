@@ -1,5 +1,7 @@
 import React, { Component, Suspense } from "react";
 import CallImage from './CallImage'
+import Callimage2 from './callimage2';
+import Callimage3 from './callimage3';
 export default class SingleProduct extends Component {
   componentDidMount() {
     if (this.state.id.length > 0) {
@@ -26,7 +28,9 @@ export default class SingleProduct extends Component {
       {price !== undefined ? (
             <Suspense fallback={<p>...</p>}>
               <div>
-                <CallImage  imageID={this.state.data.imageIDa}/>
+                <CallImage  imageID={this.state.data.imageID}/>
+                <Callimage2  imageID={this.state.data.imageID}/>
+                <Callimage3  imageID={this.state.data.imageID}/>
               </div>
             </Suspense>
           ) : (
