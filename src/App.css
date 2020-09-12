@@ -19,12 +19,12 @@
 }
 .nav {
   height: 110px;
-  z-index: -1;
 }
 .slider-img {
   width: 100vw;
   height: 400px;
   margin: 0px;
+  z-index:0;
 }
 .title-md {
   font-size: 15px;
@@ -177,6 +177,7 @@
 .offer-slider {
   height: 150px;
   width: 100%;
+  z-index:0;
 }
 /* Product Filter Desk */
 .product-filter {
@@ -652,6 +653,7 @@ color: aliceblue;
   .pdctid{
     font-weight:600;
     font-size: 13px;
+    text-align: left;
   }
 }
 .cart-withorder h5,.cart-withorder h2{
