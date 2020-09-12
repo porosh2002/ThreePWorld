@@ -96,35 +96,35 @@ export default class Navigation extends Component {
                 {/* men_link class removed */}
                 <Link
                   className="menu-link "
-                  to=""
+                  
                   onMouseEnter={this.men_mouseEnter}
                 >
                   Men
                 </Link>
                 <Link
                   className="menu-link"
-                  to=""
+                  
                   onMouseEnter={this.women_mouseEnter}
                 >
                   Women
                 </Link>
                 <Link
                   className="menu-link"
-                  to=""
+                  
                   onMouseEnter={this.kid_mouseEnter}
                 >
                   Kids
                 </Link>
                 <Link
                   className="menu-link"
-                  to=""
+                  
                   onMouseEnter={this.home_mouseEnter}
                 >
                   Home & Living
                 </Link>
                 <Link
                   className="menu-link"
-                  to=""
+                  
                   onMouseEnter={this.essential_mouseEnter}
                 >
                   Essentials
