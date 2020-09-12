@@ -21,16 +21,16 @@ export default class SingleProduct extends Component {
     };
   }
   render() {
-    const { price, imageID } = this.state.data;
+    const { price} = this.state.data;
     return (
-      <div>
+      <div className='img_Cntnt-s'>
       <div>
       {price !== undefined ? (
             <Suspense fallback={<p>...</p>}>
-              <div>
+              <div className='img-img-s'>
                 <CallImage  imageID={this.state.data.imageID}/>
-                <Callimage2  imageID={this.state.data.imageID}/>
                 <Callimage3  imageID={this.state.data.imageID}/>
+                <Callimage2  imageID={this.state.data.imageID}/>
               </div>
             </Suspense>
           ) : (
@@ -41,7 +41,9 @@ export default class SingleProduct extends Component {
       </div>
       <div>
       <Suspense fallback={<p>...</p>}>
-          <div className="cntnt-single"></div>
+          <div className="cntnt-single">
+            <h1>{price}</h1>
+          </div>
         </Suspense>
         <Suspense fallback={<p>...</p>}>
           <div></div>

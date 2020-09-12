@@ -18,8 +18,8 @@ constructor(props){
     render() {
         console.log(this.state.image);
         return (
-            <div>
-                
+            <div className='blbl'>
+                <img className='card-img-s' src={this.state.image.url} alt=''/>
             </div>
         )
     }
