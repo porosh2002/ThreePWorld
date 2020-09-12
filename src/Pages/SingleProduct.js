@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import CallImage from './CallImage'
 import Callimage2 from './callimage2';
 import Callimage3 from './callimage3';
+import Algo from './algoritom'
 export default class SingleProduct extends Component {
   componentDidMount() {
     if (this.state.id.length > 0) {
@@ -24,6 +25,7 @@ export default class SingleProduct extends Component {
   render() {
     const { price,iteam,offer,size,description,_id} = this.state.data;
     return (
+      <div>
       <div className='img_Cntnt-s'>
       <div>
       {price !== undefined ? (
@@ -59,6 +61,8 @@ export default class SingleProduct extends Component {
           <div></div>
         </Suspense>
       </div>
+      </div>
+      <Algo id={this.state.id}/>
       </div>
     );
   }
