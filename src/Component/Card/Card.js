@@ -26,7 +26,7 @@ export default class Card extends Component {
             <Link image={this.state.image} to={`/SingleProduct/${id}`} className="card">
               <div>
                 <img className='card-img' src={this.state.image.url} alt=''/>
-                <h3 className='card-title'>{name}</h3>
+                <p className='pdnm'>{name}</p>
         <p className='ofr-price'>TK: {price}</p><p className='offerprice'>TK : {Math.floor(price - price*offer/100)}</p><p className='offerprice ofrprcnt'>{offer}% off</p>
               </div>
             </Link>

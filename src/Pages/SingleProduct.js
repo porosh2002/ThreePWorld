@@ -1,4 +1,5 @@
 import React, { Component, Suspense } from "react";
+import { Link } from "react-router-dom";
 import CallImage from './CallImage'
 import Callimage2 from './callimage2';
 import Callimage3 from './callimage3';
@@ -21,7 +22,7 @@ export default class SingleProduct extends Component {
     };
   }
   render() {
-    const { price} = this.state.data;
+    const { price,iteam,offer,size,description} = this.state.data;
     return (
       <div className='img_Cntnt-s'>
       <div>
@@ -42,7 +43,15 @@ export default class SingleProduct extends Component {
       <div>
       <Suspense fallback={<p>...</p>}>
           <div className="cntnt-single">
-            <h1>{price}</h1>
+            <h3>{iteam}</h3>
+            <p className='offerprice2'>TK : {Math.floor(price - price*offer/100)}</p><h6 className='ofr-price2'>TK: {price}</h6><p className='offerprice ofrprcnt2'>({offer}% off)</p>
+            <p className='txs'>inclusive of all taxes</p>
+            <p className='size'>Select Size</p>
+            <p className='ssz'>{size}</p>
+            <div className='atc' >
+            <Link className='atcLink'>Add To Cart</Link>
+            </div>
+            <p className='description'>{description}</p>
           </div>
         </Suspense>
         <Suspense fallback={<p>...</p>}>

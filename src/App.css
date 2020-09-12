@@ -580,6 +580,7 @@
   }
   .img-img-s {
     width:80%;
+    margin:50px 0px 0px 50px;
     height:auto;
   }
   .card-img-s:hover{
@@ -588,5 +589,64 @@
   }
   .blbl {
     display: inline-block;
+  }
+  .cntnt-single{
+    margin:150px 0px 0px 50px;
+  }
+
+  .txs{
+    font-weight:600;
+    color: #ea8041;
+    margin-top:20px;
+    text-align: left;
+  }
+  .ssz{
+    text-align: left;
+    font-weight:600;
+    letter-spacing:2px;
+  }
+  .ofr-price2{
+    font-size:20px;
+    font-weight: 600;
+    margin-left: 10px;
+    display: inline;
+    color: #ff3f6c;
+    text-decoration: line-through;
+  }
+  .offerprice2{
+    font-size:20px;
+    font-weight: 600;
+
+    display: inline;
+  }
+  .ofrprcnt2{
+    font-size:20px;
+    font-weight: 600;
+    margin-left: 10px;
+    display: inline;
+    color: #ea8041;
+  }
+  .size{
+    font-weight: 600;
+    text-align: left;
+  }
+  .description{
+    font-weight: 600;
+    text-align: left;
+    margin:50px 0px;
+  }
+  .atc{
+    text-align: left;
+  }
+  .atcLink{
+   padding:10px 15px;
+   border-radius:3px;
+   font-weight: 600px;
+   background-color:#ff3f6c;
+   color: #fff;
+  }
+  .atcLink:hover{
+text-decoration: none;
+color: aliceblue;
   }
 }
