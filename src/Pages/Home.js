@@ -3,7 +3,7 @@ import Slider from '../Component/Slider/Slider'
 import SliderOffer from '../Component/Slider/offerSlider'
 export default function Home() {
     return (
-        <div>
+        <div className='swiperSlider'>
              <Slider /> 
              <SliderOffer /> 
         </div>
