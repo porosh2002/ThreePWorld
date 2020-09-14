@@ -36,7 +36,6 @@ if(this.state.email.length>6 || this.state.password>5){
                 <input className='password-input' required minLength='6' onChange={this.onPasswordChange} type='password' placeholder='Enter Your Password Here' />
                 <input className='submit-input' onClick={this.onSubmit} type='submit' value='Login'/>
                 <Link className='undr-form' to='/Register' >Create New Account</Link>
-                <Link className='undr-form' to='' >Forgot Password</Link>
                 </div>
             </form>
             </div>

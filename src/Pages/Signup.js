@@ -60,7 +60,6 @@ if(this.state.email.length>6 || this.state.password.length>5 || this.state.Addre
                 <input className='password-input' onChange={this.onRefferalChange} minLength='6' type='number' placeholder='Referral Number (Optional)' />
                 <input className='submit-input' onClick={this.onSubmit} type='submit' value='Submit'/>
                 <Link className='undr-form' to='/Login' >Log In</Link>
-                <Link className='undr-form' to='' >Forgot Password</Link>
                 </div>
             </form>
             </div>
