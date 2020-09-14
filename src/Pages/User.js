@@ -1,4 +1,5 @@
 import React from 'react'
+import { Redirect } from 'react-router-dom'
 import DU from '../Component/DsbrdUSR/DU'
 export default function User() {
     return (
