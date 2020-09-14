@@ -58,15 +58,6 @@ body {
     background-color: #fff;
     border-radius:50%;
 }
-.nav {
-  height: 450px;
-  position: absolute;
-  top: 0;
-  height: 100%;
-  background-color: #fff;
-  width: 100%;
-  border-bottom-right-radius: 5px;
-}
 .offer {
   height: 200px;
   background-color: yellowgreen;

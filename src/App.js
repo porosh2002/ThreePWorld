@@ -5,6 +5,14 @@ import Loading from "./Component/Loading/Loading";
 import Navigation from './Component/Navigation/Navigation';
 import Footer from './Component/Footer/Footer'
 export default class App extends Component {
+  constructor(){
+    super();
+    this.state={
+      id:'',
+      Loged:false,
+      LogedOut:true,
+    }
+  }
   render() {
     const Home =React.lazy(() => import('./Pages/Home'));
     const Error =React.lazy(() => import('./Pages/Error'));

@@ -324,16 +324,11 @@ body{
 }
 /* dsbrd */
 .links-dsbrd {
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+display: flex;
+justify-content: space-around;
 }
 .dsbrd {
-  position: fixed;
-  top: 110px;
   background-color: #29303b;
-  height: 100vh;
 }
 .dsLnk {
   display: block;
@@ -353,6 +348,7 @@ body{
 }
 .title-des {
   font-size: 19px;
+  color: #ff3f6c;
 }
 .update-form input {
   border: 1px solid orange;
@@ -391,29 +387,25 @@ body{
   cursor: pointer;
 }
 @media screen and (min-width: 900px) {
-  .dsbrd {
-    width: 300px;
-  }
+
   .dsbrd-cntnt {
-    margin: 150px 0px 0px 300px;
+    margin: 50px 0px 0px 0px;
     color: #444;
   }
   .update-form,
   .oh {
-    margin: 50px 0px 0px 300px;
+    margin: 50px 0px 0px 0px;
   }
 }
 @media screen and (max-width: 899px) {
-  .dsbrd {
-    width: 100px;
-  }
+
   .dsbrd-cntnt {
-    margin: 150px 0px 0px 150px;
+    margin: 150px 0px 0px 0px;
     color: #444;
   }
   .update-form,
   .oh {
-    margin: 50px 0px 0px 150px;
+    margin: 50px 0px 0px 0px;
   }
 }
 /* ADmin Panel */

@@ -21,6 +21,7 @@ export default class Navigation extends Component {
         hovered_home: false,
         hovered_kid: false,
         hovered_essential: false,
+        hovered_top: false,
       });
     };
     men_mouseEnter = () => {
