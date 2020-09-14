@@ -129,18 +129,25 @@ export default class Navigation extends Component {
                 >
                   Essentials
                 </Link>
+                <Link
+                  className="menu-link"
+                  
+                  onMouseEnter={this.essential_mouseEnter}
+                >
+                  Top Category
+                </Link>
               </div>
             </div>
             <div className="srch-profile" onMouseEnter={this.menu_div_out}>
               <div className="search-section">
                 <form>
                   <label className="label">
+                  <span class="fas fa-search"></span>
                     <input
                       className="search-box"
                       type="search"
-                      placeholder="Search Product"
+                      placeholder="Search for..."
                     />
-                    <input className="search-btn" type="submit" value="Find" />
                   </label>
                 </form>
               </div>
@@ -155,12 +162,6 @@ export default class Navigation extends Component {
                   <div className="pre-container-link-div">
                   <i className="fas fa-bullhorn"></i>
                     <p className="pr-container-des ">Promotion</p>
-                  </div>
-                </Link>
-                <Link to="/">
-                  <div className="pre-container-link-div">
-                    <i className="far fa-bookmark"></i>
-                    <p className="pr-container-des">Wishlist</p>
                   </div>
                 </Link>
                 <Link to="/">

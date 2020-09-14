@@ -18,7 +18,7 @@
       color: #444;
     }
     .menu-div-main {
-      width: 500px;
+      width:590px;
       text-align: center;
     }
     .drop-down{
@@ -68,27 +68,22 @@
       display: flex;
     }
     .search-box {
-      width: 180px;
-      border: 1px solid #444;
-      border-top-left-radius: 3px;
-      border-bottom-left-radius: 3px;
-      border-right: none;
+      margin-top:10px;
+      width:200px;
+      border:2px solid #f5f5f6;
+      border-left: none;
       padding: 0px 10px;
+      font-size:13px;
     }
-    .search-btn {
+    .fa-search{
       cursor: pointer;
-      padding: 0px 15px;
-      border-top-right-radius: 3px;
-      border-bottom-right-radius: 3px;
-      border: none;
-      background-color: #444;
-      color: #fff;
-    }
-    .search-btn:hover {
-      background-color: #f08080;
+      border:1px solid #f5f5f6;
+      color: #4444;
+      font-size:17px;
+      margin:25px 20px 0px 20px;
     }
     .srch-profile {
-      width:700px;
+      width:600px;
       display: flex;
       justify-content: space-around;
     }
