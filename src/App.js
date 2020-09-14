@@ -25,7 +25,7 @@ export default class App extends Component {
     <Suspense fallback={<Loading />}>
        <Switch>
          <Route exact path="/" component={Home}/>
-         <Route exact path="/product" component={Product}/>
+         <Route exact path="/product/:id" component={Product}/>
          <Route exact path="/Login" component={Login}/>
          <Route exact path="/Register" component={Signup}/>
          <Route exact path="/Profile/:id" component={User}/>

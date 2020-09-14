@@ -68,7 +68,7 @@ export default class Product_Filter_desk extends Component {
   fiftteoffr5 = () => {
     this.setState({ offer5: !this.state.offer5 });
   };
-  constructor() {
+  constructor(){
     super();
     this.state = {
       robots: [],
@@ -78,7 +78,6 @@ export default class Product_Filter_desk extends Component {
       offer3: false,
       offer4: false,
       offer5: false,
-      // storyby: "all",
       SizeS: false,
       SizeM: false,
       SizeL: false,

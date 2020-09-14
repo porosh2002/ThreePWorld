@@ -1045,11 +1045,6 @@ export default class Navigation extends Component {
                   Cushions & Cushion Covers
                 </Link>
               </div>
-              <div className="drop-div">
-                <Link className="drop-title drp-lst" to="/product">
-                  Curtains
-                </Link>
-              </div>
             </div>
           </div>
           <div
