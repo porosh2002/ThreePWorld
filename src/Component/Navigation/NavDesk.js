@@ -1,5 +1,5 @@
 import React,{Component} from 'react';
-import logo from "../Images/logo.jpg";
+import logo from "../Images/logo.png";
 import { Link } from "react-router-dom";
 import TopNav from './TopNav';
 export default class Navigation extends Component {
