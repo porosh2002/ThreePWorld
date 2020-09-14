@@ -149,7 +149,7 @@ export default class Navigation extends Component {
                 <Link
                   className="menu-link"
                   
-                  onMouseEnter={this.essential_mouseEnter}
+                  onMouseEnter={this.topc_mouseEnter}
                 >
                   Top Category
                 </Link>
@@ -1092,15 +1092,15 @@ export default class Navigation extends Component {
           <div
             style={style6}
             className="drop-down"
-            onMouseLeave={this.topc_mouseEnter}
+            onMouseLeave={this.menu_div_out}
           >
             <div className="ddms">
               <div className="drop-div ">
                 <Link className="drop-title drp-lst" to="/product">
-                  Mask
+                  Smart TV & Android TV
                 </Link>
                 <Link className="drop-title drp-lst" to="/product">
-                  Skin Care
+                  Skin Care  ttttt
                 </Link>
                 <Link className="drop-title drp-lst" to="/product">
                   Haircare
