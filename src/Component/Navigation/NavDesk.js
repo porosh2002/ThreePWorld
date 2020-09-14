@@ -197,7 +197,7 @@ export default class Navigation extends Component {
           >
             <div className="ddmf">
               <div className="drop-div">
-                <Link className="drop-title" to="/product">
+                <Link className="drop-title" to="/product/one">
                   Topwear
                 </Link>
                 <Link className="drop-des" to="/product">

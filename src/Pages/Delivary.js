@@ -12,7 +12,7 @@ export default function Delivary(props) {
             <h2>Bkash NUmber: <p className='orderid'>{'+8801710-163592'}</p></h2>
             <h2>Rocket NUmber: <p className='orderid'>{'+8801753-998856'}</p></h2>
             <h2>Nogod NUmber: <p className='orderid'>{'+8801713-085167'}</p></h2>
-            <Link className='atcLink'>Contact Complete and Ordered</Link>
+            <Link className='atcLink'>Ordered Completed</Link>
         </div>
     )
 }
