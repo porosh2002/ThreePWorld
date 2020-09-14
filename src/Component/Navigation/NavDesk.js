@@ -1100,28 +1100,31 @@ export default class Navigation extends Component {
                   Smart TV & Android TV
                 </Link>
                 <Link className="drop-title drp-lst" to="/product">
-                  Skin Care  ttttt
+                  Desktop
                 </Link>
                 <Link className="drop-title drp-lst" to="/product">
-                  Haircare
+                  Motor Bike
                 </Link>
                 <Link className="drop-title drp-lst" to="/product">
-                  Bath & Body
+                  Speaker
                 </Link>
                 <Link className="drop-title drp-lst" to="/product">
-                  Men's Grooming
+                  Freezer
                 </Link>
                 <Link className="drop-title drp-lst" to="/product">
-                  Baby Care
+                  Refrigerator
                 </Link>
                 <Link className="drop-title drp-lst" to="/product">
-                  At Home Salon
+                  Split AC
                 </Link>
                 <Link className="drop-title drp-lst" to="/product">
-                  Hair Styling
+                  Laptop
                 </Link>
                 <Link className="drop-title drp-lst" to="/product">
-                  Appliances
+                  Smart Phone
+                </Link>
+                <Link className="drop-title drp-lst" to="/product">
+                  Microwave Oven
                 </Link>
               </div>
             </div>
