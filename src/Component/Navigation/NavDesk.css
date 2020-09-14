@@ -14,7 +14,7 @@
     .fa-shopping-bag,
     .fa-money-bill-alt,
     .fa-bullhorn{
-      font-size: 20px;
+      font-size: 13px;
       color: #444;
     }
     .menu-div-main {
@@ -33,7 +33,7 @@
     .pr-container-des {
       text-decoration: none;
       margin: 0px 10px;
-      font-size: 13px;
+      font-size: 12px;
       color: #444;
       font-weight: 650;
       letter-spacing: 1px;
@@ -133,7 +133,7 @@
     }
     .ddms {
       display: flex;
-      margin: 50px 0px;
+      margin:10px 0px;
     }
     .pre-container-link-div:hover .fa-bookmark,
     .pre-container-link-div:hover .fa-shopping-bag {

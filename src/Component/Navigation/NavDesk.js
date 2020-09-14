@@ -11,6 +11,7 @@ export default class Navigation extends Component {
         hovered_kid: false,
         hovered_home: false,
         hovered_essential: false,
+        hovered_top: false,
       };
     }
     menu_div_out = () => {
@@ -31,6 +32,16 @@ export default class Navigation extends Component {
         hovered_essential: false,
       });
     };
+    topc_mouseEnter = () => {
+      this.setState({
+        hovered:false,
+        hovered_womwn: false,
+        hovered_home: false,
+        hovered_kid: false,
+        hovered_essential: false,
+        hovered_top:true,
+      });
+    };
     women_mouseEnter = () => {
       this.setState({
         hovered: false,
@@ -38,6 +49,7 @@ export default class Navigation extends Component {
         hovered_home: false,
         hovered_kid: false,
         hovered_essential: false,
+        hovered_top:false,
       });
     };
     kid_mouseEnter = () => {
@@ -47,6 +59,7 @@ export default class Navigation extends Component {
         hovered_home: false,
         hovered_kid: true,
         hovered_essential: false,
+        hovered_top:false,
       });
     };
     home_mouseEnter = () => {
@@ -56,6 +69,7 @@ export default class Navigation extends Component {
         hovered_home: true,
         hovered_kid: false,
         hovered_essential: false,
+        hovered_top:false,
       });
     };
     essential_mouseEnter = () => {
@@ -65,6 +79,7 @@ export default class Navigation extends Component {
         hovered_home: false,
         hovered_kid: false,
         hovered_essential: true,
+        hovered_top:false,
       });
     };
     render() {
@@ -73,11 +88,13 @@ export default class Navigation extends Component {
       const { hovered_kid } = this.state;
       const { hovered_home } = this.state;
       const { hovered_essential } = this.state;
+      const { hovered_top } = this.state;
       const style = hovered ? { display: "block" } : {};
       const style2 = hovered_womwn ? { display: "block" } : {};
       const style3 = hovered_kid ? { display: "block" } : {};
       const style4 = hovered_home ? { display: "block" } : {};
       const style5 = hovered_essential ? { display: "block" } : {};
+      const style6 = hovered_top ? { display: "block" } : {};
       return (
         <div className='nav--main' >
           <TopNav />
@@ -874,31 +891,13 @@ export default class Navigation extends Component {
                   Raymond home
                 </Link>
                 <Link className="drop-des" to="/product">
-                  Maspar
-                </Link>
-                <Link className="drop-des" to="/product">
-                  Corelle
-                </Link>
-                <Link className="drop-des" to="/product">
                   Trident
-                </Link>
-                <Link className="drop-des" to="/product">
-                  Cortina
                 </Link>
                 <Link className="drop-des" to="/product">
                   Story@Home
                 </Link>
                 <Link className="drop-des" to="/product">
-                  Random
-                </Link>
-                <Link className="drop-des" to="/product">
                   Home Sparkle
-                </Link>
-                <Link className="drop-des" to="/product">
-                  ROMEE
-                </Link>
-                <Link className="drop-des" to="/product">
-                  SEJ
                 </Link>
               </div>
               <div className="drop-div">
@@ -1042,12 +1041,12 @@ export default class Navigation extends Component {
                 </Link>
               </div>
               <div className="drop-div">
-                <Link className="drop-title" to="/product">
+                <Link className="drop-title drp-lst" to="/product">
                   Cushions & Cushion Covers
                 </Link>
               </div>
               <div className="drop-div">
-                <Link className="drop-title" to="/product">
+                <Link className="drop-title drp-lst" to="/product">
                   Curtains
                 </Link>
               </div>
@@ -1057,6 +1056,43 @@ export default class Navigation extends Component {
             style={style5}
             className="drop-down"
             onMouseLeave={this.menu_div_out}
+          >
+            <div className="ddms">
+              <div className="drop-div ">
+                <Link className="drop-title drp-lst" to="/product">
+                  Mask
+                </Link>
+                <Link className="drop-title drp-lst" to="/product">
+                  Skin Care
+                </Link>
+                <Link className="drop-title drp-lst" to="/product">
+                  Haircare
+                </Link>
+                <Link className="drop-title drp-lst" to="/product">
+                  Bath & Body
+                </Link>
+                <Link className="drop-title drp-lst" to="/product">
+                  Men's Grooming
+                </Link>
+                <Link className="drop-title drp-lst" to="/product">
+                  Baby Care
+                </Link>
+                <Link className="drop-title drp-lst" to="/product">
+                  At Home Salon
+                </Link>
+                <Link className="drop-title drp-lst" to="/product">
+                  Hair Styling
+                </Link>
+                <Link className="drop-title drp-lst" to="/product">
+                  Appliances
+                </Link>
+              </div>
+            </div>
+          </div>
+          <div
+            style={style6}
+            className="drop-down"
+            onMouseLeave={this.topc_mouseEnter}
           >
             <div className="ddms">
               <div className="drop-div ">
