@@ -5,7 +5,7 @@ const NavMob = React.lazy(() => import("./NavMob"));
 export default class Navigation extends Component {
   render() {
     return (
-      <div>
+      <div className='nav-sus'>
         {window.innerWidth > 900 ? (
           <Suspense fallback={<div>Loading...</div>}>
             <NavDesk />

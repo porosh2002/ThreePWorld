@@ -13,10 +13,6 @@ body{
   background-color: #fff;
   margin-bottom: 70px;
 }
-.nav--main {
-  /* position: fixed; */
-  width: 100%;
-}
 .slider-main {
   z-index:-1;
 }
