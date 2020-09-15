@@ -201,140 +201,131 @@ export default class Navigation extends Component {
                 <Link className="drop-title" to="/product/topwear">
                   Topwear
                 </Link>
-                <Link className="drop-des" to="/product/shirt">
+                <Link className="drop-des" to="/product/shirts">
                   T-Shirt
                 </Link>
-                <Link className="drop-des" to="/product/shirt">
+                <Link className="drop-des" to="/product/casual shirts">
                   Casual Shirts
                 </Link>
-                <Link className="drop-des" to="/product/formal shirt">
+                <Link className="drop-des" to="/product/formal shirts">
                   Formal Shirts
                 </Link>
-                <Link className="drop-des" to="/product/shirt">
+                <Link className="drop-des" to="/product/shirts">
                   SweatShirts
                 </Link>
-                <Link className="drop-des" to="/product/jacket">
+                <Link className="drop-des" to="/product/jackets">
                   Jackets
                 </Link>
-                <Link className="drop-des" to="/product/Blazer-Coat">
+                <Link className="drop-des" to="/product/Blazers Coats">
                   Blazers & Coats
                 </Link>
-                <Link className="drop-des" to="/product/sweater">
+                <Link className="drop-des" to="/product/sweaters">
                   Sweaters
                 </Link>
                 <Link className="drop-des" to="/product/suits">
                   Suits
                 </Link>
-                <Link className="drop-des" to="/product/rain-jacket">
+                <Link className="drop-des" to="/product/rain jackets">
                   Rain Jackets
                 </Link>
               </div>
               <div className="drop-div">
-                <Link className="drop-title" to="/product">
+                <Link className="drop-title" to="/product/footwear">
                   Footwear
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/sport shoes">
                   Sports Shoes
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/casual shoes">
                   Casual Shoes
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/formal shoes">
                   Formal Shoes
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/sneakers">
                   Sneakers
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/sandales floaters">
                   Sandals & Floaters
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/flip flops">
                   Flip Flops
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/socks">
                   Socks
                 </Link>
               </div>
               <div className="drop-div">
-                <Link className="drop-title" to="/product">
+                <Link className="drop-title" to="/product/bottomwear">
                   Bottomwear
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/jeans">
                   Jeans
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/casual trousers">
                   Casual Trousers
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/formal trousers">
                   Formal Trousers
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/shorts">
                   Shorts
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/track pant joggers">
                   Track Pants & Joggers
                 </Link>
               </div>
               <div className="drop-div">
-                <Link className="drop-title" to="/product">
+                <Link className="drop-title" to="/product/gadgets">
                   Gadgets
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/smart wearables">
                   Smart Wearables
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/fitness Gadgets">
                   Fitness Gadgets
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/headphones">
                   Headphones
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/speakers">
                   Speakers
                 </Link>
               </div>
               <div className="drop-div">
-                <Link className="drop-title" to="/product">
+                <Link className="drop-title" to="/product/sports wear">
                   Sports Wear
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/sports shoes">
                   Sports Shoes
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/sports sandals">
                   Sports Sandals
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/active t-shirts">
                   Active T-Shirts
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/track pants and shorts">
                   Track Pants & Shorts
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/tracksuits">
                   Tracksuits
                 </Link>
-                <Link className="drop-des" to="/product">
-                  Jackets & Sweatshirts
-                </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/sport accessories">
                   Sports Accessories
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/Swimwear">
                   Swimwear
                 </Link>
               </div>
               <div className="drop-div">
-                <Link className="drop-title" to="/product">
+                <Link className="drop-title" to="/product/festive wear">
                   Festive Wear
                 </Link>
-                <Link className="drop-des" to="/product">
-                  Kurtas & Kurta Sets
-                </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/sherwanis">
                   Sherwanis
                 </Link>
-                <Link className="drop-des" to="/product">
-                  Nehru Jackets
-                </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/dhotis">
                   Dhotis
                 </Link>
               </div>
