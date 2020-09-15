@@ -819,182 +819,179 @@ export default class Navigation extends Component {
           >
             <div className="ddmf">
               <div className="drop-div">
-                <Link className="drop-title" to="/product">
+                <Link className="drop-title" to="/product/home living">
                   Brands
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/Bombay Dyeing">
                   Bombay Dyeing
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/spaces">
                   Spaces
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/ d decor">
                   D Decor
                 </Link>
-                <Link className="drop-des" to="/product">
-                  Portico New Work
+                <Link className="drop-des" to="/product/home and living">
+                   Home & Living
                 </Link>
-                <Link className="drop-des" to="/product">
-                  Pure Home & Living
-                </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/swayam">
                   Swayam
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/raymond">
                   Raymond home
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/trident">
                   Trident
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/story">
                   Story@Home
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/home spark">
                   Home Sparkle
                 </Link>
               </div>
               <div className="drop-div">
-                <Link className="drop-title" to="/product">
+                <Link className="drop-title" to="/product/bath">
                   Bath
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/bathtowels">
                   Bath Towels
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/hand face towels">
                   Hand & Face Towels
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/beach towels">
                   Beach Towels
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/towels set">
                   Towels Set
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/bath rugs">
                   Bath Rugs
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/bath robes">
                   Bath Robes
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/Bathroom Accessories">
                   Bathroom Accessories
                 </Link>
               </div>
               <div className="drop-div">
-                <Link className="drop-title" to="/product">
+                <Link className="drop-title" to="/product/home decor">
                   Home Decor
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/plants">
                   Plants & Planters
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/aromas candle">
                   Aromas & Candles
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/clock">
                   Clocks
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/mirror">
                   Mirrors
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/wall decor">
                   Wall Decor
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/wall shelves">
                   Wall Shelves
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/fountains">
                   Fountains
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/showpieces vases">
                   ShowPieces & Vases
                 </Link>
               </div>
               <div className="drop-div">
-                <Link className="drop-title" to="/product">
+                <Link className="drop-title" to="/product/kitchen table">
                   Kitchen & Table
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/serveware">
                   Serveware
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/bar drinkware">
                   Bar & Drinkware
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/cookware">
                   Cookware
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/kitchen storage">
                   Kitchen Storage
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/table cover">
                   Table Cover
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/furnising">
                   Furnishings
                 </Link>
               </div>
               <div className="drop-div">
-                <Link className="drop-title" to="/product">
+                <Link className="drop-title" to="/product/storage">
                   Storage
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/organisers">
                   Organisers
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/hook holder">
                   Hooks & Holders
                 </Link>
               </div>
               <div className="drop-div">
-                <Link className="drop-title" to="/product">
+                <Link className="drop-title" to="/product/lamp lighting">
                   Lamps & Lighting
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/floor lamp">
                   Floor Lamps
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/table lamp">
                   Table Lamps
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/wall lamp">
                   Wall Laps
                 </Link>
               </div>
             </div>
             <div className="ddms">
               <div className="drop-div">
-                <Link className="drop-title" to="/product">
+                <Link className="drop-title" to="/product/flooring">
                   Flooring
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/carpet">
                   Carpets
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/mat dhurries">
                   Mats & Dhurries
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/door mat">
                   Door Mats
                 </Link>
               </div>
   
               <div className="drop-div ">
-                <Link className="drop-title drp-lst" to="/product">
+                <Link className="drop-title drp-lst" to="/product/bed liner furnising">
                   Bed Liner & Furnishing
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/bedsheet">
                   Bedsheets
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/bedding sets">
                   Bedding Sets
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/blamkets quilts dohar">
                   Blamkets,Quilts & Dohars
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/pillow cover">
                   Pillows & Pillow Covers
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/bed cover">
                   Bed Covers
                 </Link>
               </div>
               <div className="drop-div">
-                <Link className="drop-title drp-lst" to="/product">
+                <Link className="drop-title drp-lst" to="/product/cushion cushion cover">
                   Cushions & Cushion Covers
                 </Link>
               </div>
@@ -1007,31 +1004,31 @@ export default class Navigation extends Component {
           >
             <div className="ddms">
               <div className="drop-div ">
-                <Link className="drop-title drp-lst" to="/product">
+                <Link className="drop-title drp-lst" to="/product/mask">
                   Mask
                 </Link>
-                <Link className="drop-title drp-lst" to="/product">
+                <Link className="drop-title drp-lst" to="/product/skin care">
                   Skin Care
                 </Link>
-                <Link className="drop-title drp-lst" to="/product">
+                <Link className="drop-title drp-lst" to="/product/hair care">
                   Haircare
                 </Link>
-                <Link className="drop-title drp-lst" to="/product">
+                <Link className="drop-title drp-lst" to="/product/bath  body">
                   Bath & Body
                 </Link>
-                <Link className="drop-title drp-lst" to="/product">
+                <Link className="drop-title drp-lst" to="/product/men grooming">
                   Men's Grooming
                 </Link>
-                <Link className="drop-title drp-lst" to="/product">
+                <Link className="drop-title drp-lst" to="/product/baby care">
                   Baby Care
                 </Link>
-                <Link className="drop-title drp-lst" to="/product">
+                <Link className="drop-title drp-lst" to="/product/home salon">
                   At Home Salon
                 </Link>
-                <Link className="drop-title drp-lst" to="/product">
+                <Link className="drop-title drp-lst" to="/product/hair styling">
                   Hair Styling
                 </Link>
-                <Link className="drop-title drp-lst" to="/product">
+                <Link className="drop-title drp-lst" to="/product/appliances">
                   Appliances
                 </Link>
               </div>
@@ -1044,34 +1041,34 @@ export default class Navigation extends Component {
           >
             <div className="ddms">
               <div className="drop-div ">
-                <Link className="drop-title drp-lst" to="/product">
+                <Link className="drop-title drp-lst" to="/product/smarttv androidtv">
                   Smart TV & Android TV
                 </Link>
-                <Link className="drop-title drp-lst" to="/product">
+                <Link className="drop-title drp-lst" to="/product/desktop">
                   Desktop
                 </Link>
-                <Link className="drop-title drp-lst" to="/product">
+                <Link className="drop-title drp-lst" to="/product/motor Bike">
                   Motor Bike
                 </Link>
-                <Link className="drop-title drp-lst" to="/product">
+                <Link className="drop-title drp-lst" to="/product/speaker">
                   Speaker
                 </Link>
-                <Link className="drop-title drp-lst" to="/product">
+                <Link className="drop-title drp-lst" to="/product/freezer">
                   Freezer
                 </Link>
-                <Link className="drop-title drp-lst" to="/product">
+                <Link className="drop-title drp-lst" to="/product/refrigerator">
                   Refrigerator
                 </Link>
-                <Link className="drop-title drp-lst" to="/product">
+                <Link className="drop-title drp-lst" to="/product/split ac">
                   Split AC
                 </Link>
-                <Link className="drop-title drp-lst" to="/product">
+                <Link className="drop-title drp-lst" to="/product/laptop">
                   Laptop
                 </Link>
-                <Link className="drop-title drp-lst" to="/product">
+                <Link className="drop-title drp-lst" to="/product/smart phone">
                   Smart Phone
                 </Link>
-                <Link className="drop-title drp-lst" to="/product">
+                <Link className="drop-title drp-lst" to="/product/microwave oven">
                   Microwave Oven
                 </Link>
               </div>
