@@ -15,23 +15,27 @@ export default class User extends Component {
             headers: {'Content-Type': 'application/json'},
         })
     }
-    onEmailChange=(event)=>{
-        this.setState({nameUpdate:event.target.value})
+    onupdateform=()=>{
+        fetch(`http://localhost:5000/update/${this.props.match.params.id}`,{
+            method:'POST',
+            headers: {'Content-Type': 'application/json'},
+            body:{
+                email:this.state.email,
+                name:this.state.name
+            }
+        })
     }
-    onpasswordChange=(event)=>{
-        this.setState({password:event.target.value})
+    onEmailChange=(event)=>{
+        this.setState({email:event.target.value})
     }
     onnameChange=(event)=>{
-        this.setState({nameUpdate:event.target.value})
+        this.setState({name:event.target.value})
     }
 constructor(){
     super();
     this.state = {
       name:undefined,
       email:undefined,
-      nameUpdate:undefined,
-      emailUpdate:undefined,
-      password:undefined
     }
     
 }
@@ -48,8 +52,7 @@ constructor(){
             <form className='update-form'>
                 <input onChange={this.onnameChange} type='name' placeholder='Enter new Name'></input>
                 <input onChange={this.onEmailChange} type='email' placeholder='Enter new Email'></input>
-                <input onChange={this.onpasswordChange} type='password' placeholder='Enter new Password'></input>
-                <input type='submit' value='Update Profile'></input>
+                <input type='submit' onClick={this.onupdateform} value='Update Profile'></input>
             </form>
         </div>
         )
