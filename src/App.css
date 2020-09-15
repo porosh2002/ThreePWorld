@@ -378,12 +378,11 @@ justify-content: space-around;
   color: #ea8041;
 }
 .title-des-btn {
-  padding: 10px 20px;
+  padding: 7px 15px;
   background-color: #444;
-  margin: 10px auto;
   color: orange;
   border-radius: 3px;
-  width: 200px;
+  width:180px;
   cursor: pointer;
 }
 @media screen and (min-width: 900px) {
@@ -394,7 +393,7 @@ justify-content: space-around;
   }
   .update-form,
   .oh {
-    margin: 50px 0px 0px 0px;
+    margin: 50px 0px 30px 0px;
   }
 }
 @media screen and (max-width: 899px) {
