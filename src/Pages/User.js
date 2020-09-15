@@ -19,10 +19,10 @@ export default class User extends Component {
         fetch(`http://localhost:5000/update/${this.props.match.params.id}`,{
             method:'POST',
             headers: {'Content-Type': 'application/json'},
-            body:{
+            body:JSON.stringify({
                 email:this.state.email,
                 name:this.state.name
-            }
+            })
         })
     }
     onEmailChange=(event)=>{

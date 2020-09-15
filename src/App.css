@@ -369,6 +369,9 @@ justify-content: space-around;
 .withdrawform {
   padding: 10px 20px;
   text-align: center;
+  margin:30px 0px 50px 0px;
+  font-size: 13px;
+  font-weight: 600;
   border: 1px solid yellowgreen;
 }
 .desE {
