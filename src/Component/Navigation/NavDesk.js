@@ -612,164 +612,164 @@ export default class Navigation extends Component {
           >
             <div className="ddmf">
               <div className="drop-div">
-                <Link className="drop-title" to="/product">
+                <Link className="drop-title" to="/product/infant">
                   Infants
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/romper onsides">
                   Rompers & Onesies
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/clothing sets">
                   Clothing Sets
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/shirts tops">
                   Tshirt & Tops
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/dress">
                   Dresses
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/bottomwear">
                   Bottomwear
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/winter wear">
                   Winter Wear
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/inneraear sleepwear">
                   Innerwear & SleepWear
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/infants accessories">
                   Infants Accessories
                 </Link>
               </div>
   
               <div className="drop-div">
-                <Link className="drop-title" to="/product">
+                <Link className="drop-title" to="/product/boys footwear">
                   Boys Footwear
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/sports shoes">
                   Sports Shoes
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/casual shoes">
                   Casual Shoes
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/sandals">
                   Sandals
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/school shoes">
                   School Shoes
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/flip flop">
                   Flip Flops
                 </Link>
               </div>
               <div className="drop-div">
-                <Link className="drop-title" to="/product">
+                <Link className="drop-title" to="/product/girl footwear">
                   Girls Footwear
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/flats">
                   Flats
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/casual shoes">
                   Casual Shoes
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/hels">
                   Heels
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/flipflop">
                   Flip Flops
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/sandals">
                   Sandals
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/school shoes">
                   School Shoes
                 </Link>
               </div>
               <div className="drop-div">
-                <Link className="drop-title" to="/product">
+                <Link className="drop-title" to="/product/kids accessories">
                   Kids Accessories
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/bag bagpack">
                   Bags & Backpacks
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/watch">
                   Watches
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/jewellery">
                   Jewellery
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/eyewear">
                   Eyewear
                 </Link>
               </div>
               <div className="drop-div">
-                <Link className="drop-title" to="/product">
+                <Link className="drop-title" to="/product/home bath">
                   Home & Bath
                 </Link>
               </div>
             </div>
             <div className="ddms">
               <div className="drop-div">
-                <Link className="drop-title" to="/product">
+                <Link className="drop-title" to="/product/girls clothing">
                   Girls Clothing
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/dresses">
                   Dresses
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/tops">
                   Tops
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/tshirts">
                   Tshirts
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/clothing set">
                   Clothing Sets
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/ethnic wear">
                   Ethnic Wear
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/dungarees jumsuits">
                   Dungarees & Jumpsuits
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/skirts shorts">
                   Skirts & Shorts
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/tight leggings">
                   Tight & Leggings
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/capris jeans trousers">
                   Jeans , Trousers & Capris
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/jacket,sweater,sweatshirts">
                   Jacket , Sweater ,Sweatshirts
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/innerwear sleepwear">
                   Innerwear & Sleepwear
                 </Link>
               </div>
   
               <div className="drop-div">
-                <Link className="drop-title" to="/product">
+                <Link className="drop-title" to="/product/boys clothing">
                   Boys Clothing
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/tsirts">
                   T-Shirt
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/shirts">
                   Shirts
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/shorts">
                   Shorts
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/jeans">
                   Jeans
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/trousers">
                   Trousers
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/clothing sets">
                   Clothing Sets
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/ethnic wear">
                   Ethnic Wear
                 </Link>
                 <Link className="drop-des" to="/product">
