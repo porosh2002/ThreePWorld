@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export default function Footer() {
   return (
     <div className="footer">
-      <div className="ftr-subcription">
+      {/* <div className="ftr-subcription">
         <div className="logo-ftr">
           <img alt="logo" className="ftr-logo" src={Logo} />
         </div>
@@ -25,7 +25,7 @@ export default function Footer() {
             We’ll never share your email address with a third-party.
           </p>
         </div>
-      </div>
+      </div> */}
       <div className="menu-footer">
         <div className="abt-cs">
           <div>
