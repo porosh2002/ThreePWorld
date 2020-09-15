@@ -772,52 +772,40 @@ export default class Navigation extends Component {
                 <Link className="drop-des" to="/product/ethnic wear">
                   Ethnic Wear
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/trackpant payjamas">
                   Track Pants & Pyjamas
-                </Link>
-                <Link className="drop-des" to="/product">
-                  Jackets , Sweater, Sweatshirts
-                </Link>
-                <Link className="drop-des" to="/product">
-                  Innerwear & Sleepwear
                 </Link>
               </div>
   
               <div className="drop-div">
-                <Link className="drop-title" to="/product">
+                <Link className="drop-title" to="/product/brand">
                   Brands
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/h&m">
                   H&M
                 </Link>
-                <Link className="drop-des" to="/product">
-                  United Colors of Benetton
-                </Link>
-                <Link className="drop-des" to="/product">
-                  YK
-                </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/US polo">
                   U.S. Polo Assn. Kids
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/gap kid">
                   GAP Kids
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/gini jony">
                   Gini & Jony
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/peppermint">
                   Peppermint
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/next">
                   next
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/allen solly juniour">
                   Allen Solly Junior
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/nike">
                   Nike
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/pepe jeans">
                   Pepe Jeans
                 </Link>
               </div>
