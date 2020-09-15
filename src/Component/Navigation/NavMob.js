@@ -54,31 +54,31 @@ export default class NavMob extends Component {
       </div>
         <div className='offer'>
         </div>
-        <Link className="menu-link " to="/product">
+        <Link className="menu-link " to="/product/men">
           Men
         </Link>
-        <Link className="menu-link " to="/product">
+        <Link className="menu-link " to="/product/women">
           Women
         </Link>
-        <Link className="menu-link " to="/product">
+        <Link className="menu-link " to="/product/kids">
           Kids
         </Link>
-        <Link className="menu-link " to="/product">
+        <Link className="menu-link " to="/product/home living">
           Home & Living
         </Link>
-        <Link className="menu-link " to="/product">
+        <Link className="menu-link " to="/product/essentials">
           Essentials
         </Link>
         <Link className="menu-link " to="/product">
           Contact Us
         </Link>
-        <Link className="menu-link " to="/product">
+        <Link className="menu-link " to="/product/Login">
           Login
         </Link>
-        <Link className="menu-link " to="/product">
+        <Link className="menu-link " to="/product/vendor">
         Become a Vendor
         </Link>
-        <Link className="menu-link " to="/product">
+        <Link className="menu-link " to="/product/">
         Profile
         </Link>
         <Link className="menu-link " to="/product">
