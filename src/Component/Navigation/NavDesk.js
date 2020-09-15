@@ -198,34 +198,34 @@ export default class Navigation extends Component {
           >
             <div className="ddmf">
               <div className="drop-div">
-                <Link className="drop-title" to="/product/one">
+                <Link className="drop-title" to="/product/topwear">
                   Topwear
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/shirt">
                   T-Shirt
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/shirt">
                   Casual Shirts
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/formal shirt">
                   Formal Shirts
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/shirt">
                   SweatShirts
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/jacket">
                   Jackets
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/Blazer-Coat">
                   Blazers & Coats
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/sweater">
                   Sweaters
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/suits">
                   Suits
                 </Link>
-                <Link className="drop-des" to="/product">
+                <Link className="drop-des" to="/product/rain-jacket">
                   Rain Jackets
                 </Link>
               </div>
