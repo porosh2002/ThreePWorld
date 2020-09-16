@@ -323,6 +323,7 @@ body{
 .submit-input {
   width: 200px;
   padding: 5px 20px;
+  cursor: pointer;
   border: 1px solid #d2d2d2;
   border-radius: 3px;
   background-color: #ff3f6c;
