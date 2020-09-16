@@ -16,8 +16,7 @@ export default class Login extends Component {
     this.setState({ password: event.target.value });
   };
   onSubmit = () => {
-    if (this.state.email.length > 6 || this.state.password > 5) {
-      fetch("http://localhost:5000/Login", {
+      fetch("http://localhost:5000/CheckVendor", {
         method: "post",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -25,16 +24,14 @@ export default class Login extends Component {
           password: this.state.password,
         }),
       })
-        .then((res) => res.json())
-        .then((res) => {
-          this.setState({ id: res });
-        })
-        .then(
-          setTimeout(() => {
-            this.props.history.push(`/profile/${this.state.id}`);
-          }, 1000)
-        );
-    }
+        .then((res) => res.json()).then((res)=>{
+          this.setState({id:res._id})
+        }).then(console.log(this.state.id)).  
+then(
+  setTimeout(() => {
+    // this.props.history.push(`/vendor/1`);
+  }, 1000)
+)
   };
   render() {
     return (
