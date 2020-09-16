@@ -1,19 +1,18 @@
 import React, { Component } from 'react'
 import DU2 from '../Component/DsbrdUSR/DU2'
 export default class User extends Component {
-    componentDidMount() {
+    componentWillMount() {
         fetch(`http://localhost:5000/getvendordata/${this.props.match.params.id}`)
         .then((response) => response.json())
         .then((users) => {
-          this.setState({ name: users[0].name , email:users[0].email,Refferal:users[0].ownrefferal });
+          this.setState({ name: users[0].name , email:users[0].email});
         });
     }
 constructor(){
     super();
     this.state = {
       name:undefined,
-      email:undefined,
-      Refferal:undefined
+      email:undefined
     } 
 }
     render() {
