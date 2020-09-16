@@ -7,7 +7,7 @@
       background-color: #fff
     }
     .App-logo {
-      height:50px;
+      height:49px;
     }
     .fa-user-circle,
     .fa-bookmark,
@@ -89,7 +89,6 @@
     }
     .drop-down {
       border-top: 3px solid #f08080;
-      height: 750px;
       background-color: #fff;
       margin: 0px 50px;
       padding:10px;

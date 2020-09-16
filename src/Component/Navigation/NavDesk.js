@@ -1039,8 +1039,8 @@ export default class Navigation extends Component {
             className="drop-down"
             onMouseLeave={this.menu_div_out}
           >
-            <div className="ddms">
-              <div className="drop-div ">
+            <div className="ddms ddmstpc">
+              <div className="drop-div ddvtc">
                 <Link className="drop-title drp-lst" to="/product/smarttv androidtv">
                   Smart TV & Android TV
                 </Link>

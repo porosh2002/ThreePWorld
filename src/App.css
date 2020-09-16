@@ -5,6 +5,12 @@
   text-decoration: none;
   text-align: center;
 }
+.linkold{
+  font-size:13px;
+  padding:07px;
+  background-color:rgb(132, 154, 218);
+  border-radius:3px;
+}
 body{
   overflow-x: hidden;
 }
@@ -684,4 +690,7 @@ padding:100px 0px;
 }
 .fpd{
   padding:50px 0px;
+}
+.ddmstpc,.ddvtc{
+  height:300px;
 }
