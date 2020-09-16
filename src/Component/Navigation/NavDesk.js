@@ -1003,7 +1003,7 @@ export default class Navigation extends Component {
             onMouseLeave={this.menu_div_out}
           >
             <div className="ddms">
-              <div className="drop-div ">
+              <div className="drop-div dropessen">
                 <Link className="drop-title drp-lst" to="/product/mask">
                   Mask
                 </Link>
