@@ -469,7 +469,7 @@ justify-content: space-around;
     width: 300px;
   }
   .main-admin-content {
-    margin: 50px 0px 50px 300px;
+    margin: 50px 0px 50px 0px;
     width: 100%;
   }
   .admin-txtarea {
@@ -491,7 +491,7 @@ justify-content: space-around;
     width: 150px;
   }
   .main-admin-content {
-    margin: 150px 0px 50px 150px;
+    margin: 150px 0px 50px 0px;
     width: 100%;
   }
   .admin-txtarea {

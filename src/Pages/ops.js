@@ -58,15 +58,15 @@ export default class Upload extends React.Component {
   fileChange3 = (event) => {
     this.setState({ file3: event.target.files[0] });
   };
-  addBrand=()=>{
-    fetch('http://localhost:5000/AddBrand', {
-      method: 'post',
-      headers: {'Content-Type': 'application/json'},
-      body: JSON.stringify({
-        Brand : this.state.brand,
-      })
-    })
-  }
+  // addBrand=()=>{
+  //   fetch('http://localhost:5000/AddBrand', {
+  //     method: 'post',
+  //     headers: {'Content-Type': 'application/json'},
+  //     body: JSON.stringify({
+  //       Brand : this.state.brand,
+  //     })
+  //   })
+  // }
   upload = () => {
     const formData = new FormData();
     formData.append("upload", this.state.file);
@@ -101,16 +101,15 @@ export default class Upload extends React.Component {
     const styleproduct = {display:displayproduct};
     return (
       <div className="main-admin">
-        <div className="main-admin-menu">
+        {/* <div className="main-admin-menu">
           <div className="menu-p">
             <p className="menu-admin">Product</p>
-            <p className="menu-admin">Order</p>
             <p onClick={this.onBrand} className="menu-admin">Brand</p>
           </div>
-        </div>
+        </div> */}
         <div className="main-admin-content">
           <div style={styleproduct} className="addProduct">
-            <p className='title-admin'>Add Product</p>
+            <p className='title-admin'>Add Product by Admin</p>
             <input onChange={this.oniteamChange}
               className="admin-input"
               type="name"
