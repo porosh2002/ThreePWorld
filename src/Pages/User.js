@@ -6,7 +6,7 @@ export default class User extends Component {
         fetch(`http://localhost:5000/getuserdata/${this.props.match.params.id}`)
         .then((response) => response.json())
         .then((users) => {
-          this.setState({ name: users[0].name , email:users[0].email });
+          this.setState({ name: users[0].name , email:users[0].email,Refferal:users[0].ownrefferal });
         });
     }
     deleteAccount=()=>{
@@ -36,6 +36,7 @@ constructor(){
     this.state = {
       name:undefined,
       email:undefined,
+      Refferal:undefined
     }
     
 }
@@ -47,6 +48,7 @@ constructor(){
                 <p className='title'>Profile :</p>
                 <p className='title-des'>Name : {this.state.name}</p>
                 <p className='title-des'>Email : {this.state.email}</p>
+                <p className='title-des'>Refferal Number : {this.state.Refferal}</p>
                 <Link onClick={this.deleteAccount} to='/Login' className='title-des-btn'>Delete Account</Link>
             </div>
             <form className='update-form'>

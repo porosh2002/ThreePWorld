@@ -78,7 +78,7 @@ class Signup extends Component {
               className="password-input"
               onChange={this.onRefferalChange}
               minLength="6"
-              type="number"
+              type="text"
               placeholder="Referral Number (Optional)"
             />
             <input

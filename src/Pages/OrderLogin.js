@@ -6,7 +6,8 @@ export default class Login extends Component{
     this.state = {
       email: "",
       password: "",
-      id: "",
+      id:'',
+      price:this.props.match.params.price,
     };
   }
   onEmailChange = (event) => {
