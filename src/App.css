@@ -24,6 +24,7 @@ body{
 }
 .nav {
   height: 110px;
+  display: block;
 }
 .slider-img {
   width: 100vw;
