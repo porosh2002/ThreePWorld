@@ -1,10 +1,12 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 export default class Login extends Component {
   constructor() {
     super();
     this.state = {
       email: "",
       password: "",
+      id: "",
     };
   }
   onEmailChange = (event) => {
@@ -14,10 +16,24 @@ export default class Login extends Component {
     this.setState({ password: event.target.value });
   };
   onSubmit = () => {
-if (this.state.email=== 'masum' || this.state.password === 'masum1233psh0ping'){
+    if (this.state.email.length > 6 || this.state.password > 5) {
+      fetch("http://localhost:5000/Login", {
+        method: "post",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          email: this.state.email,
+          password: this.state.password,
+        }),
+      })
+        .then((res) => res.json())
+        .then((res) => {
+          this.setState({ id: res });
+        })
+        .then(
           setTimeout(() => {
-            this.props.history.push(`/0psAdmin/${this.state.email}/${this.state.password}`);
+            this.props.history.push(`/profile/${this.state.id}`);
           }, 1000)
+        );
     }
   };
   render() {
@@ -25,13 +41,13 @@ if (this.state.email=== 'masum' || this.state.password === 'masum1233psh0ping'){
       <div>
         <form>
           <div className="form-login">
-            <p className="title-login">Welcome</p>
+            <p className="title-login">Vendor Login</p>
             <input
               className="email-input"
               required
               onChange={this.onEmailChange}
               type="email"
-              placeholder=":)"
+              placeholder="e.g. example@example.com"
             />
             <input
               className="password-input"
@@ -39,13 +55,16 @@ if (this.state.email=== 'masum' || this.state.password === 'masum1233psh0ping'){
               minLength="6"
               onChange={this.onPasswordChange}
               type="password"
-              placeholder=":("
+              placeholder="Enter Your Password Here"
             />
             <input
               className="submit-input"
               onClick={this.onSubmit}
               value="Login"
             />
+            <Link className="undr-form" to="/Join">
+              Create New Vendor Account
+            </Link>
           </div>
         </form>
       </div>

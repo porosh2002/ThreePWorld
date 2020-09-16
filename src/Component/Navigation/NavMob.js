@@ -68,7 +68,7 @@ export default class NavMob extends Component {
         <Link onClick={this.CClick} className="menu-link " to="/product/Login">
           Login
         </Link>
-        <Link onClick={this.CClick} className="menu-link " to="/product/vendor">
+        <Link onClick={this.CClick} className="menu-link " to="/Join">
         Become a Vendor
         </Link>
         <Link onClick={this.CClick} className="menu-link " to="/Login">

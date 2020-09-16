@@ -27,6 +27,8 @@ export default class App extends Component {
     const Cart =React.lazy(() => import('./Pages/Delivary'));
     const OrderLogin =React.lazy(() => import('./Pages/OrderLogin'));
     const Admin =React.lazy(() => import('./Pages/Admin'));
+    const Join =React.lazy(() => import('./Pages/Join'));
+    const VendorLogin =React.lazy(() => import('./Pages/vendorLogin'));
     return (
       <div>
         <div className='nav'>
@@ -46,6 +48,8 @@ export default class App extends Component {
          <Route exact path="/0psAdmin/:name/:pass" component={Ops}/>
          <Route exact path="/Admin" component={Admin}/>
          <Route exact path="/AuthLog/:id" component={OrderLogin}/>
+         <Route exact path="/Join" component={Join}/>
+         <Route exact path="/VendorLogin" component={VendorLogin}/>
          <Route component={Error}/>
       </Switch>
      </Suspense>
