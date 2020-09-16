@@ -4,13 +4,10 @@ export default class Upload extends React.Component {
   constructor() {
     super();
     this.state = {
-      displayorder:'none',
-      displayBrand:'none',
-      displayproduct:'',
-      brand:'',
       file: null,
       file2: null,
       file3: null,
+      vendor:"",
       iteam: "",
       price: "",
       description: "",
@@ -21,14 +18,12 @@ export default class Upload extends React.Component {
       imageID:""
     };
   }
-  braNDlIST=event=>{
-    this.setState({brand:event.target.value})
-  }
-  onBrand=()=>{
-    this.setState({ displayBrand:'',displayproduct:'none'});
-  }
+
   onBRANDChange=event=>{
     this.setState({ BrandName: event.target.value});
+  }
+  onvendorChange=event=>{
+    this.setState({ vendor: event.target.value});
   }
   onofferChange=event=>{
     this.setState({ offer: event.target.value});
@@ -58,15 +53,6 @@ export default class Upload extends React.Component {
   fileChange3 = (event) => {
     this.setState({ file3: event.target.files[0] });
   };
-  // addBrand=()=>{
-  //   fetch('http://localhost:5000/AddBrand', {
-  //     method: 'post',
-  //     headers: {'Content-Type': 'application/json'},
-  //     body: JSON.stringify({
-  //       Brand : this.state.brand,
-  //     })
-  //   })
-  // }
   upload = () => {
     const formData = new FormData();
     formData.append("upload", this.state.file);
@@ -83,6 +69,7 @@ export default class Upload extends React.Component {
       body: JSON.stringify({
         iteam : this.state.iteam,
         price : this.state.price,
+        vendor:this.state.vendor,
         description : this.state.description,
         tags : this.state.tags,
         size : this.state.size,
@@ -101,12 +88,6 @@ export default class Upload extends React.Component {
     const styleproduct = {display:displayproduct};
     return (
       <div className="main-admin">
-        {/* <div className="main-admin-menu">
-          <div className="menu-p">
-            <p className="menu-admin">Product</p>
-            <p onClick={this.onBrand} className="menu-admin">Brand</p>
-          </div>
-        </div> */}
         <div className="main-admin-content">
           <div style={styleproduct} className="addProduct">
             <p className='title-admin'>Add Product by Admin</p>
@@ -114,6 +95,11 @@ export default class Upload extends React.Component {
               className="admin-input"
               type="name"
               placeholder="Enter Product Name"
+            />
+            <input onChange={this.onvendorChange}
+              className="admin-input"
+              type="name"
+              placeholder="Enter Vendor Name"
             />
             <input onChange={this.onpriceChange}
               className="admin-input"
