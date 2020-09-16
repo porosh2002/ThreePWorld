@@ -47,41 +47,38 @@ export default class NavMob extends Component {
       </div>
         <div className='offer'>
         </div>
-        <Link className="menu-link " to="/product/men">
+        <Link onClick={this.CClick} className="menu-link " to="/product/men">
           Men
         </Link>
-        <Link className="menu-link " to="/product/women">
+        <Link onClick={this.CClick} className="menu-link " to="/product/women">
           Women
         </Link>
-        <Link className="menu-link " to="/product/kids">
+        <Link onClick={this.CClick} className="menu-link " to="/product/kids">
           Kids
         </Link>
-        <Link className="menu-link " to="/product/home living">
+        <Link onClick={this.CClick} className="menu-link " to="/product/home living">
           Home & Living
         </Link>
-        <Link className="menu-link " to="/product/essentials">
+        <Link onClick={this.CClick} className="menu-link " to="/product/essentials">
           Essentials
         </Link>
-        <Link className="menu-link " to="/product">
+        <Link onClick={this.CClick} className="menu-link " to="/product">
           Contact Us
         </Link>
-        <Link className="menu-link " to="/product/Login">
+        <Link onClick={this.CClick} className="menu-link " to="/product/Login">
           Login
         </Link>
-        <Link className="menu-link " to="/product/vendor">
+        <Link onClick={this.CClick} className="menu-link " to="/product/vendor">
         Become a Vendor
         </Link>
-        <Link className="menu-link " to="/product/">
+        <Link onClick={this.CClick} className="menu-link " to="/Login">
         Profile
         </Link>
-        <Link className="menu-link " to="/product">
+        <Link onClick={this.CClick} className="menu-link " to="/Login">
         Login
         </Link>
-        <Link className="menu-link " to="/product">
+        <Link onClick={this.CClick} className="menu-link " to="/">
         পুরাতন পন্য ক্রয় বিক্রয়
-        </Link>
-        <Link className="menu-link " to="/product">
-          FAQs
         </Link>
       </div>
     </div>

@@ -33,6 +33,19 @@ body{
   margin: 0px;
   z-index:-1;
 }
+@media screen and (max-width:900px){
+  .slider-img {
+    width: 100vw;
+    height:200px;
+    margin: 0px;
+    z-index:-1;
+  }
+  .offer-slider {
+    height: 100px;
+    width: 100%;
+    z-index:-1;
+  }
+}
 .title-md {
   font-size: 15px;
   letter-spacing: 1px;
@@ -296,6 +309,14 @@ body{
   padding:100px;
   margin:0px auto;
   width: 600px;
+}
+@media screen and (max-width:900px){
+  .form-login {
+    padding:100px 0px;
+    margin:0px auto;
+    width:300px;
+    background-color: #fff;
+  }
 }
 .undr-form {
   font-size: 13px;
