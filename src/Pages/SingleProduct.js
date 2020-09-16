@@ -25,7 +25,7 @@ export default class SingleProduct extends Component {
   render() {
     const { price,iteam,offer,size,description,_id} = this.state.data;
     return (
-      <div>
+      <div className='single-product-for-mob'>
       <div className='img_Cntnt-s'>
       <div>
       {price !== undefined ? (

@@ -715,3 +715,9 @@ padding:100px 0px;
 .fpd{
   padding:50px 0px;
 }
+@media screen and (max-width:900px){
+  .fpd,.single-product-for-mob,.cart-withorder{
+    background-color: #fff;
+  }
+
+}
