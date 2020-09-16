@@ -7,8 +7,6 @@ export default class Signup extends Component {
           name:'',
           email:'',
           password:'',
-          Address:'',
-          district:'',
           refferal:'000000'
         }
       }
@@ -21,12 +19,6 @@ export default class Signup extends Component {
       onPasswordChange=(event)=>{
           this.setState({password:event.target.value})
       }
-      onAddressChange=(event)=>{
-          this.setState({Address:event.target.value})
-      }
-      onDistrictChange=(event)=>{
-          this.setState({district:event.target.value})
-      }
       onRefferalChange=(event)=>{
           this.setState({refferal:event.target.value})
       }
@@ -38,8 +30,6 @@ if(this.state.email.length>6 || this.state.password.length>5 || this.state.Addre
         body:JSON.stringify({
             email:this.state.email,
             password:this.state.password,
-            address:this.state.Address,
-            district:this.state.district,
             name:this.state.name,
             refferal:this.state.refferal,
         })
@@ -55,8 +45,6 @@ if(this.state.email.length>6 || this.state.password.length>5 || this.state.Addre
                 <input className='password-input' required onChange={this.onNameChange} type='name' placeholder='Enter Your Name :' />
                 <input className='email-input' required onChange={this.onEmailChange} minLength='6' type='email' placeholder='Enter Your Email :' />
                 <input className='password-input' required onChange={this.onPasswordChange} minLength='6' type='password' placeholder='Enter New Password Here' />
-                <input className='password-input' required onChange={this.onAddressChange} minLength='7' type='' placeholder='Enter Your Address' />
-                <input className='password-input' required onChange={this.onDistrictChange} type='text' placeholder='Enter Your district' />
                 <input className='password-input' onChange={this.onRefferalChange} minLength='6' type='number' placeholder='Referral Number (Optional)' />
                 <input className='submit-input' onClick={this.onSubmit} type='submit' value='Submit'/>
                 <Link className='undr-form' to='/Login' >Log In</Link>
