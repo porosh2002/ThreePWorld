@@ -7,7 +7,7 @@ export default class Login extends Component{
       email: "",
       password: "",
       id:'',
-      price:this.props.match.params.price,
+      // price:this.props.match.params.price,
     };
   }
   onEmailChange = (event) => {
@@ -26,8 +26,12 @@ export default class Login extends Component{
           password: this.state.password,
         }),
       }).then((res) => res.json()).then((res) => {
-          this.setState({ id: res });
-      })
+          this.setState({ id: res })
+      }).then(
+        setTimeout(() => {
+          this.props.history.push(`/AF1/${this.state.id}`);
+        }, 1000)
+      );
     }
   };
   render() {
