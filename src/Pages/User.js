@@ -42,7 +42,7 @@ constructor(){
     render() {
         return (
             <div>
-            <DU />
+            <DU id={this.props.match.params.id}/>
             <div  className='dsbrd-cntnt'>
                 <p className='title'>Profile :</p>
                 <p className='title-des'>Name : {this.state.name}</p>

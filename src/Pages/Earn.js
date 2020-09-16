@@ -27,7 +27,7 @@ export default class Earn extends Component {
     render() {
         return (
             <div>
-            <DU />
+            <DU id={this.props.match.params.id}/>
             <div  className='dsbrd-cntnt'>
                 <p className='title'>Earn From Affiliate</p>
                 <p className='title-des'>Current Balance ৳ {this.state.earn}</p>
