@@ -101,9 +101,9 @@ export default class Navigation extends Component {
           <TopNav />
           <div className="navigation">
             <div className="logo_div" onMouseEnter={this.menu_div_out}>
-              <Link to="/">
+              <div to="/">
                 <img className="App-logo" src={logo} alt="Logo" />
-              </Link>
+              </div>
             </div>
             <div className="menu-div-main">
               <div

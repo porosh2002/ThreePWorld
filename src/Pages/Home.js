@@ -5,7 +5,9 @@ import Feature from '../Component/Feature/Feature'
 export default function Home() {
     return (
         <div className='swiperSlider'>
+             <div>
              <Slider /> 
+             </div>
              <SliderOffer /> 
              <Feature />
         </div>
