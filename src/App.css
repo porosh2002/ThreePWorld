@@ -23,8 +23,9 @@ body{
   z-index:-1;
 }
 .nav {
-  height: 110px;
   display: block;
+  background-color: #fff;
+  z-index: 999;
 }
 .slider-img {
   width: 100vw;

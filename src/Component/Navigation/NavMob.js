@@ -3,22 +3,20 @@ import {Link} from 'react-router-dom';
 import './Navmob.css'
 export default class NavMob extends Component {
   Click=()=>{
-    this.setState({menu:'translateX(0px)'});
+    this.setState({menu:'block'});
   }
   CClick=()=>{
-    this.setState({menu:'translateX(-1000px)'});
+    this.setState({menu:'none'});
   }
   constructor(){
     super();
     this.state ={
-      menu:'translateX(-1000px)',
-      transition:'.5s'
+      menu:"none",
     }
   }
   render() {
     const { menu } = this.state;
-    const { transition } = this.state;
-    const style = {transform:menu,transition:transition};
+    const style = {display:menu};
     return (
       <div className='nav--main'>
         <div>
@@ -36,11 +34,6 @@ export default class NavMob extends Component {
               <i className="fas fa-user-circle"></i>
             </div>
           </Link> */}
-          <Link to="/">
-            <div className="pre-container-link-div">
-              <i className="far fa-bookmark"></i>
-            </div>
-          </Link>
           <Link to="/">
             <div className="pre-container-link-div">
               <i className="fas fa-shopping-bag"></i>
