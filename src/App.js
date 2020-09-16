@@ -43,7 +43,7 @@ export default class App extends Component {
          <Route exact path="/SingleProduct/:id" component={SingleProduct}/>
          <Route exact path="/cart/:id/:price" component={Cart}/>
          <Route exact path="/0psAdmin" component={Ops}/>
-         <Route exact path="/AuthLog" component={OrderLogin}/>
+         <Route exact path="/AuthLog/:id" component={OrderLogin}/>
          <Route component={Error}/>
       </Switch>
      </Suspense>

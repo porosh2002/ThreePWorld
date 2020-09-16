@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-export default class Login extends Component {
-  constructor() {
+export default class Login extends Component{
+  constructor(){
     super();
     this.state = {
       email: "",
@@ -16,7 +16,7 @@ export default class Login extends Component {
     this.setState({ password: event.target.value });
   };
   onSubmit = () => {
-    if (this.state.email.length > 6 || this.state.password > 5) {
+    if (this.state.email.length > 6 || this.state.password > 5){
       fetch("http://localhost:5000/Login", {
         method: "post",
         headers: { "Content-Type": "application/json" },
@@ -24,11 +24,9 @@ export default class Login extends Component {
           email: this.state.email,
           password: this.state.password,
         }),
-      })
-        .then((res) => res.json())
-        .then((res) => {
+      }).then((res) => res.json()).then((res) => {
           this.setState({ id: res });
-        })
+      })
     }
   };
   render() {

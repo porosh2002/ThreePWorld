@@ -53,7 +53,7 @@ export default class SingleProduct extends Component {
             <p className='ssz'>{size}</p>
             <div className='atc' >
 
-            <Link to={`/cart/${this.state.id}`} className='atcLink'>Add To Cart</Link>
+            <Link to={`/cart/${this.state.id}/${price}`} className='atcLink'>Add To Cart</Link>
             </div>
             <p className='description'>{description}</p>
           </div>
