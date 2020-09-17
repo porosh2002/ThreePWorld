@@ -1,6 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 export default function Delivary(props){
+    console.log(props);
     return (
         <div className='cart-withorder'>
         <h5>{'Currently two Payment Option Avilable'}</h5>

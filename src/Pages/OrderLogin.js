@@ -1,13 +1,16 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
-export default class Login extends Component{
+import { Link} from "react-router-dom";
+ class Login extends Component{
+   componentDidMount(){
+     this.setState({price:this.props.match.params.id})
+   }
   constructor(){
     super();
     this.state = {
       email: "",
       password: "",
       id:'',
-      // price:this.props.match.params.price,
+      price:''
     };
   }
   onEmailChange = (event) => {
@@ -29,12 +32,15 @@ export default class Login extends Component{
           this.setState({ id: res })
       }).then(
         setTimeout(() => {
-          this.props.history.push(`/AF1/${this.state.id}`);
+          fetch(`http://localhost:5000/ref/${this.state.id}/1000`,{
+            method:"post"
+          })
         }, 1000)
       );
     }
   };
   render() {
+    console.log(this.state.price);
     return (
       <div>
         <form>
@@ -69,3 +75,4 @@ export default class Login extends Component{
     );
   }
 }
+export default Login;
