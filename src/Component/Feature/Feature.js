@@ -17,16 +17,8 @@ export default class Feature extends Component {
     render() {
         return (
             <div className='fpd'>
-            <h2 className='fp'>Feature Products</h2>
-            {this.state.robots.length >0 ? (
-          <Suspense fallback={<div>Loading...</div>}>      
+            <h2 className='fp'>Feature Products</h2>     
             <CardList  robots={this.state.robots}/>
-          </Suspense>
-        ) : (
-          <Suspense fallback={<div>Loading...</div>}>
-            <div>Loading...</div>
-          </Suspense>
-        )}
             </div>
         )
     }
