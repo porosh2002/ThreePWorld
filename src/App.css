@@ -8,7 +8,7 @@
 .linkold{
   font-size:13px;
   padding:07px;
-  background-color:rgb(132, 154, 218);
+  background-color:#2992CC;
   border-radius:3px;
 }
 body{
@@ -348,7 +348,7 @@ body{
   cursor: pointer;
   border: 1px solid #d2d2d2;
   border-radius: 3px;
-  background-color: #ff3f6c;
+  background-color:#2992CC;
   color: #fff;
   letter-spacing: 1px;
 }
