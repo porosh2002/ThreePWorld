@@ -45,7 +45,7 @@ class Signup extends Component {
           Address: this.state.Address,
         }),
       }).then(setTimeout(()=>{
-        //   this.props.history.push('/Login')
+          this.props.history.push('/Login')
       },1000))
     }
   };

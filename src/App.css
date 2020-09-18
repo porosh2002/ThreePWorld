@@ -721,3 +721,13 @@ padding:100px 0px;
   }
 
 }
+.vndr-right-ok{
+  font-weight: 600;
+  color: yellowgreen;
+  letter-spacing:1px;
+}
+.vndr-right-warn{
+  font-weight: 600;
+  letter-spacing:1px;
+  color:orange;
+}

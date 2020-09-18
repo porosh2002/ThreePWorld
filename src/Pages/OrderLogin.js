@@ -40,7 +40,6 @@ import { Link} from "react-router-dom";
     }
   };
   render() {
-    console.log(this.state.price);
     return (
       <div>
         <form>

@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component,Suspense} from 'react'
 import DU2 from '../Component/DsbrdUSR/DU2'
 import uniqid from 'uniqid'
 export default class User extends Component {
@@ -6,7 +6,7 @@ export default class User extends Component {
         fetch(`http://localhost:5000/getvendordata/${this.props.match.params.id}`)
         .then((response) => response.json())
         .then((users) => {
-          this.setState({ name: users[0].name , email:users[0].email});
+          this.setState({ name: users[0].name , email:users[0].email, access:users[0].access,NidUserID:users[0]._id});
         });
     }
 constructor(){
@@ -19,15 +19,22 @@ constructor(){
       file3: null,
       vendor:"",
       iteam: "",
+      access:false,
       price: "",
       description: "",
       tags: "",
       size: "",
       offer: "",
       BrandName: "",
-      imageID:""
+      imageID:"",
+      NidImage:"",
+      NidUserID:""
     } 
 }
+
+fileChangeNID=event=>{
+    this.setState({ NidImage: event.target.value});
+  }
 onBRANDChange=event=>{
     this.setState({ BrandName: event.target.value});
   }
@@ -89,11 +96,7 @@ onBRANDChange=event=>{
     })
   };
     render() {
-        const {displayorder} = this.state;
-        const {displayBrand} = this.state;
         const {displayproduct} = this.state;
-        const styleorder = {display:displayorder};
-        const stylebrand = {display:displayBrand};
         const styleproduct = {display:displayproduct};
         return (
             <div>
@@ -102,7 +105,29 @@ onBRANDChange=event=>{
                 <p className='title'>Profile :</p>
                 <p className='title-des'>Name : {this.state.name}</p>
                 <p className='title-des'>Email : {this.state.email}</p>
-            </div>
+                
+                  {this.state.access ? (
+          <Suspense fallback={<div>Loading...</div>}>
+          <p className='vndr-right-ok'>You Have Rights to Add Product </p>
+          </Suspense>
+        ) : (
+          <Suspense fallback={<div>Loading...</div>}>
+          <div>
+          <p className='vndr-right-warn'>You Have Rights to Add Product </p>
+          <p className='vndr-right-warn'>Submit Document to get access</p>
+          <input
+              className="img-admin-input"
+              onChange={this.fileChangeNID}
+              type="file"
+            />
+              <button className="btn-upld-pdtc" onClick={this.Nidupload}>
+              Submit
+            </button>
+          </div>
+          </Suspense>
+        )}
+                
+            </div> 
             <div className="main-admin">
         <div className="main-admin-content">
           <div style={styleproduct} className="addProduct">
