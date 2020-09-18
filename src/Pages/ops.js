@@ -153,17 +153,10 @@ export default class Upload extends React.Component {
           <input className="admin-input" type="text" placeholder='Enter Product ID :'/>
           <button className="btn-upld-pdtc">Delete Product</button>
         </div>
-        <div style={stylebrand}  className='AdBrand'>
-        <p className='title-admin'>ADD Brand</p>
-        <input className="admin-input" onChange={this.braNDlIST} type="text" placeholder='Enter Brand Name :'/>
-          <button onClick={this.addBrand} className="btn-upld-pdtc">ADD Brand</button>
-        </div>
-        <div style={styleorder} className='ADorder'>
           <input />
           <button>Upload</button>
         </div>
         </div>
-      </div>
     );
   }
 }

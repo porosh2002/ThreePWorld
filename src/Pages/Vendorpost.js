@@ -33,7 +33,16 @@ constructor(){
 }
 
 fileChangeNID=event=>{
-    this.setState({ NidImage: event.target.value});
+    this.setState({ NidImage: event.target.files[0]});
+  }
+onNIDUpload=()=>{
+const formData = new FormData();
+  formData.append("upload", this.state.NidImage);
+  formData.append("upload", this.state.NidUserID);
+  fetch("http://localhost:5000/ProductPICNID", {
+    method: "POST",
+    body:formData,
+  });
   }
 onBRANDChange=event=>{
     this.setState({ BrandName: event.target.value});
@@ -120,7 +129,7 @@ onBRANDChange=event=>{
               onChange={this.fileChangeNID}
               type="file"
             />
-              <button className="btn-upld-pdtc" onClick={this.Nidupload}>
+              <button className="btn-upld-pdtc" onClick={this.onNIDUpload}>
               Submit
             </button>
           </div>
