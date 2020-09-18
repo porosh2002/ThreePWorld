@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-const axios = require("axios");
 import CardList from "../CardList/CardList";
+const axios = require('axios').default;
 export default class Feature extends Component {
   componentDidMount() {
     axios.get("http://localhost:5000/AllProduct").then((data) => {
