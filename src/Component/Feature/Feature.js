@@ -17,7 +17,7 @@ export default class Feature extends Component {
     return (
       <div className="fpd">
         <h2 className="fp">Feature Products</h2>
-        <CardList robots={this.state.robots} />
+        <CardList data={this.state.robots} />
       </div>
     );
   }

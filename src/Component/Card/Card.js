@@ -6,7 +6,7 @@ export default class Card extends Component {
     this.state = {
       image: [],
       imageID:this.props.imageID
-    };
+    }
   }
   componentDidMount() {
     if(this.state.imageID !== 0){

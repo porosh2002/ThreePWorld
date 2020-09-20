@@ -278,8 +278,6 @@ export default class Product_Filter_desk extends Component {
       <div className="product-page">
         <div className="product-filter">
           <p className=" title-filter title-main-f">Filters</p>
-          {/* <p className='title-filter'>CATEGORIES</p> */}
-          {/* {Catagories} */}
           <p className="title-filter">BRAND</p>
           <form>
             <label className="color-label">
