@@ -26,8 +26,7 @@ export default class Login extends Component {
       })
         .then((res) => res.json()).then((res)=>{
           this.setState({id:res._id})
-        }).then(console.log(this.state.id)).
-then(
+        }).then(
   setTimeout(() => {
     this.props.history.push(`/vendor/${this.state.id}`);
   }, 1000)

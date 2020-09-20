@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-// import {Link} from 'react-router-dom'
+import {Link} from 'react-router-dom'
 import SwiperCore, { Autoplay ,EffectFade} from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.css';
@@ -19,16 +19,16 @@ export default class Slider extends Component {
     >
       <SwiperSlide>
           <div>
-         <a>
+         <Link to=''>
          <img className='slider-img' src='https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2020/8/17/baba2c89-c706-44b1-a7d8-abbad4649fe41597683284959-women-footwear-dk.jpg' alt='company-logo'></img>
-         </a>
+         </Link>
           </div>
       </SwiperSlide>
       <SwiperSlide>
           <div>
-          <a>
+          <Link to=''>
           <img className='slider-img' src='https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2020/8/17/1b9af71b-64ee-4736-9ee7-1209740a3f4b1597683284668-MnH_Desk.jpg' alt='company-logo'></img>
-          </a>
+          </Link>
           </div>
       </SwiperSlide>
     </Swiper>

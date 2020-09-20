@@ -30,183 +30,46 @@ export default function Footer() {
         <div className="abt-cs">
           <div>
             <p className="footer-title">About Us</p>
-            <Link>
+            <Link to=''>
               <p className="footer-des">About 3pshopping.com</p>
             </Link>
-            <Link>
+            <Link to=''>
               <p className="footer-des">About 3pshopping Group</p>
             </Link>
-            <Link>
+            <Link to=''>
               <p className="footer-des">Sitemap</p>
             </Link>
           </div>
           <div>
             <p className="footer-title">Customer Services</p>
-            <Link>
+            <Link to=''>
               <p className="footer-des">Help Center</p>
             </Link>
-            <Link>
+            <Link to=''>
               <p className="footer-des">Contact Us</p>
             </Link>
-            <Link>
+            <Link to=''>
               <p className="footer-des">Report Abuse</p>
             </Link>
-            <Link>
+            <Link to=''>
               <p className="footer-des">Submit a Dispute</p>
             </Link>
-            <Link>
+            <Link to=''>
               <p className="footer-des">Policies & Rules</p>
             </Link>
-            <Link>
+            <Link to=''>
               <p className="footer-des">Get Paid for Your Feedback</p>
             </Link>
           </div>
         </div>
         <div className="menu_-footer">
-          <Link>
+          <Link to=''>
             <p className="footer-des_menu">Help Center</p>
           </Link>
-          <Link>
+          <Link to=''>
             <p className="footer-des_menu">Contact Us</p>
           </Link>
-          <Link>
-            <p className="footer-des_menu">Report Abuse</p>
-          </Link>
-          <Link>
-            <p className="footer-des_menu">Submit a Dispute</p>
-          </Link>
-          <Link>
-            <p className="footer-des_menu">Policies & Rules</p>
-          </Link>
-          <Link>
-            <p className="footer-des_menu">Get Paid for Your Feedback</p>
-          </Link>
-          <Link>
-            <p className="footer-des_menu">Help Center</p>
-          </Link>
-          <Link>
-            <p className="footer-des_menu">Contact Us</p>
-          </Link>
-          <Link>
-            <p className="footer-des_menu">Report Abuse</p>
-          </Link>
-          <Link>
-            <p className="footer-des_menu">Submit a Dispute</p>
-          </Link>
-          <Link>
-            <p className="footer-des_menu">Policies & Rules</p>
-          </Link>
-          <Link>
-            <p className="footer-des_menu">Get Paid for Your Feedback</p>
-          </Link>
-          <Link>
-            <p className="footer-des_menu">Help Center</p>
-          </Link>
-          <Link>
-            <p className="footer-des_menu">Contact Us</p>
-          </Link>
-          <Link>
-            <p className="footer-des_menu">Report Abuse</p>
-          </Link>
-          <Link>
-            <p className="footer-des_menu">Submit a Dispute</p>
-          </Link>
-          <Link>
-            <p className="footer-des_menu">Policies & Rules</p>
-          </Link>
-          <Link>
-            <p className="footer-des_menu">Get Paid for Your Feedback</p>
-          </Link>
-          <Link>
-            <p className="footer-des_menu">Help Center</p>
-          </Link>
-          <Link>
-            <p className="footer-des_menu">Contact Us</p>
-          </Link>
-          <Link>
-            <p className="footer-des_menu">Report Abuse</p>
-          </Link>
-          <Link>
-            <p className="footer-des_menu">Submit a Dispute</p>
-          </Link>
-          <Link>
-            <p className="footer-des_menu">Policies & Rules</p>
-          </Link>
-          <Link>
-            <p className="footer-des_menu">Get Paid for Your Feedback</p>
-          </Link>
-          <Link>
-            <p className="footer-des_menu">Help Center</p>
-          </Link>
-          <Link>
-            <p className="footer-des_menu">Contact Us</p>
-          </Link>
-          <Link>
-            <p className="footer-des_menu">Report Abuse</p>
-          </Link>
-          <Link>
-            <p className="footer-des_menu">Submit a Dispute</p>
-          </Link>
-          <Link>
-            <p className="footer-des_menu">Policies & Rules</p>
-          </Link>
-          <Link>
-            <p className="footer-des_menu">Get Paid for Your Feedback</p>
-          </Link>
-          <Link>
-            <p className="footer-des_menu">Help Center</p>
-          </Link>
-          <Link>
-            <p className="footer-des_menu">Contact Us</p>
-          </Link>
-          <Link>
-            <p className="footer-des_menu">Report Abuse</p>
-          </Link>
-          <Link>
-            <p className="footer-des_menu">Submit a Dispute</p>
-          </Link>
-          <Link>
-            <p className="footer-des_menu">Policies & Rules</p>
-          </Link>
-          <Link>
-            <p className="footer-des_menu"> Feedback</p>
-          </Link>
-          <Link>
-            <p className="footer-des_menu">Heter</p>
-          </Link>
-          <Link>
-            <p className="footer-des_menu">Conts</p>
-          </Link>
-          <Link>
-            <p className="footer-des_menu">Reuse</p>
-          </Link>
-          <Link>
-            <p className="footer-des_menu">Submspute</p>
-          </Link>
-          <Link>
-            <p className="footer-des_menu">Poliles</p>
-          </Link>
-          <Link>
-            <p className="footer-des_menu"> Paid </p>
-          </Link>
-          <Link>
-            <p className="footer-des_menu">Help Cter</p>
-          </Link>
-          <Link>
-            <p className="footer-des_menu">Coact Us</p>
-          </Link>
-          <Link>
-            <p className="footer-des_menu">Re Abuse</p>
-          </Link>
-          <Link>
-            <p className="footer-des_menu">SubDispute</p>
-          </Link>
-          <Link>
-            <p className="footer-des_menu"> Rules</p>
-          </Link>
-          <Link>
-            <p className="footer-des_menu">Get Paid</p>
-          </Link>
+
         </div>
       </div>
       <div className="footer-lst">
@@ -214,29 +77,29 @@ export default function Footer() {
           <div className="download">
             <p className="title-md dwnld">Download :</p>
             <Link to="">
-              <i class="fab fa-android"></i>
+              <i className="fab fa-android"></i>
             </Link>
             <Link to="">
-              <i class="fab fa-apple"></i>
+              <i className="fab fa-apple"></i>
             </Link>
           </div>
           <div>
           <div className="download">
             <p className="title-md dwnld">Follow Us On :</p>
             <Link to="">
-            <i class="fab fa-facebook-square"></i>
+            <i className="fab fa-facebook-square"></i>
             </Link>
             <Link to="">
-            <i class="fab fa-twitter-square"></i>
+            <i className="fab fa-twitter-square"></i>
             </Link>
             <Link to="">
-            <i class="fab fa-youtube"></i>
+            <i className="fab fa-youtube"></i>
             </Link>
             <Link to="">
-            <i class="fab fa-linkedin"></i>
+            <i className="fab fa-linkedin"></i>
             </Link>
             <Link to="">
-            <i class="fab fa-instagram"></i>
+            <i className="fab fa-instagram"></i>
             </Link>
           </div>
           </div>
@@ -246,7 +109,7 @@ export default function Footer() {
           <Link className='pptu' to="">User Information Legal Enquiry Guide</Link>
           <Link className='pptu' to="">Terms of Use</Link>
         </div>
-  <p className='footer-c'>© 1999-<span>{new Date().getFullYear()}</span> 3pshopping .com. All rights reserved. Design and Developed by <a className='linkcare' href='#'>BestITCare</a> Foundation</p>
+  <p className='footer-c'>© 1999-<span>{new Date().getFullYear()}</span> 3pshopping .com. All rights reserved. Design and Developed by <a className='linkcare' href='https://www.bestitcare.com'>BestITCare</a> Foundation</p>
       </div>
     </div>
   );

@@ -112,42 +112,42 @@ export default class Navigation extends Component {
               ></div>
               <div className="menu-div">
                 {/* men_link class removed */}
-                <Link
+                <Link to=''
                   className="menu-link "
                   
                   onMouseEnter={this.men_mouseEnter}
                 >
                   Men
                 </Link>
-                <Link
+                <Link to=''
                   className="menu-link"
                   
                   onMouseEnter={this.women_mouseEnter}
                 >
                   Women
                 </Link>
-                <Link
+                <Link to=''
                   className="menu-link"
                   
                   onMouseEnter={this.kid_mouseEnter}
                 >
                   Kids
                 </Link>
-                <Link
+                <Link to=''
                   className="menu-link"
                   
                   onMouseEnter={this.home_mouseEnter}
                 >
                   Home & Living
                 </Link>
-                <Link
+                <Link to=''
                   className="menu-link"
                   
                   onMouseEnter={this.essential_mouseEnter}
                 >
                   Essentials
                 </Link>
-                <Link
+                <Link to=''
                   className="menu-link"
                   
                   onMouseEnter={this.topc_mouseEnter}
@@ -160,7 +160,7 @@ export default class Navigation extends Component {
               <div className="search-section">
                 <form>
                   <label className="label">
-                  <span class="fas fa-search"></span>
+                  <span className="fas fa-search"></span>
                     <input
                       className="search-box"
                       type="search"

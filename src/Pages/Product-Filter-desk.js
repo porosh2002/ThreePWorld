@@ -99,6 +99,7 @@ export default class Product_Filter_desk extends Component {
         if (data.offer > 10 || data.offer === 10) {
           return data;
         }
+        else{return {}}
       } else {
         return ts.robots;
       }
@@ -108,6 +109,7 @@ export default class Product_Filter_desk extends Component {
         if (data.offer > 20 || data.offer === 20) {
           return data;
         }
+        else{return {}}
       } else {
         return filteroffer1;
       }
@@ -117,6 +119,7 @@ export default class Product_Filter_desk extends Component {
         if (data.offer > 30 || data.offer === 30) {
           return data;
         }
+        else{return {}}
       } else {
         return filteroffer2;
       }
@@ -126,6 +129,7 @@ export default class Product_Filter_desk extends Component {
         if (data.offer > 40 || data.offer === 40) {
           return data;
         }
+        else{return {}}
       } else {
         return filteroffer3;
       }
@@ -135,6 +139,7 @@ export default class Product_Filter_desk extends Component {
         if (data.offer > 50 || data.offer === 50) {
           return data;
         }
+        else{return {}}
       } else {
         return filteroffer4;
       }
@@ -144,6 +149,7 @@ export default class Product_Filter_desk extends Component {
         if (data.size.includes("S")) {
           return data;
         }
+        else{return {}}
       } else {
         return filteroffer5;
       }
@@ -153,6 +159,7 @@ export default class Product_Filter_desk extends Component {
         if (data.size.includes("M")) {
           return data;
         }
+        else{return {}}
       } else {
         return sizeS;
       }
@@ -162,6 +169,7 @@ export default class Product_Filter_desk extends Component {
         if (data.size.includes("L")) {
           return data;
         }
+        else{return {}}
       } else {
         return sizeM;
       }
@@ -171,6 +179,7 @@ export default class Product_Filter_desk extends Component {
         if (data.tags.includes("red")) {
           return data;
         }
+        else{return {}}
       } else {
         return sizeL;
       }
@@ -180,6 +189,7 @@ export default class Product_Filter_desk extends Component {
         if (data.tags.includes("green")) {
           return data;
         }
+        else{return {}}
       } else {
         return Red;
       }
@@ -189,6 +199,7 @@ export default class Product_Filter_desk extends Component {
         if (data.tags.includes("orange")) {
           return data;
         }
+        else{return {}}
       } else {
         return green;
       }
@@ -198,6 +209,7 @@ export default class Product_Filter_desk extends Component {
         if (data.tags.includes("black")) {
           return data;
         }
+        else{return {}}
       } else {
         return Orange;
       }
@@ -207,6 +219,7 @@ export default class Product_Filter_desk extends Component {
         if (data.tags.includes("yellow")) {
           return data;
         }
+        else{return {}}
       } else {
         return Black;
       }
@@ -216,6 +229,7 @@ export default class Product_Filter_desk extends Component {
         if (data.price < 500 || data.price === 500) {
           return data;
         }
+        else{return {}}
       } else {
         return Yellow;
       }
@@ -230,6 +244,7 @@ export default class Product_Filter_desk extends Component {
         ) {
           return data;
         }
+        else{return {}}
       } else {
         return price1;
       }
@@ -244,6 +259,7 @@ export default class Product_Filter_desk extends Component {
         ) {
           return data;
         }
+        else{return {}}
       } else {
         return price2;
       }
@@ -253,6 +269,7 @@ export default class Product_Filter_desk extends Component {
         if (data.BrandName.includes(ts.brand.toString())) {
           return data;
         }
+        else{return {}}
       } else {
         return price3;
       }

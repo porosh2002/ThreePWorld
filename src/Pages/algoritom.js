@@ -17,9 +17,12 @@ export default class algoritom extends Component {
   render() {
     console.log(this.state.robots);
     console.log(this.props);
-    const filterdata = this.state.robots.filter((data) => {
+    const filterdata = this.state.robots.filter(function(data){
       if (data._id !== this.props.id) {
         return data;
+      }
+      else{
+        return {}
       }
     });
     return (

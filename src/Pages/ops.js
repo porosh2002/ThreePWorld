@@ -80,16 +80,10 @@ export default class Upload extends React.Component {
     })
   };
   render() {
-    const {displayorder} = this.state;
-    const {displayBrand} = this.state;
-    const {displayproduct} = this.state;
-    const styleorder = {display:displayorder};
-    const stylebrand = {display:displayBrand};
-    const styleproduct = {display:displayproduct};
     return (
       <div className="main-admin">
         <div className="main-admin-content">
-          <div style={styleproduct} className="addProduct">
+          <div className="addProduct">
             <p className='title-admin'>Add Product by Admin</p>
             <input onChange={this.oniteamChange}
               className="admin-input"
@@ -148,7 +142,7 @@ export default class Upload extends React.Component {
               ADD Product
             </button>
           </div>
-          <div style={styleproduct} className='deleteProduct'>
+          <div className='deleteProduct'>
           <p className='title-admin'>Delete Product</p>
           <input className="admin-input" type="text" placeholder='Enter Product ID :'/>
           <button className="btn-upld-pdtc">Delete Product</button>
