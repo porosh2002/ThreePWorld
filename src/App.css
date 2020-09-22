@@ -731,3 +731,10 @@ padding:100px 0px;
   letter-spacing:1px;
   color:orange;
 }
+/* Hover menu make money */
+.drop2money{
+  width:200px !important;
+  position: absolute;
+  right:100px;
+  padding: 0px 10px !important;
+}

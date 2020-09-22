@@ -10,7 +10,7 @@ export default class Card extends Component {
   }
   componentDidMount() {
     if(this.state.imageID !== 0){
-      fetch(`http://localhost:5000/geTiMagE/${this.state.imageID}`).then(
+      fetch(`http://139.59.81.94:5000/geTiMagE/${this.state.imageID}`).then(
         (users) => {
           this.setState({ image: users });
         }

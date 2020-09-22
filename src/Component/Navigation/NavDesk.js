@@ -12,6 +12,7 @@ export default class Navigation extends Component {
         hovered_home: false,
         hovered_essential: false,
         hovered_top: false,
+        makemoney:false
       };
     }
     menu_div_out = () => {
@@ -22,6 +23,7 @@ export default class Navigation extends Component {
         hovered_kid: false,
         hovered_essential: false,
         hovered_top: false,
+        makemoney:false
       });
     };
     men_mouseEnter = () => {
@@ -83,6 +85,11 @@ export default class Navigation extends Component {
         hovered_top:false,
       });
     };
+    makemoney_mouseEnter = () => {
+      this.setState({
+makemoney:true
+      });
+    };
     render() {
       const { hovered } = this.state;
       const { hovered_womwn } = this.state;
@@ -90,12 +97,14 @@ export default class Navigation extends Component {
       const { hovered_home } = this.state;
       const { hovered_essential } = this.state;
       const { hovered_top } = this.state;
+      const { makemoney } = this.state;
       const style = hovered ? { display: "block" } : {};
       const style2 = hovered_womwn ? { display: "block" } : {};
       const style3 = hovered_kid ? { display: "block" } : {};
       const style4 = hovered_home ? { display: "block" } : {};
       const style5 = hovered_essential ? { display: "block" } : {};
       const style6 = hovered_top ? { display: "block" } : {};
+      const style7 = makemoney ? { display: "block" } : {};
       return (
         <div className='nav--main' >
           <TopNav />
@@ -171,7 +180,7 @@ export default class Navigation extends Component {
               </div>
               <div className="pr-container">
                 <Link to="/">
-                  <div className="pre-container-link-div">
+                  <div onMouseEnter={this.makemoney_mouseEnter} className="pre-container-link-div">
                   <i className="far fa-money-bill-alt"></i>
                     <p className="pr-container-des ">Make Money</p>
                   </div>
@@ -1074,6 +1083,55 @@ export default class Navigation extends Component {
               </div>
             </div>
           </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <div
+            style={style7}
+            className="drop-down drop2money"
+            onMouseLeave={this.menu_div_out}
+          >
+            <div className="ddms">
+              <div className="drop-div ddvtc">
+                <Link className="drop-title drp-lst" to="/product/smarttv androidtv">
+                  Vendor Login
+                </Link>
+                <Link className="drop-title drp-lst" to="/product/desktop">
+                  Create Vendor Account
+                </Link>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         </div>
       );
     }
