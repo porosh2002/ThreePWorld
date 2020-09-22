@@ -1,5 +1,5 @@
 import React from "react";
-import uniqid from 'uniqid'
+import uniqid from "uniqid";
 export default class Upload extends React.Component {
   constructor() {
     super();
@@ -7,7 +7,7 @@ export default class Upload extends React.Component {
       file: null,
       file2: null,
       file3: null,
-      vendor:"",
+      vendor: "",
       iteam: "",
       price: "",
       description: "",
@@ -15,35 +15,88 @@ export default class Upload extends React.Component {
       size: "",
       offer: "",
       BrandName: "",
-      imageID:""
+      imageID: "",
+      addProduct: true,
+      deleteProduct: false,
+      editProduct: false,
+      fileEdit: null,
+      file2Edit: null,
+      file3Edit: null,
+      vendorEdit: "",
+      iteamEdit: "",
+      priceEdit: "",
+      descriptionEdit: "",
+      tagsEdit: "",
+      sizeEdit: "",
+      offerEdit: "",
+      BrandNameEdit: "",
+      imageIDEdit: "",
+      file1Edit:null,
+      file2Edit:null,
+      file3Edit:null,
     };
   }
-
-  onBRANDChange=event=>{
-    this.setState({ BrandName: event.target.value});
+  updateproduct=()=>{
+    
   }
-  onvendorChange=event=>{
-    this.setState({ vendor: event.target.value});
+  onfile1update=e=>{
+    this.setState({file1Edit:e.target.files})
   }
-  onofferChange=event=>{
-    this.setState({ offer: event.target.value});
+  onfile2update=e=>{
+    this.setState({file2Edit:e.target.files})
   }
-  onsizeChange=event=>{
-    this.setState({ size: event.target.value});
+  onfile3update=e=>{
+    this.setState({file3Edit:e.target.files})
   }
-  ontagChange=event=>{
-    this.setState({ tags: event.target.value});
+  onbrandnameupdate=e=>{
+    this.setState({BrandNameEdit:e.target.value})
   }
-  ondesChange=event=>{
-    this.setState({ description: event.target.value});
+  onoffrupdate=e=>{
+    this.setState({offerEdit:e.target.value})
   }
-  onpriceChange=event=>{
-    this.setState({ price: event.target.value});
+  onsizeupdate=e=>{
+    this.setState({sizeEdit:e.target.value})
   }
-  oniteamChange=event=>{
-    this.setState({imageID:uniqid()})
-    this.setState({ iteam: event.target.value});
+  ontagsupdate=e=>{
+    this.setState({tagsEdit:e.target.value})
   }
+  ondesupdate=e=>{
+    this.setState({descriptionEdit:e.target.value})
+  }
+  onpriceupdate=e=>{
+    this.setState({priceEdit:e.target.value})
+  }
+  onvendorupdate=e=>{
+    this.setState({vendorEdit:e.target.value})
+  }
+onnameupdate=e=>{
+  this.setState({iteamEdit:e.target.value})
+}
+  onBRANDChange = (event) => {
+    this.setState({ BrandName: event.target.value });
+  };
+  onvendorChange = (event) => {
+    this.setState({ vendor: event.target.value });
+  };
+  onofferChange = (event) => {
+    this.setState({ offer: event.target.value });
+  };
+  onsizeChange = (event) => {
+    this.setState({ size: event.target.value });
+  };
+  ontagChange = (event) => {
+    this.setState({ tags: event.target.value });
+  };
+  ondesChange = (event) => {
+    this.setState({ description: event.target.value });
+  };
+  onpriceChange = (event) => {
+    this.setState({ price: event.target.value });
+  };
+  oniteamChange = (event) => {
+    this.setState({ imageID: uniqid() });
+    this.setState({ iteam: event.target.value });
+  };
   fileChange = (event) => {
     this.setState({ file: event.target.files[0] });
   };
@@ -53,6 +106,13 @@ export default class Upload extends React.Component {
   fileChange3 = (event) => {
     this.setState({ file3: event.target.files[0] });
   };
+  onpdctedit=event=>{
+    fetch(`http://localhost:5000/Product/${event.target.value}`)
+    .then((response) => response.json())
+    .then((users) => {
+      this.setState({vendorEdit:users[0].vendor,iteamEdit:users[0].iteam,priceEdit:users[0].price,BrandNameEdit:users[0].BrandName,descriptionEdit:users[0].description,tagsEdit:users[0].tags,sizeEdit:users[0].size,offerEdit:users[0].offer,imageIDEdit:users[0].imageID})
+    });
+  }
   upload = () => {
     const formData = new FormData();
     formData.append("upload", this.state.file);
@@ -61,29 +121,29 @@ export default class Upload extends React.Component {
     formData.append("upload", this.state.imageID);
     fetch("http://localhost:5000/ProductPIC", {
       method: "POST",
-      body:formData,
+      body: formData,
     });
-    fetch('http://localhost:5000/ProductADD', {
-      method: 'post',
-      headers: {'Content-Type': 'application/json'},
+    fetch("http://localhost:5000/ProductADD", {
+      method: "post",
+      headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
-        iteam : this.state.iteam,
-        price : this.state.price,
-        vendor:this.state.vendor,
-        description : this.state.description,
-        tags : this.state.tags,
-        size : this.state.size,
-        offer : this.state.offer,
-        BrandName : this.state.BrandName,
-        imageID:this.state.imageID
-      })
-    })
+        iteam: this.state.iteam,
+        price: this.state.price,
+        vendor: this.state.vendor,
+        description: this.state.description,
+        tags: this.state.tags,
+        size: this.state.size,
+        offer: this.state.offer,
+        BrandName: this.state.BrandName,
+        imageID: this.state.imageID,
+      }),
+    });
   };
   render() {
     return (
       <div className="main-admin">
-        <div className="main-admin-content">
-          <div className="addProduct">
+        {/* <div className="main-admin-content"> */}
+        {/* <div className="addProduct">
             <p className='title-admin'>Add Product by Admin</p>
             <input onChange={this.oniteamChange}
               className="admin-input"
@@ -145,12 +205,72 @@ export default class Upload extends React.Component {
           <div className='deleteProduct'>
           <p className='title-admin'>Delete Product</p>
           <input className="admin-input" type="text" placeholder='Enter Product ID :'/>
-          <button className="btn-upld-pdtc">Delete Product</button>
+          <button className="btn-upld-pdtc">
+              Delete Product
+            </button>
         </div>
-          <input />
-          <button>Upload</button>
+        </div> */}
+        <div className="GetProductforEdit">
+          <p className="title-admin">Edit Product</p>
+          <input onChange={this.onpdctedit} className="admin-input" type="text" required></input>
+          <p  className="edit-pdct-dtls">Name: {this.state.iteamEdit}</p>
+          <p  className="edit-pdct-dtls">Price: {this.state.priceEdit}</p>
+          <p  className="edit-pdct-dtls">Vendor: {this.state.vendorEdit}</p>
+          <p  className="edit-pdct-dtls">
+            Description: {this.state.descriptionEdit}
+          </p>
+          <p  className="edit-pdct-dtls">Tag's: {this.state.tagsEdit}</p>
+          <p  className="edit-pdct-dtls">Size: {this.state.sizeEdit}</p>
+          <p  className="edit-pdct-dtls">Offer: {this.state.offerEdit}</p>
+          <p  className="edit-pdct-dtls">
+            BrandName: {this.state.BrandNameEdit}
+          </p>
+          <input onChange={this.onnameupdate}
+            className="admin-input"
+            type="text"
+            placeholder="Product  Name"
+          ></input>
+          <input onChange={this.onpriceupdate}
+            className="admin-input"
+            type="text"
+            placeholder="Product  price"
+          ></input>
+          <input onChange={this.onsizeupdate}
+            className="admin-input"
+            type="text"
+            placeholder="Product  Size"
+          ></input>
+          <input onChange={this.onoffrupdate}
+            className="admin-input"
+            type="text"
+            placeholder="Product  offer"
+          ></input>
+          <input onChange={this.onbrandnameupdate}
+            className="admin-input"
+            type="text"
+            placeholder="Product  Brand"
+          ></input>
+          <input onChange={this.onvendorupdate}
+            className="admin-input"
+            type="text"
+            placeholder="Vendor Name"
+          ></input>
+          <textarea onChange={this.ondesupdate}
+            className="admin-txtarea"
+            placeholder="Enter Product Description"
+          />
+          <textarea onChange={this.ontagsupdate}
+            className="admin-txtarea"
+            placeholder="Enter Product Tags"
+          />
+          <input onChange={this.onfile1update} className="img-admin-input" type='file'></input>
+          <input onChange={this.onfile2update} className="img-admin-input" type='file'></input>
+          <input onChange={this.onfile3update} className="img-admin-input" type='file'></input>
+          <button onClick={this.updateproduct} className="btn-upld-pdtc">
+              Update Product
+            </button>
         </div>
-        </div>
+      </div>
     );
   }
 }

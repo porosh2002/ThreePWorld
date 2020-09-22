@@ -111,7 +111,9 @@ makemoney:true
           <div className="navigation">
             <div className="logo_div" onMouseEnter={this.menu_div_out}>
               <div to="/">
+                <Link to='/'>
                 <img className="App-logo" src={logo} alt="Logo" />
+                </Link>
               </div>
             </div>
             <div className="menu-div-main">
@@ -1107,10 +1109,10 @@ makemoney:true
           >
             <div className="ddms">
               <div className="drop-div ddvtc">
-                <Link className="drop-title drp-lst" to="/product/smarttv androidtv">
+                <Link className="drop-title drp-lst" to="/VendorLogin">
                   Vendor Login
                 </Link>
-                <Link className="drop-title drp-lst" to="/product/desktop">
+                <Link className="drop-title drp-lst" to="/Join">
                   Create Vendor Account
                 </Link>
               </div>

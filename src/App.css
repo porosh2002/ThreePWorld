@@ -738,3 +738,12 @@ padding:100px 0px;
   right:100px;
   padding: 0px 10px !important;
 }
+.GetProductforEdit{
+  margin: 0px auto;
+  padding:50px 0px;
+}
+.edit-pdct-dtls{
+  font-weight: 600;
+  margin:10px;
+  letter-spacing: 1px;
+}
