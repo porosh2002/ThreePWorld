@@ -764,3 +764,22 @@ padding:100px 0px;
   color:yellowgreen;
   text-decoration: none;
 }
+.vndr-aprove p {
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: orange;
+  margin: 50px 0px;
+}
+.content-approve span {
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #ea8041;
+  margin: 5px 10px;
+}
+.approve-btn{
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 15px;
+  color: red;
+  margin:30px;
+}

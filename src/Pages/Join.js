@@ -26,6 +26,9 @@ class Signup extends Component {
   onRefferalChange = (event) => {
     this.setState({ refferal: event.target.value });
   };
+  onnumber=e=>{
+    this.setState({number:e.target.value})
+  }
   onSubmit = () => {
     if (
       this.state.email.length > 6 ||
@@ -80,7 +83,7 @@ class Signup extends Component {
             />
             <input
               className="password-input"
-              onChange={this.onRefferalChange}
+              onChange={this.onnumber}
               minLength="6"
               type="number"
               placeholder="mobile number"
