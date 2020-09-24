@@ -747,3 +747,20 @@ padding:100px 0px;
   margin:10px;
   letter-spacing: 1px;
 }
+.opsLink{
+  padding:10px 0px;
+  text-align: center;
+  background-color: #444;
+}
+.opsLink_{
+  font-weight: 600;
+  font-size: 13px;
+  color: #fff;
+  letter-spacing:1px;
+  display: inline-block;
+  margin:30px;
+}
+.opsLink_:hover{
+  color:yellowgreen;
+  text-decoration: none;
+}

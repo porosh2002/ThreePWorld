@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import uniqid from "uniqid";
 export default class Upload extends React.Component {
   constructor() {
@@ -31,22 +32,32 @@ export default class Upload extends React.Component {
       offerEdit: "",
       BrandNameEdit: "",
       imageIDEdit: "",
-      file1Edit:null,
-      file2Edit:null,
-      file3Edit:null,
+      deleteId:''
     };
   }
+  ondeleteProduct=()=>{
+    fetch(`http://localhost:5000/deleteProduct/${this.state.deleteId}`,{
+      method:"post"
+    })
+  }
   updateproduct=()=>{
-    
+    fetch(`http://localhost:5000/ProductEdit/${this.state.imageID}`, {
+      method: "post",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        iteam: this.state.iteamEdit,
+        price: this.state.priceEdit,
+        vendor: this.state.vendorEdit,
+        description: this.state.descriptionEdit,
+        tags: this.state.tagsEdit,
+        size: this.state.sizeEdit,
+        offer: this.state.offerEdit,
+        BrandName: this.state.BrandNameEdit
+      }),
+    });
   }
-  onfile1update=e=>{
-    this.setState({file1Edit:e.target.files})
-  }
-  onfile2update=e=>{
-    this.setState({file2Edit:e.target.files})
-  }
-  onfile3update=e=>{
-    this.setState({file3Edit:e.target.files})
+  ondeleteid=e=>{
+    this.setState({deleteId:e.target.value})
   }
   onbrandnameupdate=e=>{
     this.setState({BrandNameEdit:e.target.value})
@@ -110,7 +121,7 @@ onnameupdate=e=>{
     fetch(`http://localhost:5000/Product/${event.target.value}`)
     .then((response) => response.json())
     .then((users) => {
-      this.setState({vendorEdit:users[0].vendor,iteamEdit:users[0].iteam,priceEdit:users[0].price,BrandNameEdit:users[0].BrandName,descriptionEdit:users[0].description,tagsEdit:users[0].tags,sizeEdit:users[0].size,offerEdit:users[0].offer,imageIDEdit:users[0].imageID})
+      this.setState({imageID:users[0].imageID,vendorEdit:users[0].vendor,iteamEdit:users[0].iteam,priceEdit:users[0].price,BrandNameEdit:users[0].BrandName,descriptionEdit:users[0].description,tagsEdit:users[0].tags,sizeEdit:users[0].size,offerEdit:users[0].offer,imageIDEdit:users[0].imageID})
     });
   }
   upload = () => {
@@ -141,6 +152,12 @@ onnameupdate=e=>{
   };
   render() {
     return (
+<div>
+<div className='opsLink'>
+      <Link className='opsLink_' to=''>Add Product</Link>
+      <Link className='opsLink_' to=''>Delete Product</Link>
+      <Link className='opsLink_' to=''>Edit Product</Link>
+    </div>
       <div className="main-admin">
         {/* <div className="main-admin-content"> */}
         {/* <div className="addProduct">
@@ -210,7 +227,7 @@ onnameupdate=e=>{
             </button>
         </div>
         </div> */}
-        <div className="GetProductforEdit">
+        {/* <div className="GetProductforEdit">
           <p className="title-admin">Edit Product</p>
           <input onChange={this.onpdctedit} className="admin-input" type="text" required></input>
           <p  className="edit-pdct-dtls">Name: {this.state.iteamEdit}</p>
@@ -263,14 +280,44 @@ onnameupdate=e=>{
             className="admin-txtarea"
             placeholder="Enter Product Tags"
           />
-          <input onChange={this.onfile1update} className="img-admin-input" type='file'></input>
-          <input onChange={this.onfile2update} className="img-admin-input" type='file'></input>
-          <input onChange={this.onfile3update} className="img-admin-input" type='file'></input>
           <button onClick={this.updateproduct} className="btn-upld-pdtc">
               Update Product
             </button>
+        </div> */}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div className="GetProductforEdit">
+          <p className="title-admin">Delete Product</p>
+          <input onChange={this.ondeleteid} className="admin-input" type="text" required></input>
+          <button onClick={this.ondeleteProduct} className="btn-upld-pdtc">
+              Delete Product
+            </button>
         </div>
+
+
+
+
+
+
+
+
       </div>
+</div>
     );
   }
 }
