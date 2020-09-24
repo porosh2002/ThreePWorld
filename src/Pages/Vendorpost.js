@@ -62,8 +62,7 @@ fileChangeNID=event=>{
 onNIDUpload=()=>{
 const formData = new FormData();
   formData.append("upload", this.state.NidImage);
-  formData.append("upload", this.state.NidUserID);
-  fetch("http://localhost:5000/ProductPICNID", {
+  fetch(`http://localhost:5000/ProductPICNID/${this.props.match.params.id}`, {
     method: "POST",
     body:formData,
   });
