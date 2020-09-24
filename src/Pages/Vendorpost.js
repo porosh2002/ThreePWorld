@@ -43,13 +43,14 @@ constructor(){
       offerEdit: "",
       BrandNameEdit: "",
       imageIDEdit: "",
+      pdtId:''
     } 
 }
 onpdctedit=event=>{
   fetch(`http://localhost:5000/Product/${event.target.value}`)
   .then((response) => response.json())
   .then((users) => {
-    this.setState({imageID:users[0].imageID,vendorEdit:users[0].vendor,iteamEdit:users[0].iteam,priceEdit:users[0].price,BrandNameEdit:users[0].BrandName,descriptionEdit:users[0].description,tagsEdit:users[0].tags,sizeEdit:users[0].size,offerEdit:users[0].offer,imageIDEdit:users[0].imageID})
+    this.setState({pdtId:users[0]._id,imageID:users[0].imageID,vendorEdit:users[0].vendor,iteamEdit:users[0].iteam,priceEdit:users[0].price,BrandNameEdit:users[0].BrandName,descriptionEdit:users[0].description,tagsEdit:users[0].tags,sizeEdit:users[0].size,offerEdit:users[0].offer,imageIDEdit:users[0].imageID})
   });
 }
 ondeleteid=e=>{
@@ -161,7 +162,7 @@ onBRANDChange=event=>{
     })
   };
   updateproduct=()=>{
-    fetch(`http://localhost:5000/ProductEdit/${this.state.imageID}`, {
+    fetch(`http://localhost:5000/ProductEditV/${this.state.email}/${this.state.pdtId}`, {
       method: "post",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({

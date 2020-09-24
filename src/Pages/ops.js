@@ -167,8 +167,8 @@ onnameupdate=e=>{
 <div>
 <div className='opsLink'>
       <Link onClick={this.activateAddproduct} className='opsLink_' >Add Product</Link>
-      <Link onClick={this.activateDeleteproduct} className='opsLink_' >Delete Product</Link>
-      <Link onClick={this.activateEditproduct} className='opsLink_' >Edit Product</Link>
+      <Link onClick={this.activateDeleteproduct} className='opsLink_' >Edit Product</Link>
+      <Link onClick={this.activateEditproduct} className='opsLink_' >Delete Product</Link>
     </div>
       <div className="main-admin">
         <div style={style} className="main-admin-content">
