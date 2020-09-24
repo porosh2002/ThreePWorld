@@ -43,7 +43,7 @@ constructor(){
       offerEdit: "",
       BrandNameEdit: "",
       imageIDEdit: "",
-      pdtId:''
+      pdtId:'',
     } 
 }
 onpdctedit=event=>{
@@ -178,7 +178,7 @@ onBRANDChange=event=>{
     });
   }
   ondeleteProduct=()=>{
-    fetch(`http://localhost:5000/deleteProduct/${this.state.deleteId}`,{
+    fetch(`http://localhost:5000/DeleteV/${this.state.email}/${this.state.deleteId}`,{
       method:"post"
     })
   }
