@@ -35,6 +35,15 @@ export default class Upload extends React.Component {
       deleteId:''
     };
   }
+  activateAddproduct=()=>{
+    this.setState({addProduct:true,editProduct:false,deleteProduct:false})
+  }
+  activateEditproduct=()=>{
+    this.setState({addProduct:false,editProduct:true,deleteProduct:false})
+  }
+  activateDeleteproduct=()=>{
+    this.setState({addProduct:false,editProduct:false,deleteProduct:true})
+  }
   ondeleteProduct=()=>{
     fetch(`http://localhost:5000/deleteProduct/${this.state.deleteId}`,{
       method:"post"
@@ -151,16 +160,22 @@ onnameupdate=e=>{
     });
   };
   render() {
+    const {addProduct} = this.state;
+    const {deleteProduct} = this.state;
+    const {editProduct} = this.state;
+    const style = addProduct ? { display: "block" } : { display: "none" };
+    const style2 = deleteProduct ? { display: "block" } : { display: "none" };
+    const style3 = editProduct ? { display: "block" } : { display: "none" };
     return (
 <div>
 <div className='opsLink'>
-      <Link className='opsLink_' to=''>Add Product</Link>
-      <Link className='opsLink_' to=''>Delete Product</Link>
-      <Link className='opsLink_' to=''>Edit Product</Link>
+      <Link onClick={this.activateAddproduct} className='opsLink_' >Add Product</Link>
+      <Link onClick={this.activateDeleteproduct} className='opsLink_' >Delete Product</Link>
+      <Link onClick={this.activateEditproduct} className='opsLink_' >Edit Product</Link>
     </div>
       <div className="main-admin">
-        {/* <div className="main-admin-content"> */}
-        {/* <div className="addProduct">
+        <div style={style} className="main-admin-content">
+        <div className="addProduct">
             <p className='title-admin'>Add Product by Admin</p>
             <input onChange={this.oniteamChange}
               className="admin-input"
@@ -219,15 +234,8 @@ onnameupdate=e=>{
               ADD Product
             </button>
           </div>
-          <div className='deleteProduct'>
-          <p className='title-admin'>Delete Product</p>
-          <input className="admin-input" type="text" placeholder='Enter Product ID :'/>
-          <button className="btn-upld-pdtc">
-              Delete Product
-            </button>
         </div>
-        </div> */}
-        {/* <div className="GetProductforEdit">
+        <div style={style2} className="GetProductforEdit">
           <p className="title-admin">Edit Product</p>
           <input onChange={this.onpdctedit} className="admin-input" type="text" required></input>
           <p  className="edit-pdct-dtls">Name: {this.state.iteamEdit}</p>
@@ -283,7 +291,7 @@ onnameupdate=e=>{
           <button onClick={this.updateproduct} className="btn-upld-pdtc">
               Update Product
             </button>
-        </div> */}
+        </div>
 
 
 
@@ -301,7 +309,7 @@ onnameupdate=e=>{
 
 
 
-        <div className="GetProductforEdit">
+        <div style={style3} className="GetProductforEdit">
           <p className="title-admin">Delete Product</p>
           <input onChange={this.ondeleteid} className="admin-input" type="text" required></input>
           <button onClick={this.ondeleteProduct} className="btn-upld-pdtc">
