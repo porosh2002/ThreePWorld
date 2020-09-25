@@ -33,6 +33,7 @@ export default class Upload extends React.Component {
       imageIDEdit: "",
       deleteId: "",
       needApprove:[],
+      approvepass:null
     };
   }
   activateAddproduct = () => {
@@ -212,9 +213,9 @@ componentDidMount() {
 <div className='vndr-aprove'>
 <p>Approve Vendor</p>
 {this.state.needApprove.map((data,i)=>{
-  return (<div className='content-approve'>
-    <span>{i+1}</span><span>{data.name}</span> <span>{data.number}</span> <Link className='approve-btn' to=''>Approve</Link>
-    <Nid imageID={data._id}/>
+  return (<div key={i} className='content-approve'>
+    <span>{i+1}</span><span>{data.name}</span> <span>{data.number}</span> <Link className='approve-btn' to={`/approve/${data._id}`}>Approve</Link>
+    {/* <Nid imageID={data._id}/> */}
   </div>)
   })}
 </div>

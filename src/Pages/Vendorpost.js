@@ -220,8 +220,7 @@ onBRANDChange=event=>{
             </button>
           </div>
           </Suspense>
-        )}
-                
+        )}         
             </div> 
             <div className="main-admin">
         <div className="main-admin-content">
