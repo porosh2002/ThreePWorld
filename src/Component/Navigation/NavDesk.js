@@ -1,8 +1,8 @@
 import React,{Component} from 'react';
 import logo from "../Images/logo.png";
-import { Link } from "react-router-dom";
+import { Link, withRouter} from "react-router-dom";
 import TopNav from './TopNav';
-export default class Navigation extends Component {
+ class Navigation extends Component {
     constructor() {
       super();
       this.state = {
@@ -12,7 +12,8 @@ export default class Navigation extends Component {
         hovered_home: false,
         hovered_essential: false,
         hovered_top: false,
-        makemoney:false
+        makemoney:false,
+        searchFeild:''
       };
     }
     menu_div_out = () => {
@@ -26,6 +27,14 @@ export default class Navigation extends Component {
         makemoney:false
       });
     };
+    searchchange=e=>{
+      this.setState({searchFeild:e.target.value})
+    }
+    onserchclick=()=>{
+      if(this.state.searchFeild.length > 0){     
+        this.props.history.push(`/product/${this.state.searchFeild}`)
+      }
+    }
     men_mouseEnter = () => {
       this.setState({
         hovered: true,
@@ -35,6 +44,7 @@ export default class Navigation extends Component {
         hovered_essential: false,
       });
     };
+
     topc_mouseEnter = () => {
       this.setState({
         hovered:false,
@@ -170,9 +180,9 @@ makemoney:true
             <div className="srch-profile" onMouseEnter={this.menu_div_out}>
               <div className="search-section">
                 <form>
-                  <label className="label">
-                  <span className="fas fa-search"></span>
-                    <input
+                  <label onClick={this.onserchclick} className="label">
+                  <span  className="fas fa-search"></span>
+                    <input onChange={this.searchchange}
                       className="search-box"
                       type="search"
                       placeholder="Search for..."
@@ -1138,4 +1148,4 @@ makemoney:true
       );
     }
   }
-  
+  export default withRouter(Navigation)

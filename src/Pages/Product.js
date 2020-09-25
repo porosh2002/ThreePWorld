@@ -3,7 +3,6 @@ import Loading from "../Component/Loading/Loading";
 export default class Product extends Component {
 
   render() {
-    console.log(this.props);
     const ProductDesk = React.lazy(() =>
       import("../Pages/Product-Filter-desk")
     );
@@ -14,12 +13,12 @@ export default class Product extends Component {
           {window.innerWidth > 900 ? (
             <Suspense fallback={<Loading />}>
               <div>
-                <ProductDesk />
+                <ProductDesk props={this.props}/>
               </div>
             </Suspense>
           ) : (
             <Suspense fallback={<Loading />}>
-              <ProductMob />
+              <ProductMob props={this.props}/>
             </Suspense>
           )}
         </div>

@@ -501,6 +501,13 @@ justify-content: space-around;
     width: 200px;
   }
 }
+@media screen and (max-width:899px){
+    .card-img-s {
+    max-height:250px;
+    max-width:250px;
+    transition:1s;
+  }
+}
 .admin-input {
   display: block;
   height: 30px;
@@ -596,8 +603,8 @@ justify-content: space-around;
     height: auto;
   }
   .card-img-s {
-    max-height:400px;
-    max-width:400px;
+    max-height:300px;
+    max-width:300px;
     transition:1s;
   }
   .img-img-s {

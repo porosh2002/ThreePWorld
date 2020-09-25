@@ -71,6 +71,7 @@ export default class Product_Filter_desk extends Component {
   constructor(){
     super();
     this.state = {
+      pdct:true,
       robots: [],
       fiftteoffr: false,
       offer1: false,
@@ -269,6 +270,17 @@ export default class Product_Filter_desk extends Component {
         return price3;
       }
     });
+    const pdnam = this.props.props.match.params.id
+    const Brand2 = Brand.filter((data) => {
+      if (ts.pdct === true) {
+        if (data.tags.includes(pdnam)) {
+          return data;
+        }
+      } else {
+        return Brand;
+      }
+    });
+    // console.log(this.props.props.match.params.id);
     return (
       <div className="product-page">
         <div className="product-filter">
@@ -491,20 +503,9 @@ export default class Product_Filter_desk extends Component {
           </form>
         </div>
         <div className="ffc">
-          {/*
-    <CardList robots={this.state.robots} />
-     */}
-          {this.state.robots.length > 0 ? (
-            <Suspense fallback={<p>...</p>}>
               <div>
-                <CardList robots={Brand} />
+                <CardList data={Brand2} />
               </div>
-            </Suspense>
-          ) : (
-            <Suspense fallback={<p>...</p>}>
-              <div></div>
-            </Suspense>
-          )}
         </div>
       </div>
     );

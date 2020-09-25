@@ -69,6 +69,54 @@ export default function Footer() {
           <Link to=''>
             <p className="footer-des_menu">Contact Us</p>
           </Link>
+          <Link to=''>
+            <p className="footer-des_menu">Help Center</p>
+          </Link>
+          <Link to=''>
+            <p className="footer-des_menu">Contact Us</p>
+          </Link>
+          <Link to=''>
+            <p className="footer-des_menu">Help Center</p>
+          </Link>
+          <Link to=''>
+            <p className="footer-des_menu">Contact Us</p>
+          </Link>
+          <Link to=''>
+            <p className="footer-des_menu">Help Center</p>
+          </Link>
+          <Link to=''>
+            <p className="footer-des_menu">Contact Us</p>
+          </Link>
+          <Link to=''>
+            <p className="footer-des_menu">Help Center</p>
+          </Link>
+          <Link to=''>
+            <p className="footer-des_menu">Contact Us</p>
+          </Link>
+          <Link to=''>
+            <p className="footer-des_menu">Help Center</p>
+          </Link>
+          <Link to=''>
+            <p className="footer-des_menu">Contact Us</p>
+          </Link>
+          <Link to=''>
+            <p className="footer-des_menu">Help Center</p>
+          </Link>
+          <Link to=''>
+            <p className="footer-des_menu">Contact Us</p>
+          </Link>
+          <Link to=''>
+            <p className="footer-des_menu">Help Center</p>
+          </Link>
+          <Link to=''>
+            <p className="footer-des_menu">Contact Us</p>
+          </Link>
+          <Link to=''>
+            <p className="footer-des_menu">Help Center</p>
+          </Link>
+          <Link to=''>
+            <p className="footer-des_menu">Contact Us</p>
+          </Link>
 
         </div>
       </div>

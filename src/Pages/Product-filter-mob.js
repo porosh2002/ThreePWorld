@@ -270,13 +270,22 @@ export default class Product_filter_mob extends Component {
         return price3;
       }
     });
-
+    const pdnam = this.props.props.match.params.id
+    const Brand2 = Brand.filter((data) => {
+      if (ts.pdct === true) {
+        if (data.tags.includes(pdnam)) {
+          return data;
+        }
+      } else {
+        return Brand;
+      }
+    });
     return (
       <div className="product-mob-div-container">
         {this.state.robots.length > 0 ? (
           <Suspense fallback={<p>...</p>}>
             <div>
-              <CardList robots={Brand} />
+              <CardList data={Brand2} />
             </div>
           </Suspense>
         ) : (
