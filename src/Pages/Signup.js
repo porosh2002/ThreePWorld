@@ -24,12 +24,9 @@ class Signup extends Component {
   };
   onSubmit = () => {
     if (
-      this.state.email.length > 6 ||
-      this.state.password.length > 5 ||
-      this.state.Address.length > 6 ||
-      this.state.name.length > 1 ||
-      this.state.name.district.length > 1 ||
-      this.state.refferal.length > 5
+      this.state.email.length > 6 &&
+      this.state.password.length > 5 &&
+      this.state.name.length > 3
     ) {
       fetch("http://localhost:5000/Register", {
         method: "post",
@@ -39,10 +36,13 @@ class Signup extends Component {
           password: this.state.password,
           name: this.state.name,
           refferal: this.state.refferal,
-        }),
-      }).then(setTimeout(()=>{
-          this.props.history.push('/Login')
-      },1000))
+        })
+      }).then(
+        alert("account Created")
+        // setTimeout(() => {
+        //   this.props.history.push("/Login");
+        // }, 1000)
+      );
     }
   };
   render() {
@@ -81,11 +81,10 @@ class Signup extends Component {
               type="text"
               placeholder="Referral Number (Optional)"
             />
-            <input
+            <button
               className="submit-input"
               onClick={this.onSubmit}
-              value="Submit"
-            />
+            >Sign Up</button>
             <Link className="undr-form" to="/Login">
               Log In
             </Link>

@@ -58,6 +58,7 @@ export default class Login extends Component {
               placeholder="Enter Your Password Here"
             />
             <input
+            type="submit"
               className="submit-input"
               onClick={this.onSubmit}
               value="Login"

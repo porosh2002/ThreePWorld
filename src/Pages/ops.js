@@ -383,9 +383,6 @@ componentDidMount() {
               Delete Product
             </button>
           </div>
-
-
-
         </div>
       </div>
     );

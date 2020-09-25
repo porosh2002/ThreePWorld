@@ -31,11 +31,11 @@ class Signup extends Component {
   }
   onSubmit = () => {
     if (
-      this.state.email.length > 6 ||
-      this.state.password.length > 5 ||
-      this.state.Address.length > 6 ||
-      this.state.name.length > 1 ||
-      this.state.number.length > 5
+      this.state.email.length > 6 &&
+      this.state.password.length > 5 &&
+      this.state.Address.length > 3 &&
+      this.state.name.length > 1 &&
+      this.state.number.length > 10
     ) {
       fetch("http://localhost:5000/Join", {
         method: "post",
@@ -46,9 +46,9 @@ class Signup extends Component {
           name: this.state.name,
           number: this.state.number,
           Address: this.state.Address,
-        }),
+        })
       }).then(setTimeout(()=>{
-          this.props.history.push('/Login')
+          this.props.history.push('/VendorLogin')
       },1000))
     }
   };
