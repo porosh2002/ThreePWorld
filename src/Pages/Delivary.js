@@ -12,7 +12,7 @@ export default function Delivary(props){
             <h2>Bkash NUmber: <p className='orderid'>{'+8801710-163592'}</p></h2>
             <h2>Rocket NUmber: <p className='orderid'>{'+8801753-998856'}</p></h2>
             <h2>Nogod NUmber: <p className='orderid'>{'+8801713-085167'}</p></h2>
-            <Link to={`/AuthLog/${props.match.params.price}`} className='atcLink'>Ordered Completed</Link>
+            <Link to={`/AuthLog/${props.match.params.id}/${props.match.params.price}`} className='atcLink'>Ordered Completed</Link>
         </div>
     )
 }

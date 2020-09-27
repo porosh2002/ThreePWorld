@@ -49,7 +49,7 @@ export default class App extends Component {
          <Route exact path="/cart/:id/:price" component={Cart}/>
          <Route exact path="/0psAdmin/:name/:pass" component={Ops}/>
          <Route exact path="/Admin" component={Admin}/>
-         <Route exact path="/AuthLog/:id" component={OrderLogin}/>
+         <Route exact path="/AuthLog/:id/:price" component={OrderLogin}/>
          <Route exact path="/Join" component={Join}/>
          <Route exact path="/VendorLogin" component={VendorLogin}/>
          <Route exact path="/Vendor/:id" component={VendorPost}/>
