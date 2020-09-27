@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { Link} from "react-router-dom";
  class Login extends Component{
-   componentDidMount(){
-     this.setState({price:this.props.match.params.id})
+   componentDidMount(props){
+     this.setState({price:this.props.match.params.price,productID:this.props.match.params.id})
    }
   constructor(){
     super();
@@ -10,6 +10,7 @@ import { Link} from "react-router-dom";
       email: "",
       password: "",
       id:'',
+      productID:'',
       price:''
     };
   }
@@ -32,14 +33,23 @@ import { Link} from "react-router-dom";
           this.setState({ id: res })
       }).then(
         setTimeout(() => {
+          fetch("/orderHistory",{
+            method:"post",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+              ID: this.state.id,
+              history: this.state.productID,
+            }),
+          })
           fetch(`http://139.59.81.94:5000/ref/${this.state.id}/${this.state.price}`,{
             method:"post"
           })
         }, 1000)
-      );
+      )
     }
   };
   render() {
+    console.log(this.props.match.params);
     return (
       <div>
         <form>
