@@ -17,7 +17,7 @@ export default class Login extends Component {
   };
   onSubmit = () => {
     if (this.state.email.length > 6 || this.state.password > 5) {
-      fetch("http://localhost:5000/Login", {
+      fetch("http://139.59.81.94:5000/Login", {
         method: "post",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -58,7 +58,6 @@ export default class Login extends Component {
               placeholder="Enter Your Password Here"
             />
             <input
-            type="submit"
               className="submit-input"
               onClick={this.onSubmit}
               value="Login"

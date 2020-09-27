@@ -7,7 +7,7 @@ class Signup extends Component {
       name: "",
       email: "",
       password: "",
-      refferal: "000000",
+      refferal: "000",
     };
   }
   onNameChange = (event) => {
@@ -22,13 +22,14 @@ class Signup extends Component {
   onRefferalChange = (event) => {
     this.setState({ refferal: event.target.value });
   };
-  onSubmit = () => {
+  onSubmit = e => {
+    e.preventDefault()
     if (
       this.state.email.length > 6 &&
       this.state.password.length > 5 &&
       this.state.name.length > 3
     ) {
-      fetch("http://localhost:5000/Register", {
+      fetch("http://139.59.81.94:5000/Register", {
         method: "post",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -38,10 +39,9 @@ class Signup extends Component {
           refferal: this.state.refferal,
         })
       }).then(
-        alert("account Created")
-        // setTimeout(() => {
-        //   this.props.history.push("/Login");
-        // }, 1000)
+        setTimeout(() => {
+          this.props.history.push("/Login");
+        }, 1000)
       );
     }
   };

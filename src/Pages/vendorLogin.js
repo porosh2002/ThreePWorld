@@ -16,7 +16,7 @@ export default class Login extends Component {
     this.setState({ password: event.target.value });
   };
   onSubmit = () => {
-      fetch("http://localhost:5000/CheckVendor", {
+      fetch("http://139.59.81.94:5000/CheckVendor", {
         method: "post",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

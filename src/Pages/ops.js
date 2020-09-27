@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import axios from 'axios'
 import uniqid from "uniqid";
-import Nid from './Nid'
+// import Nid from './Nid'
 export default class Upload extends React.Component {
   constructor() {
     super();
@@ -69,19 +69,19 @@ export default class Upload extends React.Component {
     });
   };
   ondeleteProduct = () => {
-    fetch(`http://localhost:5000/deleteProduct/${this.state.deleteId}`, {
+    fetch(`http://139.59.81.94:5000/deleteProduct/${this.state.deleteId}`, {
       method: "post",
-    });
+    }).then(alert("product Deleted"));
   };
 
 componentDidMount() {
-  axios.get("http://localhost:5000/vendorApprove").then(data=>{
+  axios.get("http://139.59.81.94:5000/vendorApprove").then(data=>{
     this.setState({needApprove:data.data})
   })
 }
 
   updateproduct = () => {
-    fetch(`http://localhost:5000/ProductEdit/${this.state.imageID}`, {
+    fetch(`http://139.59.81.94:5000/ProductEdit/${this.state.imageID}`, {
       method: "post",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
@@ -94,7 +94,7 @@ componentDidMount() {
         offer: this.state.offerEdit,
         BrandName: this.state.BrandNameEdit,
       }),
-    });
+    }).then(alert("product Edited"));
   };
   ondeleteid = (e) => {
     this.setState({ deleteId: e.target.value });
@@ -158,7 +158,7 @@ componentDidMount() {
     this.setState({ file3: event.target.files[0] });
   };
   onpdctedit = (event) => {
-    fetch(`http://localhost:5000/Product/${event.target.value}`)
+    fetch(`http://139.59.81.94:5000/Product/${event.target.value}`)
       .then((response) => response.json())
       .then((users) => {
         this.setState({
@@ -181,11 +181,11 @@ componentDidMount() {
     formData.append("upload", this.state.file2);
     formData.append("upload", this.state.file3);
     formData.append("upload", this.state.imageID);
-    fetch("http://localhost:5000/ProductPIC", {
+    fetch("http://139.59.81.94:5000/ProductPIC", {
       method: "POST",
       body: formData,
-    });
-    fetch("http://localhost:5000/ProductADD", {
+    }).then(alert("product Image uploaded"));
+    fetch("http://139.59.81.94:5000/ProductADD", {
       method: "post",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
@@ -199,7 +199,7 @@ componentDidMount() {
         BrandName: this.state.BrandName,
         imageID: this.state.imageID,
       }),
-    });
+    }).then(alert("product uploaded"));
   };
   render() {
     const { addProduct } = this.state;

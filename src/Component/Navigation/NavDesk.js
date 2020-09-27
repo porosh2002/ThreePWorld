@@ -206,7 +206,7 @@ makemoney:true
                 <Link to="/">
                   <div className="pre-container-link-div">
                     <i className="fas fa-shopping-bag"></i>
-                    <p className="pr-container-des">Cart</p>
+                    <p className="pr-container-des">Bag</p>
                   </div>
                 </Link>
               </div>
@@ -1119,11 +1119,11 @@ makemoney:true
           >
             <div className="ddms">
               <div className="drop-div ddvtc">
-                <Link className="drop-title drp-lst" to="/VendorLogin">
-                  Vendor Login
+                <Link className="drop-title drp-lst" to="/Login">
+                Affiliate Login
                 </Link>
-                <Link className="drop-title drp-lst" to="/Join">
-                  Create Vendor Account
+                <Link className="drop-title drp-lst" to="/Register">
+                Affiliate Signup
                 </Link>
               </div>
             </div>
