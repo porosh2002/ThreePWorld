@@ -8,6 +8,7 @@ export default class User extends Component {
         .then((users) => {
           this.setState({ name: users[0].name , email:users[0].email,Refferal:users[0].ownrefferal });
         });
+        fetch(`http://localhost:5000/gethistory/${this.props.match.params.id}`).then(res=>res.json()).then(res=>{this.setState({history:res})})
     }
     deleteAccount=()=>{
         fetch(`http://localhost:5000/delete/${this.props.match.params.id}`,{
@@ -36,7 +37,8 @@ constructor(){
     this.state = {
       name:undefined,
       email:undefined,
-      Refferal:undefined
+      Refferal:undefined,
+      history:[]
     }
     
 }
@@ -56,6 +58,22 @@ constructor(){
                 <input onChange={this.onEmailChange} type='email' placeholder='Enter new Email'></input>
                 <input type='submit' onClick={this.onupdateform} value='Update Profile'></input>
             </form>
+            <p className='title'>Order History</p>
+            <div>
+                {this.state.history.length===0?(<p style={{color:'#444',margin:'50px',fontWeight:"600"}}>There is no History.....</p>):(<div>
+                                    {
+                    this.state.history.map((data,i)=>{
+                        return (
+                            <div>
+                                <span style={{color:'#2992cc',margin:'70px 20px',fontWeight:"600"}}>{i + 1}</span>
+                                <span style={{color:'#2992cc',margin:'70px 20px',fontWeight:"600"}}>Order ID : {data.history}</span>
+                                <span style={{color:'#2992cc',margin:'70px 0px',fontWeight:"600"}}>Order Complete Date : {data.date}</span>
+                            </div>
+                        )
+                    })
+                }
+                </div>)}
+            </div>
         </div>
         )
     }
