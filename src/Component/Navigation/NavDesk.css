@@ -28,12 +28,20 @@
     .menu-div-one {
       height: 28px;
     }
+    .menu-link-2{
+      text-decoration: none;
+      margin: 0px 10px;
+      font-size: 13px;
+      color: #444;
+      font-weight: 650;
+      letter-spacing: 1px;
+    }
     .menu-link,
     .drop-title,
     .pr-container-des {
       text-decoration: none;
       margin: 0px 10px;
-      font-size: 12px;
+      font-size: 11px;
       color: #444;
       font-weight: 650;
       letter-spacing: 1px;

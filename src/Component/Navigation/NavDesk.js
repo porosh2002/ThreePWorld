@@ -134,42 +134,41 @@ makemoney:true
               <div className="menu-div">
                 {/* men_link class removed */}
                 <Link to=''
-                  className="menu-link "
-                  
+                  className="menu-link-2 "
                   onMouseEnter={this.men_mouseEnter}
                 >
                   Men
                 </Link>
                 <Link to=''
-                  className="menu-link"
+                  className="menu-link-2"
                   
                   onMouseEnter={this.women_mouseEnter}
                 >
                   Women
                 </Link>
                 <Link to=''
-                  className="menu-link"
+                  className="menu-link-2"
                   
                   onMouseEnter={this.kid_mouseEnter}
                 >
                   Kids
                 </Link>
                 <Link to=''
-                  className="menu-link"
+                  className="menu-link-2"
                   
                   onMouseEnter={this.home_mouseEnter}
                 >
                   Home & Living
                 </Link>
                 <Link to=''
-                  className="menu-link"
+                  className="menu-link-2"
                   
                   onMouseEnter={this.essential_mouseEnter}
                 >
                   Essentials
                 </Link>
                 <Link to=''
-                  className="menu-link"
+                  className="menu-link-2"
                   
                   onMouseEnter={this.topc_mouseEnter}
                 >
