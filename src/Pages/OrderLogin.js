@@ -22,7 +22,7 @@ import { Link} from "react-router-dom";
   };
   onSubmit = () => {
     if (this.state.email.length > 6 || this.state.password > 5){
-      fetch("http://139.59.81.94:5000/Login", {
+      fetch("http://localhost:5000/Login", {
         method: "post",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -33,7 +33,7 @@ import { Link} from "react-router-dom";
           this.setState({ id: res })
       }).then(
         setTimeout(() => {
-          fetch("/orderHistory",{
+          fetch("http://localhost:5000/orderHistory",{
             method:"post",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({
@@ -41,15 +41,19 @@ import { Link} from "react-router-dom";
               history: this.state.productID,
             }),
           })
-          fetch(`http://139.59.81.94:5000/ref/${this.state.id}/${this.state.price}`,{
+          fetch(`http://localhost:5000/ref/${this.state.id}/${this.state.price}`,{
             method:"post"
           })
+          .then(
+            setTimeout(() => {
+              this.props.history.push(`/`);
+            }, 1000)
+          );
         }, 1000)
       )
     }
   };
   render() {
-    console.log(this.props.match.params);
     return (
       <div>
         <form>

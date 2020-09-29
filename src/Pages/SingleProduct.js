@@ -7,7 +7,7 @@ import Callimage3 from './callimage3';
 export default class SingleProduct extends Component {
   componentDidMount() {
     if (this.state.id.length > 0) {
-      fetch(`http://139.59.81.94:5000/Product/${this.state.id}`)
+      fetch(`http://localhost:5000/Product/${this.state.id}`)
         .then((response) => response.json())
         .then((users) => {
           this.setState({ data: users[0] });

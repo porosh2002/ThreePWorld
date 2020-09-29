@@ -3,7 +3,7 @@ import React, { Component} from "react";
 import CardList from "../Component/CardList/CardList";
 export default class algoritom extends Component {
   componentDidMount() {
-    fetch("http://139.59.81.94:5000/AllProduct")
+    fetch("http://localhost:5000/AllProduct")
       .then((response) => response.json())
       .then((users) => {this.setState({ robots: users });});
   }
