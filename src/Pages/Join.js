@@ -37,7 +37,7 @@ class Signup extends Component {
       this.state.name.length > 1 &&
       this.state.number.length > 10
     ) {
-      fetch("http://localhost:5000/Join", {
+      fetch("http://139.59.81.94:5000/Join", {
         method: "post",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 
 export default class ApproveVendor extends Component {
 componentDidMount() {
-    fetch(`http://localhost:5000/approve/${this.props.match.params.id}`, {
+    fetch(`http://139.59.81.94:5000/approve/${this.props.match.params.id}`, {
         method: "post",}).then(setTimeout(()=>{
           this.props.history.push('/')
       },1000))

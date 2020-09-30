@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 
 export default class CallImage extends Component {
     componentDidMount(){
-        fetch(`http://localhost:5000/geTNidiMagE/${this.state.imageID}`).then(
+        fetch(`http://139.59.81.94:5000/geTNidiMagE/${this.state.imageID}`).then(
             (users) => {
               this.setState({ image: users });
             }

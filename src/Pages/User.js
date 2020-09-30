@@ -3,21 +3,21 @@ import { Link } from 'react-router-dom';
 import DU from '../Component/DsbrdUSR/DU'
 export default class User extends Component {
     componentDidMount() {
-        fetch(`http://localhost:5000/getuserdata/${this.props.match.params.id}`)
+        fetch(`http://139.59.81.94:5000/getuserdata/${this.props.match.params.id}`)
         .then((response) => response.json())
         .then((users) => {
           this.setState({ name: users[0].name , email:users[0].email,Refferal:users[0].ownrefferal });
         });
-        fetch(`http://localhost:5000/gethistory/${this.props.match.params.id}`).then(res=>res.json()).then(res=>{this.setState({history:res})})
+        fetch(`http://139.59.81.94:5000/gethistory/${this.props.match.params.id}`).then(res=>res.json()).then(res=>{this.setState({history:res})})
     }
     deleteAccount=()=>{
-        fetch(`http://localhost:5000/delete/${this.props.match.params.id}`,{
+        fetch(`http://139.59.81.94:5000/delete/${this.props.match.params.id}`,{
             method:'POST',
             headers: {'Content-Type': 'application/json'},
         })
     }
     onupdateform=()=>{
-        fetch(`http://localhost:5000/update/${this.props.match.params.id}`,{
+        fetch(`http://139.59.81.94:5000/update/${this.props.match.params.id}`,{
             method:'POST',
             headers: {'Content-Type': 'application/json'},
             body:JSON.stringify({

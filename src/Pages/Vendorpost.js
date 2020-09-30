@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom'
 import uniqid from 'uniqid'
 export default class User extends Component {
     componentWillMount() {
-        fetch(`http://localhost:5000/getvendordata/${this.props.match.params.id}`)
+        fetch(`http://139.59.81.94:5000/getvendordata/${this.props.match.params.id}`)
         .then((response) => response.json())
         .then((users) => {
           this.setState({ name: users[0].name , email:users[0].email, access:users[0].access,NidUserID:users[0]._id});
@@ -47,7 +47,7 @@ constructor(){
     } 
 }
 onpdctedit=event=>{
-  fetch(`http://localhost:5000/Product/${event.target.value}`)
+  fetch(`http://139.59.81.94:5000/Product/${event.target.value}`)
   .then((response) => response.json())
   .then((users) => {
     this.setState({pdtId:users[0]._id,imageID:users[0].imageID,vendorEdit:users[0].vendor,iteamEdit:users[0].iteam,priceEdit:users[0].price,BrandNameEdit:users[0].BrandName,descriptionEdit:users[0].description,tagsEdit:users[0].tags,sizeEdit:users[0].size,offerEdit:users[0].offer,imageIDEdit:users[0].imageID})
@@ -62,7 +62,7 @@ fileChangeNID=event=>{
 onNIDUpload=()=>{
 const formData = new FormData();
   formData.append("upload", this.state.NidImage);
-  fetch(`http://localhost:5000/ProductPICNID/${this.props.match.params.id}`, {
+  fetch(`http://139.59.81.94:5000/ProductPICNID/${this.props.match.params.id}`, {
     method: "POST",
     body:formData,
   });
@@ -140,11 +140,11 @@ onBRANDChange=event=>{
     formData.append("upload", this.state.file2);
     formData.append("upload", this.state.file3);
     formData.append("upload", this.state.imageID);
-    fetch("http://localhost:5000/ProductPIC", {
+    fetch("http://139.59.81.94:5000/ProductPIC", {
       method: "POST",
       body:formData,
     }).then(alert("product Image uploaded"));
-    fetch('http://localhost:5000/ProductADD', {
+    fetch('http://139.59.81.94:5000/ProductADD', {
       method: 'post',
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify({
@@ -161,7 +161,7 @@ onBRANDChange=event=>{
     }).then(alert("product  uploaded"))
   };
   updateproduct=()=>{
-    fetch(`http://localhost:5000/ProductEditV/${this.state.email}/${this.state.pdtId}`, {
+    fetch(`http://139.59.81.94:5000/ProductEditV/${this.state.email}/${this.state.pdtId}`, {
       method: "post",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
@@ -177,7 +177,7 @@ onBRANDChange=event=>{
     }).then(alert("product Edited"));
   }
   ondeleteProduct=()=>{
-    fetch(`http://localhost:5000/DeleteV/${this.state.email}/${this.state.deleteId}`,{
+    fetch(`http://139.59.81.94:5000/DeleteV/${this.state.email}/${this.state.deleteId}`,{
       method:"post"
     }).then(alert("product Deleted"))
   }
